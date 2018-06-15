@@ -11,7 +11,7 @@ const Services = () => {
         </div>
         <div className="serviceBoxes webDes col-lg-2 col-md-3">
           <div className="serviceCircle">
-            <img alt="icon" className="icon" src="../icons/browser.png" />
+            <img alt="icon" className="icon" src="./icons/browser.png" />
           </div> 
           <div className="serviceTitle">WEBDESIGN</div>
           <div className="serviceBorder"></div>
@@ -19,7 +19,7 @@ const Services = () => {
         </div>    
         <div className="serviceBoxes webDev col-lg-2 col-md-3">
           <div className="serviceCircle">
-            <img alt="icon" className="icon" src="../icons/settings.png" />
+            <img alt="icon" className="icon" src="./icons/settings.png" />
           </div>
           <div className="serviceTitle">WEBDEVELOPMENT</div>
           <div className="serviceBorder"></div>
@@ -27,7 +27,7 @@ const Services = () => {
         </div>    
         <div className="serviceBoxes backend col-lg-2 col-md-3">
           <div className="serviceCircle">
-            <img alt="icon" className="icon" src="../icons/database.png" />
+            <img alt="icon" className="icon" src="./icons/database.png" />
           </div>
           <div className="serviceTitle">BACK-END SOLUTIONS</div>
           <div className="serviceBorder"></div>
@@ -35,7 +35,7 @@ const Services = () => {
         </div>    
         <div className="serviceBoxes socialMedia col-lg-2 col-md-3">
           <div className="serviceCircle">
-            <img alt="icon" className="icon" src="../icons/users.png" />
+            <img alt="icon" className="icon" src="./icons/users.png" />
           </div>
           <div className="serviceTitle">SOCIAL MEDIA</div>
           <div className="serviceBorder"></div>

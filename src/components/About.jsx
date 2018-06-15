@@ -3,7 +3,7 @@ import './css/About.css';
 
 const About = () => {
   const style = { 
-      background: 'url(../images/atti.jpg)', 
+      background: 'url(./images/atti.jpg)', 
       backgroundPosition: 'center-top', 
       backgroundSize: '140%',
   };

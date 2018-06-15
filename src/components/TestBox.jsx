@@ -12,7 +12,7 @@ class TestBox extends Component {
                  onMouseLeave={ (e) => onMouseLeave(e) } 
                  onClick={ onClick }>
     
-                <img alt="" className="test-box-img" src={ "../images/" + p.images[0] }></img>
+                <img alt="" className="test-box-img" src={ "./images/" + p.images[0] }></img>
                 <i className={ i }></i>
                 <div className="test-box-text">{ p.title }</div>
             </div>
