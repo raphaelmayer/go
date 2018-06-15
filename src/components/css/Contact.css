@@ -1,0 +1,33 @@
+.form-row {
+}
+.form-row .form-group {
+	display: inline-flex;
+}
+.form-group input, .form-group textarea {
+	border: 2px solid #555;
+	border-radius: 6px;
+	font-size: 18px;
+	margin: 20px;
+	padding: 5px;
+}
+.form-group textarea {
+	width: 600px !important;
+}
+.form-group input {
+	width: 300px;
+}
+.form-group small {
+}
+
+.footers {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.footer {
+	color: #555;
+	font-family: 'caveat';
+	font-size: 30px;
+	padding-top: 18%;
+}

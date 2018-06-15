@@ -1,0 +1,50 @@
+.page {
+	border: 1px solid transparent;
+	background: #f3f7f7;
+	display: inline-flex;
+	min-height: 90vh;
+	text-align: left;
+}
+.left, .right {
+	order: 1px solid black;
+	margin: 100px 0;
+	padding: 0;
+}
+.left {
+	margin-left: 150px;
+	width: 40%;
+}
+.right {
+	margin-left: 40px;
+	width: 36%;	/*  right margin from screen border ok?  */
+}
+.left h1 {
+	width: 88%;
+}
+.text {
+	width: 70%;
+}
+.right h2 {
+	margin-top: 30px;
+	width: 100%;
+}
+.stats {
+	background: #eee;
+	margin: 0;
+	width: 100%;
+	height: 400px;
+}
+.pageAlt {
+	background: white;
+}
+
+@media (max-width: 1200px) {
+	.page {
+		display: block;
+	}
+	.left, .right {
+		margin-left: 150px;
+		margin-right: 150px;
+		width: auto;
+	}
+}

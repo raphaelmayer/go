@@ -1,0 +1,122 @@
+.hexagon {
+  box-sizing: border-box;
+  cursor: pointer;
+    float: left;
+    margin-left: 12px;
+    margin-bottom: -66px;
+    transition: all 0.2s ease-in-out;
+}
+.hexagon:hover {
+  background-size: 210% !important;
+}
+.hex-row .hex-top {
+  border-radius: 2px;
+  box-sizing: border-box;
+  border-bottom: 84px solid #444;
+  border-left: 145.6px solid transparent;
+  border-right: 145.6px solid transparent;
+  width: 0;
+}
+.hex-row .hex-body {
+  border-radius: 2px;
+  background: #444;
+  height: 168px; 
+  width: 290px;
+}
+.hex-row .hex-bot {
+  border-radius: 2px;  
+  border-top: 84px solid #444;
+  border-left: 145.6px solid transparent;
+  border-right: 145.6px solid transparent;
+  width: 0;
+}
+
+.hex-row-even .hex-top {
+  border-radius: 2px;
+  box-sizing: border-box;
+  border-bottom: 84px solid transparent;
+  border-left: 145.6px solid #333;
+  border-right: 145.6px solid #333;
+  width: 0;
+}
+.hex-row-even .hex-body {
+  border-radius: 2px;
+  ackground: #444;
+  height: 168px; 
+  width: 290px;
+}
+.hex-row-even .hex-bot {
+  border-radius: 2px;  
+  border-top: 84px solid transparent;
+  border-left: 145.6px solid #333;
+  border-right: 145.6px solid #333;
+  width: 0;
+}
+
+.hex-row {
+  clear: left;
+  position: relative;
+  z-index: 10;
+}
+.hex-row-even {
+  clear: left;
+  margin-left: 151px;
+}
+
+.hex-grid {
+  background: #333;
+  min-height: 100vh;
+  order: 2px solid orange;
+  padding-left: 160px;
+  padding-top: 50px;
+}
+
+#display {
+  border: 1px solid white;
+  box-sizing: border-box;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'open sans';
+  overflow: hidden;
+  padding-top: 10%;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+
+/*#######################################################*/
+.clear-hexagon {
+    float: left;
+    margin-left: 9px;
+    margin-bottom: -20px;
+}
+.clear-hex-top {
+  border-bottom: 30px solid #144;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  width: 0;
+}
+.clear-hex-body {
+  background: #122;
+  height: 60px; 
+  width: 104px;
+}
+.clear-hex-bot {
+  border-top: 30px solid #111;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  width: 0;
+}
+.clear-hex-row {
+  background: green;
+}
+.clear-hex-row-even {
+  margin-left: 57px;
+}
+
+.clear-hex-grid {
+  float: right;
+  margin-top: -30px;
+  margin-right: 28px;
+}

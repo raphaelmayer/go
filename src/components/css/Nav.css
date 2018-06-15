@@ -1,0 +1,70 @@
+.nav {
+	ackground: rgba(255, 255, 255, 0.1);
+	position: fixed;
+	top: 0; 
+	bottom: 0;
+	left: 0;
+	z-index: 9;
+}
+.nav .fa-gem {
+	color: #449999;
+	font-size: 30px;
+	margin-top: 40px;
+	margin-bottom: 150px;
+	padding: 0 30px;
+}
+
+.nav-btn {
+	order: 1px solid black;
+	color: silver;
+	cursor: pointer;
+	display: list-item;
+	list-style: none;
+	padding: 8px 40px;
+	position: relative;
+	transition: all 0.2s ease-out;
+}
+.nav-btn-text {
+	color: aqua;
+	font-size: 92%;
+	font-weight: 500;
+	letter-spacing: 1px;
+	opacity: 0;
+	position: absolute;
+	top: 24.5%;
+	right: -70%;
+	text-align: left;
+	transition: all 0.2s ease-out;
+	visibility: hidden;
+	white-space: nowrap;
+	width: 0%;	
+}
+.nav-btn:hover {
+	color: #666;
+}
+.nav-btn:hover .nav-btn-text {
+	color: #eee;
+	opacity: 1;
+	position: absolute;
+	visibility: visible;
+	width: 100%;
+}
+
+.border {
+	border-bottom: 2px solid silver;
+	margin: 8px 28px;
+	width: 40px;
+}
+.active {
+	color: lime;
+}
+.fa-github, .fa-linkedin {
+	color: silver;
+	cursor: pointer;
+	font-size: 24px;
+	padding: 8px 12px !important;
+	transition: all 0.2s ease;
+}
+.fa-github:hover, .fa-linkedin:hover {
+	color: #777;
+}

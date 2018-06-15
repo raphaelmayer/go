@@ -1,0 +1,71 @@
+.about {
+    position: relative;
+    text-align: left;
+}
+.my-img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 1px #111;
+    float: right;
+    height: 300px;
+    opacity: 0.9;
+    width: 300px;
+}
+.about-box {
+    margin: 6vh 20vw;
+}
+.skills-box {
+    margin: 6vh 20vw;
+}
+.skill-icons-box {
+    padding: 3vh;
+    text-align: center;
+}
+.skill-icons {
+    color: black;
+    font-size: 100px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.fa-html5 {
+    color: tomato;
+}
+.fa-css3 {
+    color: skyblue;
+}
+.fa-js-square {
+    color: #e8cd22;
+}
+.fa-react {
+    color: lightblue;
+}
+.fa-node-js {
+    color: lime;
+}
+.fa-git {
+    color: #777;
+}
+.expand-skills {
+    color: orange;
+    cursor: pointer;
+    font-weight: 600;
+}
+.expanded-skills {
+    isplay: none;
+    padding-left: 20px;
+}
+.expand-title {
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+@media (max-width: 767px) {
+    .my-img {
+        width: 100px;
+        height: 100px;
+    }
+    .about-box {
+        margin: 6vh 2vw;
+    }
+    .skills-box {
+        margin: 6vh 2vw;
+    }
+}

@@ -1,0 +1,72 @@
+.work-box {
+  border-bottom: 3px solid white;
+  border-radius: 3px;
+  display: inline-flex;
+  margin: 1% 2%;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease;
+  height: 225px;
+  width: 400px;
+}
+.work-box img {
+    display: inline;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.7s ease;
+}
+.work-box:hover {
+    opacity: 1;
+    border-bottom: 3px solid orange;
+}
+.work-box:hover img {
+    transform: scale(1.1);
+}
+.work-box:hover .work-box-text {
+    opacity: 1;
+}
+
+
+.work-box-text {
+    background: rgb(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 2px;
+    opacity: 0;
+    overflow: hidden;
+    padding-top: 24%;
+    position: absolute;
+    text-shadow: 2px 2px 2px #333;
+    top: 0%;
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+.work-box-tech {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: table;
+    font-family: "open sans";
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 4px 4px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    z-index: 4;
+}
+
+
+.hide {
+  margin: 0;
+  padding: 0;
+  width: 0;
+}
