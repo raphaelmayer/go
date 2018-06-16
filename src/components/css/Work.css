@@ -4,17 +4,6 @@
   osition: relative;
   width: 80%;
 }
-.filter-container {
-	margin: 20px;
-}
-.filter {
-	display: flex;
-	height: 50px;
-	padding: 0px 30%;
-}
-.filter button:hover {
-  font-size: 22px;
-}
 
 .test {
 }

@@ -8,17 +8,15 @@
 section {
   background: linear-gradient(to top right, rgba(0, 0, 0, 0.3), #333);
   box-sizing: border-box;
-  margin-top: 10px;
   min-height: 100vh;
   overflow: hidden;
   opacity: 0;
   padding: 2% 0;
   position: relative;
-  transition: all .4s ease-out;
+  transition: all .7s ease-out;
   width: 100vw;
 }
 .appear {   /*  animation  */
-  margin-top: 0px;
   opacity: 1;
 }
 h1 {

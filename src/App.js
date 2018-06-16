@@ -28,7 +28,7 @@ class App extends Component {
         for (let i=0; i<sections.length; i++) {
             console.log(sections[i].children)
             if (checkVisible(sections[i])) {
-                setTimeout(() => sections[i].className += " appear", 200);
+                sections[i].className += " appear";
             } else {
                 sections[i].className = "";
             }

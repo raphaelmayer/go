@@ -4,6 +4,7 @@ import './css/Work.css';
 import myProjects from '../projects';
 //import WorkBox from './WorkBox';
 import TestBox from './TestBox';
+import Filter from './Filter';
 import Overlay from './Overlay';
 
 class Work extends Component {
@@ -17,39 +18,42 @@ class Work extends Component {
         this.handleFilter = this.handleFilter.bind(this);
         this.handleOverlay = this.handleOverlay.bind(this);
     }
-    componentDidMount() {
-        //this.setState({ projects: myProjects });
-        //this.setState({ filtered: myProjects });
-    }
 
     handleFilter(e) {
         const keyword = e.target.innerHTML;
-
-        if (this.state.filter) {
-            this.setState({ filter: false });
-            this.setState({ projects: myProjects });
-        } else {
-            const filtered = this.state.projects.filter(p => p.tech.indexOf(keyword) >= 0);
-            console.log(filtered);
+        const btn  = e.target;
+console.log(e.target.className)
+        // turn filter on
+        if (!this.state.filter) {
+            const filtered = myProjects.filter(p => p.tech.indexOf(keyword) >= 0);
             this.setState({ filter: keyword });
             this.setState({ projects: filtered });
+        // switch filter
+        } else if (this.state.filter !== keyword) {
+            const filtered = myProjects.filter(p => p.tech.indexOf(keyword) >= 0);
+            this.setState({ filter: keyword });
+            this.setState({ projects: filtered });
+        // turn filter off
+        } else {
+            this.setState({ filter: false });
+            this.setState({ projects: myProjects });
         }
     }
-    onMouseEnter(e) {
+    onMouseEnter(e) {   // start animation for TestBox
         const el = e.target.childNodes[0] || e.target.parentNode.childNodes[0];
         if (!el) { console.error("Work44:", "!el"); return; }
         el.className = "test-box-img";
         setTimeout(() => el.classList += " test-box-img-extend", 300);
         setTimeout(() => el.classList += " test-box-img-active", 900);
     }
-    onMouseLeave(e) {
+    onMouseLeave(e) {   //reset animation
         const el = e.target.childNodes[0];
         if (!el) return;
         console.log("before", el.className);
         el.className = "test-box-img";
         console.log("after", el.className);
     }
-    handleOverlay(p) {
+    handleOverlay(p) {  //overlay
         this.state.overlay.visible ? 
             this.setState({ overlay: { p: this.state.overlay.p, visible: false } }) 
             : 
@@ -58,23 +62,7 @@ class Work extends Component {
 
     render() {
         const projects = this.state.projects; //this.state.filter ? this.state.filtered : this.state.projects;
-        const icons = [ "fas fa-chart-pie", "fas fa-cloud", "fas fa-circle", "fas fa-film", "fas fa-map", "fas fa-clock", "fas fa-desktop", "fas fa-th", "fas fa-calculator" ]
-
-        const Filter = (props) => {
-            return(
-                <div className='filter-container'>
-                    <div className='filter'>
-                        <button id='Front-End' onClick={ this.handleFilter }>Website</button>
-                        <button id='Front-End' onClick={ this.handleFilter }>Front-End</button>
-                        <button id='Full-Stack' onClick={ this.handleFilter }>Full-Stack</button>
-                        <button id='React.js' onClick={ this.handleFilter }>React.js</button>
-                        <button id='jQuery' onClick={ this.handleFilter }>jQuery</button>
-                        <button id='d3.js' onClick={ this.handleFilter }>d3.js</button>
-                    </div>
-                    { this.state.filter ? <p>Active Filter: <strong>{this.state.filter}</strong></p> : <p>Active Filter: none</p> }
-                </div>
-            );
-        }
+        const icons = [ "fas fa-chart-pie", "fas fa-cloud", "fas fa-circle", "fas fa-film", "fas fa-map", "fas fa-clock", "fas fa-desktop", "fas fa-th", "fas fa-calculator" ];
 
         if (projects) {
             return (
@@ -85,7 +73,7 @@ class Work extends Component {
                     <h1>Featured Work</h1>
                     <div><button onClick={ (e) => console.log(this.state) }>this.state</button></div>
 
-                    <Filter />
+                    <Filter isActive={ this.state.filter } onClick={ this.handleFilter } />
                     
                     { //if no projects with currently active filter
                         this.state.filter && !this.state.projects[0] ? 
