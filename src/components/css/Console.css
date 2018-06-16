@@ -1,6 +1,31 @@
 .console {
-  margin: 6% 20% 0 0;
+  border: 10px solid #22ffff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 2px #338888;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 0;
+  margin: 6vh auto;
+  max-width: 99%;
+  overflow: hidden;
+  padding: 0;
   text-align: left;
+  transition: all 0.5s ease-in-out;
+  width: 0;
+}
+.console-extend {
+  border: 1px solid #228888;
+  border-radius: 20px;
+  height: 400px;
+  opacity: 0.4;
+}
+.console-active {
+  border: 1px solid #22ffff;
+  box-shadow: 0px 0px 10px 1px #338888;
+  border-radius: 8px;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+  width: 800px;
 }
 .console-btns {
   height: 10px;
@@ -29,7 +54,6 @@
 
 .console-bar {
   width: 800px;
-  max-width: 99%;
   box-shadow: 0px 0px 10px 1px #222;
   box-sizing: border-box;
   height: 25px;
@@ -44,7 +68,6 @@
   box-shadow: 0px 0px 10px 1px #222;
   box-sizing: border-box;
   width: 800px;
-  max-width: 99%;
   margin: 0 auto;
   padding: 40px;
   border-bottom-left-radius: 5px;

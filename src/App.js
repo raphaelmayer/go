@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-//import content from './content';
 import './App.css';
 
 import Nav from './components/Nav';
-//import Page from './components/Page';
 import Work from './components/Work';
 import Work2 from './components/Work2';
 import Console from './components/Console';
@@ -12,19 +10,42 @@ import About from './components/About';
 import Contact from './components/Contact';
 import { HexGridClear } from './components/Hexagon';
 
+function checkVisible(elm) {
+  var rect = elm.getBoundingClientRect();
+  var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+  return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+}
+
 class App extends Component {
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+    handleScroll(e) {
+        const sections = document.querySelectorAll("section");
+        for (let i=0; i<sections.length; i++) {
+            console.log(sections[i].children)
+            if (checkVisible(sections[i])) {
+                setTimeout(() => sections[i].className += " appear", 200);
+            } else {
+                sections[i].className = "";
+            }
+        }
+    }
     render() {
         return (
             <div className='App'>
                 <Nav />
 
-                <section id={0} >
+                <section id={0} className="appear" >
                     <HexGridClear color={'#444'} />
                     <h1>mayer.solutions</h1>
                     <Console />
                 </section>
     
-                <section id={1} >
+                <section id={1}>
                     <Services />
                 </section>
     

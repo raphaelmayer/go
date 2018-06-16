@@ -60,7 +60,7 @@
 	width: 94% !important;
 }
 .test-box:hover .test-box-img-active {
-	border-radius: 0%;	
+	border-radius: 10px;	
 	height: 190% !important;
 	top: -180% !important;
 }
