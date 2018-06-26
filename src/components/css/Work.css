@@ -20,7 +20,7 @@
 	padding: 50px 0;
 	position: relative;
 	transition: all 0.5s ease-out;
-	width: 30%;
+	width: 400px;
 }
 .test-box:hover {
 	box-shadow: 0px 0px 10px 1px #011;
@@ -90,4 +90,10 @@
 
 .no-projects {
 	margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+	.test-box {
+		width: 90%;
+	}
 }

@@ -2,9 +2,10 @@
 	margin: 20px;
 }
 .filter {
-	display: flex;
-	height: 50px;
-	padding: 0px 30%;
+	display: block;
+}
+.filter button {
+	margin: 2px 5px;
 }
 .filter button:hover {
   font-size: 22px;

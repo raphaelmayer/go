@@ -22,6 +22,7 @@
     margin-top: 10vh;
     text-align: center;
     width: 20%;
+    min-width: 300px;
 }
 .serviceCircle {
     border-radius: 50%;
@@ -74,4 +75,42 @@
 .dark-bg {
     background: rgba(0, 0, 0, 0.6);
     color: white;
+}
+
+@media (max-width: 600px) {
+  .service {
+    padding-top: 4vh;
+  }  
+  .serviceBoxes {
+    position: relative;
+    min-width: none;
+    width: 90%;
+  }
+  .serviceCircle {
+    margin: 0 5 0 0;
+    position: absolute;
+    height: 14vw;
+    width: 14vw;
+  }
+  .serviceTitle {
+    float: right;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 80%;
+  }
+  .serviceBorder {
+    display: none;
+  }
+  .serviceText {
+    float: right;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 80%;
+  }
 }
