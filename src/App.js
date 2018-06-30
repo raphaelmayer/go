@@ -30,6 +30,9 @@ class App extends Component {
             }
         }
         setInterval(pulse, 500);
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector(".loading-screen").className = "loading-screen-done";
+        }, false);
     }
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
@@ -89,7 +92,4 @@ class App extends Component {
 export default App;
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector(".loading-screen").className = "loading-screen-done";
-}, false);
 
