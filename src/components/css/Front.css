@@ -1,0 +1,35 @@
+
+.front-title {
+	order: 1px solid white;
+	color: #228888;
+	font-family: 'audiowide';
+	font-size: 50px;
+	height: 60px;
+	margin: 0 auto;
+	overflow: hidden;
+	transition: all 1s ease;
+	width: 1px;
+
+}
+.front-title:hover {
+	width: 500px;
+}
+
+
+
+
+.front {
+	position: relative;
+}
+#c {
+	background: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+}

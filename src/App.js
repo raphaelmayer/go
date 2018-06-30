@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Nav from './components/Nav';
+import Front from './components/Front';
 import Work from './components/Work';
 import Work2 from './components/Work2';
 import Console from './components/Console';
@@ -19,6 +20,16 @@ function checkVisible(elm) {
 class App extends Component {
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
+
+        function pulse() {
+            const span = document.querySelector(".title-anim");
+            if (span.className === "title-anim title-anim-1") {
+                span.className = "title-anim title-anim-2";
+            } else {
+                span.className = "title-anim title-anim-1";
+            }
+        }
+        setInterval(pulse, 500);
     }
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
@@ -26,7 +37,7 @@ class App extends Component {
     handleScroll(e) {
         const sections = document.querySelectorAll("section");
         for (let i=0; i<sections.length; i++) {
-            console.log(sections[i].children)
+            // console.log(sections[i].children)
             if (checkVisible(sections[i])) {
                 sections[i].className += " appear";
             } else {
@@ -37,11 +48,15 @@ class App extends Component {
     render() {
         return (
             <div className='App'>
+                <div className="loading-screen">
+                    <i className="fas fa-spinner rotating"></i>
+                </div>
+
                 <Nav />
 
                 <section id={0} className="appear" >
                     <HexGridClear color={'#444'} />
-                    <h1>mayer.solutions</h1>
+                    <h1>mayer.solution<span className="title-anim title-anim-1">s</span></h1>
                     <Console />
                 </section>
     
@@ -72,4 +87,9 @@ class App extends Component {
 }
 
 export default App;
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector(".loading-screen").className = "loading-screen-done";
+}, false);
 
