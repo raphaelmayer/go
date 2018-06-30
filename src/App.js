@@ -19,6 +19,7 @@ function checkVisible(elm) {
 
 class App extends Component {
     componentDidMount() {
+        window.addEventListener('load', this.handleLoad);
         window.addEventListener('scroll', this.handleScroll);
 
         function pulse() {
@@ -30,9 +31,6 @@ class App extends Component {
             }
         }
         setInterval(pulse, 500);
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelector(".loading-screen").className = "loading-screen-done";
-        }, false);
     }
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
@@ -47,6 +45,9 @@ class App extends Component {
                 sections[i].className = "";
             }
         }
+    }
+    handleLoad() {
+        document.querySelector(".loading-screen").className += " ls-done";
     }
     render() {
         return (
