@@ -3,6 +3,7 @@ import './App.css';
 
 import Nav from './components/Nav';
 import LoadingScreen from './components/LoadingScreen';
+import Thanks from './components/Thanks';
 import Front from './components/Front';
 import Work from './components/Work';
 import Console from './components/Console';
@@ -42,12 +43,14 @@ class App extends Component {
     handleLoad() {
         document.querySelector(".loading-screen").className += " ls-done";
     }
-    render() {
+    render() { 
         return (
             <div className='App'>
                 <LoadingScreen />
 
-                <Nav />
+                <Thanks />
+
+               <Nav />
 
                 <section id={0} className="appear" >
                     <HexGridClear color={'#444'} />
