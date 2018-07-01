@@ -27,11 +27,7 @@ const Nav = (props) => {
 				<i className='far fa-circle'props='4'></i>
 				<div className='nav-btn-text' props='4'> Get In Touch </div>
 			</div>
-			<div className='nav-btn' props='5' onClick={ (e) => smoothScroll(e) } >
-				<i className='far fa-circle'props='5'></i>
-				<div className='nav-btn-text' props='5'> placeholder </div>
-			</div>
-
+			
 			<div className='border'></div>
 			<a href="https://github.com/attiimaster" target="_blank" rel="noopener noreferrer" ><i className='fab fa-github'></i></a>
 			<a href="https://www.linkedin.com/in/raphael-mayer" target="_blank" rel="noopener noreferrer" ><i className='fab fa-linkedin'></i></a>

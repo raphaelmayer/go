@@ -3,7 +3,7 @@ import './css/Work.css';
 
 import myProjects from '../projects';
 //import WorkBox from './WorkBox';
-import TestBox from './TestBox';
+import WorkBox from './WorkBox';
 import Filter from './Filter';
 import Overlay from './Overlay';
 
@@ -39,7 +39,7 @@ console.log(e.target.className)
             this.setState({ projects: myProjects });
         }
     }
-    onMouseEnter(e) {   // start animation for TestBox
+    onMouseEnter(e) {   // start animation for WorkBox
         const el = e.target.childNodes[0] || e.target.parentNode.childNodes[0];
         if (!el) { console.error("Work44:", "!el"); return; }
         el.className = "test-box-img";
@@ -84,9 +84,9 @@ console.log(e.target.className)
                         { //append Projects and alternate between bgColor
                         this.state.projects.map((p, i) => {
                             if( i % 2 === 0 ) {
-                                return(<TestBox i={ icons[i] } p={ p } brightness="bright" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.handleOverlay(myProjects[i]) } key={i} />)
+                                return(<WorkBox i={ icons[i] } p={ p } brightness="bright" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.handleOverlay(myProjects[i]) } key={i} />)
                             } else {
-                                return(<TestBox i={ icons[i] } p={ p } brightness="dark" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.handleOverlay(myProjects[i]) } key={i} />)
+                                return(<WorkBox i={ icons[i] } p={ p } brightness="dark" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.handleOverlay(myProjects[i]) } key={i} />)
                             }
                         })}
                     

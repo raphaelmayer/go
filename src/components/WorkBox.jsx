@@ -1,15 +1,18 @@
-import React from 'react';
-import './css/WorkBox.css';
+import React, { Component } from 'react';
 
 const WorkBox = (props) => {
-	const { project } = props;
-	return (
-       <div className="work-box">
-           <img src={ '../images/' + project.images[0] } />
-           <div className="work-box-text"> { project.title } </div>
-           <div className="work-box-tech"> { project.tech.join(", ") } </div>
-       </div>
-	);
+    const { p, i, brightness, onClick, onMouseEnter, onMouseLeave } = props;
+    return(
+        <div className={ "test-box " + brightness } 
+             onMouseEnter={ (e) => onMouseEnter(e) }
+             onMouseLeave={ (e) => onMouseLeave(e) } 
+             onClick={ onClick }>
+    
+            <img alt="" className="test-box-img" src={ "./images/" + p.images[0] }></img>
+            <i className={ i }></i>
+            <div className="test-box-text">{ p.title }</div>
+        </div>
+    );
 }
 
 export default WorkBox;
