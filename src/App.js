@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Nav from './components/Nav';
+import LoadingScreen from './components/LoadingScreen';
 import Front from './components/Front';
 import Work from './components/Work';
 import Console from './components/Console';
@@ -24,6 +25,7 @@ class App extends Component {
         setInterval(pulse, 2000);
     }
     componentWillUnmount() {
+        window.removeEventListener('load', this.handleLoad);
         window.removeEventListener('scroll', this.handleScroll);
     }
     handleScroll(e) {
@@ -43,13 +45,9 @@ class App extends Component {
     render() {
         return (
             <div className='App'>
-                <div className="loading-screen">
-                    <i className="fas fa-spinner rotating"></i>
-                </div>
+                <LoadingScreen />
 
                 <Nav />
-
-                <Front />
 
                 <section id={0} className="appear" >
                     <HexGridClear color={'#444'} />

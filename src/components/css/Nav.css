@@ -65,6 +65,9 @@
 	padding: 8px 12px !important;
 	transition: all 0.2s ease;
 }
-.fa-github:hover, .fa-linkedin:hover {
-	color: #777;
+.fa-github:hover {
+	color: azure;
+}
+.fa-linkedin:hover {
+	color: azure;
 }

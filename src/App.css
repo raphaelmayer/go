@@ -8,17 +8,18 @@
 section {
   background: linear-gradient(to top right, rgba(0, 0, 0, 0.3), #333);
   box-sizing: border-box;
+  margin-left: 2%;
   min-height: 100vh;
   overflow: hidden;
   opacity: 0;
-  padding: 2% 2%;
+  padding: 2% 0;
   position: relative;
   transition: all .7s ease-out;
   width: 100vw;
 }
 .appear {   /*  animation  */
   opacity: 1;
-  padding: 2% 0;
+  margin-left: 0;
 }
 h1 {
   color: #448888;
@@ -49,63 +50,6 @@ button {
 button:hover {
   border: 2px solid #226666;
   color: #339999;
-}
-
-/* loading screen */
-.loading-screen {
-  background: rgba(35, 35, 35, 0.95);
-  display: flex;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: all 0.2s ease-in-out;
-  z-index: 20;
-}
-.loading-screen .fa-spinner {
-  color: #11ffff;
-  font-size: 40px;
-  margin: auto;
-}
-.ls-done {
-  display: none;
-  visibility: hidden;
-}
-@-webkit-keyframes rotating /* Safari and Chrome */ {
-  from {
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotating {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.rotating {
-  -webkit-animation: rotating 2s linear infinite;
-  -moz-animation: rotating 2s linear infinite;
-  -ms-animation: rotating 2s linear infinite;
-  -o-animation: rotating 2s linear infinite;
-  animation: rotating 2s linear infinite;
 }
 
 /*pulse-anim */
