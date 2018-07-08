@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './css/Work.css';
 
 import myProjects from '../projects';
-//import WorkBox from './WorkBox';
 import WorkBox from './WorkBox';
 import Filter from './Filter';
 import Overlay from './Overlay';
@@ -71,7 +70,6 @@ console.log(e.target.className)
                     <Overlay p={ this.state.overlay.p } visible={ this.state.overlay.visible } handleOverlay={ this.handleOverlay } />
                     
                     <h1>Featured Work</h1>
-                    <div><button onClick={ (e) => console.log(this.state) }>this.state</button></div>
 
                     <Filter isActive={ this.state.filter } onClick={ this.handleFilter } />
                     

@@ -2,13 +2,18 @@
 	margin: 20px;
 }
 .filter {
-	display: block;
+	display: flex;
+	justify-content: center;
+	min-height: 40px;
 }
 .filter button {
+	display: table;
 	margin: 2px 5px;
 }
 .filter button:hover {
   font-size: 22px;
+}
+.filter-container p {
 }
 .filter-btn-active {
   	border: 2px solid #226666;
