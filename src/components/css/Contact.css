@@ -1,39 +1,39 @@
-.form-row {
+.contactBox button {		
+	margin-top: 10px;
+	padding: 6px 0;
+	width: 500px;
 }
-.form-row .form-group {
-	display: inline;
-}
+.form-group {}
 .form-group input, .form-group textarea {
-	border: 2px solid #555;
-	border-radius: 6px;
+	box-sizing: border-box;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #444;
+	color: #448888;
 	font-size: 18px;
 	margin: 20px;
+	transition: all 0.3s ease;
 	padding: 5px;
+	width: 500px;
 }
 .form-group textarea {
-	width: 600px;
+	font-family: "open sans";
+	width: 500px;
 }
-.form-group input {
-	width: 300px;
+.form-group input:focus {
+	border-bottom: 2px solid #339999;
 }
-.form-group small {
+.form-group textarea:focus {
+	border-bottom: 2px solid #339999;
 }
 
-.footers {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
 .footer {
 	color: #555;
 	font-family: 'caveat';
 	font-size: 30px;
-	padding-top: 18%;
+	padding-top: 12%;
 }
 
 @media (max-width: 600px) {
-	.form-group textarea {
-		width: 300px;
-	}
+	.form-group textarea {}
 }

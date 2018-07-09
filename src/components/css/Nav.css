@@ -58,10 +58,13 @@
 .active {
 	color: lime;
 }
+.nav a {
+	display: block;
+}
 .fa-github, .fa-linkedin {
 	color: silver;
 	cursor: pointer;
-	font-size: 24px;
+	font-size: 30px;
 	padding: 8px 12px !important;
 	transition: all 0.2s ease;
 }

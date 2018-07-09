@@ -24,12 +24,12 @@ const About = () => {
           <small>REST, AJAX, API's, XML, JSON, JWT, oAuth</small>
           <div className="expand-title">Tools</div>
           <small>Other tools I use include but are not limited to:<br />
-            <strong>Wordpress</strong>,
-            <strong>git</strong> for version control, 
-            <strong>Gulp</strong> task runner to automate redundant development steps, 
-            <strong>redux</strong> state management for react,
-            <strong>Babel</strong> and 
-            <strong>Webpack</strong>.
+            <strong> Wordpress</strong>,
+            <strong> git</strong> for version control, 
+            <strong> Gulp</strong> task runner to automate redundant development steps, 
+            <strong> redux</strong> state management for react,
+            <strong> Babel</strong> and 
+            <strong> Webpack</strong>.
           </small>
         </div>       
       </div>

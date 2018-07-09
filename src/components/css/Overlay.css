@@ -41,13 +41,14 @@
 }
 .overlay-img-pre {
 	border: 1px solid #333;
-	display: flex;
+	display: inline-flex;
+	height: 30%;
 	margin: 5px;
 }
 .overlay-img-pre img {
-	max-height: 100px;
-	min-width: 150px;
+	height: 135px;
 	margin: 2px;
+	width: 240px;
 }
 
 .light-border {

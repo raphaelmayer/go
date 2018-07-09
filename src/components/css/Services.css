@@ -16,8 +16,6 @@
     text-align: left;
 }
 .serviceBoxes {
-    background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(55, 55, 55, 0.1));
-    order: 1px solid white;
     display: inline-block;
     margin-top: 10vh;
     text-align: center;
@@ -26,8 +24,6 @@
 }
 .serviceCircle {
     border-radius: 50%;
-    ackground: rgba(255, 255, 255, 0.7);
-    ox-shadow: 0px 0px 10px 1px #eee;
     height: 10vw;
     position: relative;
     margin: 0 auto;
