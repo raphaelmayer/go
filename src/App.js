@@ -55,30 +55,30 @@ class App extends Component {
 
                 <Parallax />
 
-                <section id={0} className="appear " style={{ zIndex: 1, backgroundColor: "rgba(30, 30, 30)" }}>
+                <section id={0} className="appear " style={{ zIndex: 1, backgroundColor: "rgb(30, 30, 30)" }}>
                    {/* <HexGridClear color={'#444'} /> */}
                     <Front />
                 </section>
     
-				<div className="section-bg" style={{ backgroundColor: "rgba(35, 35, 35)" }}>
+				<div className="section-bg" style={{ backgroundColor: "rgb(35, 35, 35)" }}>
                 <section id={1}>
                     <Services />
                 </section>
 				</div>
     
-				<div className="section-bg" style={{ backgroundColor: "rgba(30, 30, 30)" }}>
+				<div className="section-bg" style={{ backgroundColor: "rgb(30, 30, 30)" }}>
                 <section id={2} >
                     <About />
                 </section>
 				</div>
     
-				<div className="section-bg" style={{ backgroundColor: "rgba(35, 35, 35)" }}>
+				<div className="section-bg" style={{ backgroundColor: "rgb(35, 35, 35)" }}>
                 <section id={3} >
                     <Work />
                 </section>
 				</div>
     
-				<div className="section-bg" style={{ backgroundColor: "rgba(30, 30, 30)" }}>
+				<div className="section-bg" style={{ backgroundColor: "rgb(30, 30, 30)" }}>
                 <section id={4} >
                     <Contact />
                     <HexGridClear margin={{ marginTop: -220 + "px" }} color={'#444'} />
