@@ -1,9 +1,13 @@
 .App {
-  background-color: rgba(35, 35, 35);
+  background-color: rgba(30, 30, 30);
   margin: 0;
   padding: 0;
   overflow: hidden;
   text-align: center;
+}
+.section-bg {
+  position: relative;
+  z-index: 2;
 }
 section {
   box-sizing: border-box;
@@ -17,6 +21,7 @@ section {
   position: relative;
   transition: all .7s ease-out;
   width: 100vw;
+  z-index: 3;
 }
 .appear {   /*  animation  */
   opacity: 1;

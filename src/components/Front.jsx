@@ -7,7 +7,7 @@ class Front extends Component {
     render() {
         return (
             <div className="front">
-            <div className="front-title">asdasdasda</div>
+            	<h1><span className="pulse-anim pulse-anim-1">mayer.solutions</span></h1>
             </div>
         );
     }

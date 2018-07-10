@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Nav from './components/Nav';
+import Parallax from './components/Parallax';
 import LoadingScreen from './components/LoadingScreen';
 import Thanks from './components/Thanks';
 import Front from './components/Front';
@@ -50,32 +51,34 @@ class App extends Component {
 
                 <Thanks />
 
-               <Nav />
-                <section id={0} className="appear " >
-                    <HexGridClear color={'#444'} />
-                    <h1><span className="pulse-anim pulse-anim-1">mayer.solutions</span></h1>
-                    <Console />
+                <Nav />
+
+                <Parallax />
+
+                <section id={0} className="appear " style={{ zIndex: 1, backgroundColor: "rgba(30, 30, 30)" }}>
+                   {/* <HexGridClear color={'#444'} /> */}
+                    <Front />
                 </section>
     
-				<div style={{ backgroundColor: "rgba(35, 35, 35)" }}>
+				<div className="section-bg" style={{ backgroundColor: "rgba(35, 35, 35)" }}>
                 <section id={1}>
                     <Services />
                 </section>
 				</div>
     
-				<div style={{ backgroundColor: "rgba(30, 30, 30)" }}>
+				<div className="section-bg" style={{ backgroundColor: "rgba(30, 30, 30)" }}>
                 <section id={2} >
                     <About />
                 </section>
 				</div>
     
-				<div style={{ backgroundColor: "rgba(35, 35, 35)" }}>
+				<div className="section-bg" style={{ backgroundColor: "rgba(35, 35, 35)" }}>
                 <section id={3} >
                     <Work />
                 </section>
 				</div>
     
-				<div style={{ backgroundColor: "rgba(30, 30, 30)" }}>
+				<div className="section-bg" style={{ backgroundColor: "rgba(30, 30, 30)" }}>
                 <section id={4} >
                     <Contact />
                     <HexGridClear margin={{ marginTop: -220 + "px" }} color={'#444'} />
@@ -88,6 +91,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-
