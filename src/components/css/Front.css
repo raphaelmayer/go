@@ -1,3 +1,19 @@
 .front {
-padding-top: 8%;
+	padding-top: 10%;
+}
+.front h1 {
+	font-size: 70px;
+	margin: 0;
+	padding: 0;
+}
+.front p {
+	font-size: 20px;
+}
+.front button {
+	margin: 40px 5px;
+	position: relative;
+	z-index: 1;
+}
+.front button:hover {
+	font-size: 22px;
 }

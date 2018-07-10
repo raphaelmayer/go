@@ -33,7 +33,7 @@ h1 {
   color: #448888;
   font-family: 'Audiowide';
   font-size: 50px;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 h2 {
   color: #448888;
@@ -46,12 +46,13 @@ p {
 button {
   background: none;
   border: 2px solid #889999;
-  border-radius: 5px;
+  border-radius: 4px;
   box-shadow: 0px 0px 10px 1px #111;
   color: #889999;
   cursor: pointer;
   font-size: 20px;
   margin: auto;
+  padding: 3px 6px;
   transition: all 0.3s ease;
   white-space: nowrap;
 }
@@ -65,9 +66,9 @@ button:hover {
 }
 .pulse-anim-1 {
   background: none;
-  color: #446666;
+  color: transparent;
   text-shadow: 0px 0px 20px black;
-  transition: all 1.5s ease-in;
+  transition: all 1.6s ease-in;
 }
 .pulse-anim-2 {
   color: #228888;  

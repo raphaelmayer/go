@@ -1,7 +1,14 @@
 .contactBox button {		
 	margin-top: 10px;
-	padding: 6px 0;
 	width: 500px;
+}
+.contactBox h1 {
+	padding: 0;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.contactBox form {
+	margin-top: 100px;
 }
 .form-group {}
 .form-group input, .form-group textarea {

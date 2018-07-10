@@ -7,7 +7,7 @@ const Services = () => {
         <div className="services-text-box">
           <h1>Services I offer</h1> 
           <p>In my time as a software developer building and maintaining a diverse set of applications I encountered a wide variety of problems and acquired a diverse skillset. I am confident I can add value to your project and help you throughout your development process from conceptualizing prototypes to deploying a finished product.</p>
-          <p>I invite you to check out some of the services I offer down below aswell as some of the more recent work I did.</p> 
+          <p>I invite you to check out some of the services I offer down below.</p> 
         </div>
         <div className="serviceBoxes webDes col-lg-2 col-md-3">
           <div className="serviceCircle">

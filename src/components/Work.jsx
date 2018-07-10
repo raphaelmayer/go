@@ -82,9 +82,9 @@ console.log(e.target.className)
                         { //append Projects and alternate between bgColor
                         this.state.projects.map((p, i) => {
                             if( i % 2 === 0 ) {
-                                return(<WorkBox i={ icons[i] } p={ p } brightness="bright" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.handleOverlay(myProjects[i]) } key={i} />)
+                                return(<WorkBox i={ icons[i] } p={ p } brightness="bright" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.handleOverlay(projects[i]) } key={i} />)
                             } else {
-                                return(<WorkBox i={ icons[i] } p={ p } brightness="dark" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.handleOverlay(myProjects[i]) } key={i} />)
+                                return(<WorkBox i={ icons[i] } p={ p } brightness="dark" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.handleOverlay(projects[i]) } key={i} />)
                             }
                         })}
                     

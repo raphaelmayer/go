@@ -1,6 +1,8 @@
 import React from 'react';
 import './css/Nav.css';
 
+import smoothScroll from "../helpers/smoothScroll";
+
 const sections = [
 	"Home",
 	"Services I Offer",
@@ -32,10 +34,3 @@ const Nav = (props) => {
 }
 
 export default Nav;
-
-function smoothScroll(e) {	// not well supported though
-	const key = e.target.attributes.props.value;
-	const element = document.getElementById(key);
-
-	element.scrollIntoView({ behavior: 'smooth' });
-}

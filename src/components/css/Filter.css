@@ -4,7 +4,6 @@
 .filter {
 	display: flex;
 	justify-content: center;
-	min-height: 40px;
 }
 .filter button {
 	display: table;

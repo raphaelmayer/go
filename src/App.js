@@ -53,8 +53,6 @@ class App extends Component {
 
                 <Nav />
 
-                <Parallax />
-
                 <section id={0} className="appear " style={{ zIndex: 1, backgroundColor: "rgb(30, 30, 30)" }}>
                    {/* <HexGridClear color={'#444'} /> */}
                     <Front />
@@ -81,7 +79,7 @@ class App extends Component {
 				<div className="section-bg" style={{ backgroundColor: "rgb(30, 30, 30)" }}>
                 <section id={4} >
                     <Contact />
-                    <HexGridClear margin={{ marginTop: -220 + "px" }} color={'#444'} />
+                    <HexGridClear margin={{ marginTop: -180 + "px" }} color={'#444'} />
                     <footer className="footer">2018 - designed and built by Raphael Mayer</footer>
                 </section>
 				</div>
