@@ -2,4 +2,4 @@
 
 ### You can view my portfolio live on: 
 
-Link: *attiimaster@github.io/go*
+Link: *https://attiimaster@github.io/go*
