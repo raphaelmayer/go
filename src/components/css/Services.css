@@ -1,11 +1,11 @@
-
-/*================== service ====================*/
-.service {
-    background: linear-gradient(
-        to top right, #eee9de 0%,#eee9de 10%, #000000 10%, 
-        white 10%,white 84%,#000000 84%,
-        #eee9de 84%,#eee9de 100%);
+.services {
+    border: 2px solid silver;
 }
+.service {
+    border: 2px solid white;
+    height: 60vh;
+}
+/*================== service ====================*/
 .services-text-box {
     box-sizing: border-box;
     margin: 0 auto;

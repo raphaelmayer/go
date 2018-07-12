@@ -80,7 +80,7 @@
             }
         }
 
-        w.addEventListener("click", mouse_click_handler);
+        // w.addEventListener("click", mouse_click_handler);
         
         // w.addEventListener("mousedown", mouse_down_handler);
         w.addEventListener("touchstart", mouse_down_handler);

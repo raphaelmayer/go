@@ -92,7 +92,7 @@ class App extends Component {
 				<div className="section-bg" style={{ backgroundColor: "rgb(33, 33, 33)" }}>
                 <section id={4} >
                     <Contact />
-                    { window.innerWidth <= 1000 ? null : <HexGridClear margin={{ marginTop: -180 + "px" }} color={'#444'} /> }
+                    { window.innerWidth <= 1000 ? null : <HexGridClear margin={{ marginTop: -270 + "px" }} color={'#444'} /> }
                     <footer className="footer">2018 - designed and built by Raphael Mayer</footer>
                 </section>
 				</div>

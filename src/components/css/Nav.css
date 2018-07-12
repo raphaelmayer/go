@@ -10,10 +10,13 @@
 	color: #449999;
 	font-size: 30px;
 	margin-top: 40px;
-	margin-bottom: 150px;
+	margin-bottom: 0px;
 	padding: 0 30px;
 }
 
+.nav-btns-container {
+	margin-top: 150px;
+}
 .nav-btn {
 	order: 1px solid black;
 	color: silver;
