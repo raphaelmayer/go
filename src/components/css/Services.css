@@ -74,11 +74,13 @@
 }
 
 @media (max-width: 600px) {
-  .service {
-    padding-top: 4vh;
-  }  
+  .services-text-box {
+      margin-bottom: 30px;
+      width: 90%;
+  }
   .serviceBoxes {
     position: relative;
+    margin-top: 20px;
     min-width: none;
     width: 90%;
   }

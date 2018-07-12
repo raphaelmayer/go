@@ -105,4 +105,7 @@
 		padding: 50px;
 		width: 100%;
 	}
+	.overlay-text-box p {
+		width: 98%;
+	}
 }

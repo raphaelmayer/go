@@ -21,7 +21,6 @@ const Filter = (props) => {
         <div className='filter-container'>
             <div className='filter'>
                 <FilterBtn isActive={ isActive } onClick={ onClick } keyword="Website"></FilterBtn>
-                <FilterBtn isActive={ isActive } onClick={ onClick } keyword="Front-End"></FilterBtn>
                 <FilterBtn isActive={ isActive } onClick={ onClick } keyword="Full-Stack"></FilterBtn>
                 <FilterBtn isActive={ isActive } onClick={ onClick } keyword="React.js"></FilterBtn>
                 <FilterBtn isActive={ isActive } onClick={ onClick } keyword="jQuery"></FilterBtn>

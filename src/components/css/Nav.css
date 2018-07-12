@@ -74,3 +74,54 @@
 .fa-linkedin:hover {
 	color: azure;
 }
+
+@media(max-width: 600px) {
+	.nav {
+		background: #111;
+		eight: 0%;
+		overflow: hidden;
+		width: 100%;
+	}
+	.nav-btn {
+		border-bottom: 2px solid #222;
+		display: flex;
+		margin: 0 5%;
+	}
+	.nav-btn:hover {
+		border-bottom: 2px solid #122;
+		color: #666;
+	}
+	.nav-btn:hover .nav-btn-text {
+		color: #777;
+		opacity: 1;
+		position: relative;
+		visibility: visible;
+		width: 100%;
+	}
+	.nav-btn-text {
+		color: silver;
+		font-weight: 700;
+		letter-spacing: 6px;
+		margin-left: 30px;
+		opacity: 1;
+		position: relative;
+		top: auto;
+		right: auto;
+		text-transform: uppercase;
+		visibility: visible;
+		width: 100%;
+	}
+	.border {
+		border-bottom: 2px solid silver;
+		margin: 20px auto;
+		width: 80%;
+	}
+}
+@media (max-width: 400px) {
+	.nav-btn {
+		padding: 8px 10px;
+	}
+	.nav-btn-text {
+		font-size: 13px;
+	}
+}

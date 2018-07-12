@@ -17,3 +17,31 @@
 .front button:hover {
 	font-size: 22px;
 }
+
+@media (max-width: 600px) {
+	.front {
+		padding-top: 18%;
+	}
+	.front h1 {
+		font-size: 50px;
+	}
+	.front p {
+		font-size: 18px;
+	}
+}
+@media (max-width: 450px) {
+	.front h1 {
+		font-size: 40px;
+	}
+	.front p {
+		font-size: 18px;
+	}
+}
+@media (max-width: 380px) {
+	.front h1 {
+		font-size: 30px;
+	}
+	.front p {
+		font-size: 14px;
+	}
+}

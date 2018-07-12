@@ -15,12 +15,17 @@ import pulse from './helpers/pulse';
 import { HexGridClear } from './components/Hexagon';
 
 function checkVisible(elm) {
-  var rect = elm.getBoundingClientRect();
-  var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+  const rect = elm.getBoundingClientRect();
+  const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
   return !(rect.bottom < 200 || rect.top - viewHeight >= -200);
 }
 
 class App extends Component {
+    constructor() {
+        super();
+        this.state = { showMobileNav: false };
+        this.handleMobileNav = this.handleMobileNav.bind(this);
+    }
     componentDidMount() {
         window.addEventListener('load', this.handleLoad);
         window.addEventListener('scroll', this.handleScroll);
@@ -44,14 +49,22 @@ class App extends Component {
     handleLoad() {
         document.querySelector(".loading-screen").className += " ls-done";
     }
+    handleMobileNav() {
+        console.log("MN")
+        this.state.showMobileNav ? 
+        this.setState({ showMobileNav: false }) : 
+        this.setState({ showMobileNav: true });
+    }
     render() { 
+        const { showMobileNav } = this.state;
         return (
             <div className='App'>
                 <LoadingScreen />
 
                 <Thanks />
 
-                <Nav />
+                { window.innerWidth <= 600 ? <i onClick={ this.handleMobileNav } className="fas fa-bars"></i> : <Nav /> }
+                { showMobileNav ? <Nav /> : null }
 
                 <section id={0} className="appear " style={{ zIndex: 1, backgroundColor: "rgb(30, 30, 30)" }}>
                    {/* <HexGridClear color={'#444'} /> */}
@@ -79,7 +92,7 @@ class App extends Component {
 				<div className="section-bg" style={{ backgroundColor: "rgb(30, 30, 30)" }}>
                 <section id={4} >
                     <Contact />
-                    <HexGridClear margin={{ marginTop: -180 + "px" }} color={'#444'} />
+                    { window.innerWidth <= 1000 ? null : <HexGridClear margin={{ marginTop: -180 + "px" }} color={'#444'} /> }
                     <footer className="footer">2018 - designed and built by Raphael Mayer</footer>
                 </section>
 				</div>

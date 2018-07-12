@@ -5,11 +5,11 @@
 	display: flex;
 	justify-content: center;
 }
-.filter button {
+.filter-btn {
 	display: table;
 	margin: 2px 5px;
 }
-.filter button:hover {
+.filter-btn:hover {
   font-size: 22px;
 }
 .filter-container p {
@@ -18,4 +18,13 @@
   	border: 2px solid #226666;
   	color: #339999;
 	font-size: 22px;
+}
+
+@media (max-width: 600px) {
+	.filter-btn {
+		font-size: 16px;
+	}
+	.filter-btn:hover {
+	  font-size: 18px;
+	}
 }

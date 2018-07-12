@@ -11,8 +11,18 @@ const sections = [
 	"Get in Touch" 
 ];
 
+const MobileNav = () => {
+	return (
+		<div></div>
+	);
+}
+const DesktopNav = () => {
+	return (
+		<div></div>
+	);
+}
 const Nav = (props) => {
-
+console.log(window.innerWidth);
 	return (
 		<div className='nav'>
 			<i className='far fa-gem'></i>

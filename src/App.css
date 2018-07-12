@@ -5,6 +5,14 @@
   overflow: hidden;
   text-align: center;
 }
+.fa-bars {
+  font-size: 30px;
+  position: fixed;
+  top: 2%;
+  left: 5%;
+  z-index: 10;
+}
+
 .section-bg {
   position: relative;
   z-index: 2;
@@ -29,6 +37,7 @@ section {
   padding-left: 0%;
   width: 100vw !important;
 }
+
 h1 {
   color: #448888;
   font-family: 'Audiowide';
@@ -92,4 +101,10 @@ button:hover {
 }
 .thanks div {
   margin: auto;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
 }

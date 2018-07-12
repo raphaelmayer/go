@@ -1,13 +1,16 @@
-.contactBox button {		
+.contact {
+	box-sizing: border-box;
+}
+.contact button {		
 	margin-top: 10px;
 	width: 500px;
 }
-.contactBox h1 {
+.contact h1 {
 	padding: 0;
 	padding-top: 20px;
 	padding-bottom: 10px;
 }
-.contactBox form {
+.contact form {
 	margin-top: 100px;
 }
 .form-group {}
@@ -25,7 +28,6 @@
 }
 .form-group textarea {
 	font-family: "open sans";
-	width: 500px;
 }
 .form-group input:focus {
 	border-bottom: 2px solid #339999;
@@ -42,5 +44,25 @@
 }
 
 @media (max-width: 600px) {
-	.form-group textarea {}
+	.contact {
+		padding: 0 4%;
+	}
+	.form-group input, .form-group textarea {
+		font-size: 16px;
+		margin: 10px;
+		width: 90%;
+	
+	}
+	.contact form {		
+		margin-top: 40px;
+	}
+	.contact button {
+		width: 90%;
+	}
+
+	.footer {
+		font-size: 20px;
+		padding-top: 12%;
+		width: 96%;
+	}
 }
