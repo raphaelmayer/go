@@ -5,7 +5,7 @@ export const Contact = () => {
   return (
     <div className="contact">
       <h1>get in touch</h1>
-      <p><em><b>Open for inquiries.</b></em></p><p>If you have a problem or project you want to discuss, just shoot me an email and we'll examine everything in detail.</p>
+      <p><em><b>I am open for inquiries.</b></em></p><p>If you have a problem or project you want to discuss, just shoot me an email and we'll examine everything in detail.</p>
       
         <form action="https://formcarry.com/s/rJG-vkYrM" method="POST" acceptCharset="UTF-8">    
             <div className="form-group ">

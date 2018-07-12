@@ -11,9 +11,11 @@ const About = () => {
     <div id="about" className="about">
       <div className="about-box"><h1>who I am</h1>
         <div className="my-img" style={ style }></div>
+        <p className="quote">
+        <i className="fas fa-angle-double-left"></i> I am a naturally curious guy perpetually trying to improve his chops. <i className="fas fa-angle-double-right"></i>
+        </p>
         <p>Hi, my name is Raphael. I'm a fullstack developer based in Innsbruck, Austria. For the past year I have worked as a freelancer building websites and applications for a number of clients both from online and offline.</p> 
         <p>I specialize in everything Javascript, namely ReactJS, NodeJS and MongoDB, because I enjoy the fast and straight forward development process and flexibility. That being said I will make use of other technologies aswell; depending on the project, its requirements and its goals.</p>
-        <p>I am a naturally curious guy perpetually trying to improve his chops.</p>
         
         <div id="expanded" className="expanded-skills">
           <div className="expand-title">Frontend</div>

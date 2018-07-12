@@ -13,6 +13,12 @@
 .about-box {
     margin: 6vh 20vw;
 }
+.quote {
+    color: #999;
+    font-style: oblique;
+    font-size: 18px;
+    margin:  0 0 30px 20px;
+}
 .skills-box {
     margin: 6vh 20vw;
 }

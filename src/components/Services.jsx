@@ -1,36 +1,13 @@
 import React from 'react';
 import './css/Services.css';
 
-const Servicess = () => {
-  return( 
-      <div className="services"> 
-        
-        <div className="services-text-box">
-          <h1>Services I offer</h1> 
-          <p>In my time as a software developer building and maintaining a diverse set of applications I encountered a wide variety of problems and acquired a diverse skillset. I am confident I can add value to your project and help you throughout your development process from conceptualizing prototypes to deploying a finished product.</p>
-          <p>I invite you to check out some of the services I offer down below.</p> 
-        </div>
-
-        <div className="service">
-          <h2>Web Design</h2>
-        </div>
-        <div className="service">
-          <h2>Web Development</h2>
-        </div>
-        <div className="service">
-          <h2>Online Marketing & Social Media</h2>
-        </div>
-
-      </div>
-        );
-} 
 const Services = () => {
   return( 
       <div> 
         <div className="services-text-box">
           <h1>Services I offer</h1> 
-          <p>In my time as a software developer building and maintaining a diverse set of applications I encountered a wide variety of problems and was able to acquire a diverse skillset. I am confident I can add value to your project and help you throughout your development process from conceptualizing prototypes to deploying a finished product.</p>
-          <p>I invite you to check out some of the services I offer down below.</p> 
+          <p>In my time as a software developer building and maintaining a diverse set of applications I encountered a wide variety of problems and was able to acquire a diverse skillset. I can help you throughout your development process from conceptualizing prototypes to deploying a finished product.</p>
+          <p>Check out some of the services I offer down below.</p> 
         </div>
         <div className="serviceBoxes webDes col-lg-2 col-md-3">
           <div className="serviceCircle">
