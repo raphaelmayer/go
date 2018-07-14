@@ -17,8 +17,8 @@
 .filter-btn-active {
   	border: 2px solid #226666;
   	color: #339999;
-	font-size: 22px;
-	margin: 2px 6px;
+	ont-size: 22px;
+	margin: 2px 8px;
 }
 
 @media (max-width: 600px) {

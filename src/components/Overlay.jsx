@@ -10,8 +10,10 @@ export const Overlay = (props) => {
         		<div className="overlay-text-box">
                     <h2>{ p.title }</h2>
                     <p><em>{ p.tagline }</em></p>
-                    <p>{ p.description }</p>
+                    <h3>Main Features</h3>
                     <p>{ p.features.map((f, i) => <li key={ i }> { f } </li>) }</p>
+                    <h3>Details</h3>
+                    <p>{ p.description }</p>
                     <a href={ p.link }><button className="overlay-btn">View live</button></a>
                 </div>
                 <div className="overlay-img-box">
@@ -29,8 +31,10 @@ export const Overlay = (props) => {
                 <div className="overlay-text-box">
                     <h2>{ p.title }</h2>
                     <p>{ p.tagline }</p>
-                    <p>{ p.description }</p>
+                    <h3>Main Features</h3>
                     <p>{ p.features.map((f, i) => <li key={ i }> { f } </li>) }</p>
+                    <h3>Details</h3>
+                    <p>{ p.description }</p>
                     <a href={ p.link }><button className="overlay-btn">View live</button></a>
                 </div>
                 <div className="overlay-img-box">

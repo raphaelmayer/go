@@ -26,6 +26,7 @@
 	white-space: pre-wrap;
 }
 .overlay-text-box p {
+	margin-bottom: 36px;
 	width: 80%;
 }
 .overlay-text-box li {
@@ -43,6 +44,7 @@
 	display: inline-flex;
 	height: 30%;
 	margin: 5px;
+	overflow-y: auto;
 }
 .overlay-img-pre img {
 	height: 135px;
@@ -72,14 +74,8 @@
 }
 
 .overlay-btn {
-	border: 2px solid #779999 !important;
-	color: #779999 !important;
-	transition: all 0.2s ease;
-}
-
-.overlay-btn:hover {
-	border: 2px solid #339999 !important;
-	color: #339999 !important;
+	border: 2px solid #779999;
+	color: #779999;
 }
 
 @media (max-width: 1000px) {

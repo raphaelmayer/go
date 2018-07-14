@@ -63,7 +63,7 @@ const projects = [{ "title": "YouVote - create and share polls",
 //
                   { "title": "simple hotel landing page", 
                     "tagline": "My client wanted simple, easy to navigate landing page for his hotel to add to his online presence.",
-                    "description": "A very basic landing page containing all the basic information of the business. I integrated Google Maps into the site aswell as a contact form, so potential customers can get in contact directly from the site. (Please note: I had to remove any personal information for privacy reasons)",
+                    "description": "Please note: I had to remove any personal information and images. \n\nA simplistic landing page where potential customers can get basic information like address and contact details. A gallery has been implemented where users can browse through images. A embedded Google Maps View makes route & trip planning easier for any customers aswell as a contact form, so potential customers can get in contact directly from the website quick and easy.",
                     "features": [ "Simple design and clear structure",
                                       "Integrated Google Maps API",
                                       "Contact Form",],

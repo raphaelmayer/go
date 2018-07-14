@@ -48,6 +48,12 @@ h2 {
   color: #448888;
   font-family: 'Audiowide';
 }
+h3 {
+  color: #559999;
+  font-family: 'raleway';
+  margin: 0;
+  padding: 0;
+}
 p {
   font-family: 'raleway';
 }
