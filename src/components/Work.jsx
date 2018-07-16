@@ -41,15 +41,15 @@ console.log(e.target.className)
     onMouseEnter(e) {   // start animation for WorkBox
         const el = e.target.childNodes[0] || e.target.parentNode.childNodes[0];
         if (!el) { console.error("Work44:", "!el"); return; }
-        el.className = "test-box-img";
-        setTimeout(() => el.classList += " test-box-img-extend", 300);
-        setTimeout(() => el.classList += " test-box-img-active", 900);
+        el.className = "work-box-img";
+        setTimeout(() => el.classList += " work-box-img-extend", 300);
+        setTimeout(() => el.classList += " work-box-img-active", 900);
     }
     onMouseLeave(e) {   //reset animation
         const el = e.target.childNodes[0];
         if (!el) return;
         console.log("before", el.className);
-        el.className = "test-box-img";
+        el.className = "work-box-img";
         console.log("after", el.className);
     }
     handleOverlay(p) {  //overlay

@@ -5,7 +5,7 @@
   width: 80%;
 }
 
-.test-box {
+.work-box {
 	background: #222;
 	box-shadow: 0px 0px 10px 1px #111;
 	color: silver;
@@ -20,11 +20,11 @@
 	transition: all 0.5s ease-out;
 	width: 400px;
 }
-.test-box:hover {
+.work-box:hover {
 	box-shadow: 0px 0px 10px 1px #011;
 	color: #448888;
 }
-.test-box-img {
+.work-box-img {
 	box-shadow: 0px 0px 10px 1px #448888;
 	border-radius: 50%;
 	border: 1px solid #339999;
@@ -36,38 +36,38 @@
 	width: 94%;
 	z-index: 3;
 }
-.test-box:hover .test-box-img {
+.work-box:hover .work-box-img {
 	border: 2px solid azure;
 	box-shadow: 0px 0px 10px 1px azure;
 	width: 0%;
 }
-.test-box:hover .test-box-img-extend {
+.work-box:hover .work-box-img-extend {
 	border: 2px solid #339999;
 	box-shadow: 0px 0px 10px 1px #339999;
 	width: 94% !important;
 }
-.test-box:hover .test-box-img-active {
+.work-box:hover .work-box-img-active {
 	border-radius: 10px;	
 	height: 170% !important;
 	top: -160% !important;
 }
-.test-box-img-extend {
+.work-box-img-extend {
 	transition: all 0.5s ease-in-out;
 }
-.test-box-img-active {
+.work-box-img-active {
 	transition: all 0.2s ease-in;
 }
-.test-box-text {
+.work-box-text {
 	position: relative;
 	z-index: 2;
 }
-.test-box i {
+.work-box i {
 	color: #333;
 	font-size: 80px;
 	position: absolute;
 	top: 30%;
 	right: 2%;
-	visibility: hidden;	/*  disable icons for <TestBox />  */
+	visibility: hidden;	/*  disable icons for <workBox />  */
 	z-index: 1;
 }
 
@@ -91,7 +91,7 @@
 }
 
 @media (max-width: 700px) {
-	.test-box {
+	.work-box {
 		width: 90%;
 	}
 }
