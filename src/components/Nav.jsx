@@ -24,7 +24,7 @@ const DesktopNav = () => {
 const Nav = (props) => {
 console.log(window.innerWidth);
 	return (
-		<div className='nav'>
+		<div className={ props.className }>
 			<i className='far fa-gem'></i>
 
 			<div className="nav-btns-container">

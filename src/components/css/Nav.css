@@ -6,6 +6,7 @@
 	left: 0;
 	z-index: 9;
 }
+.nav-active {}
 .nav .fa-gem {
 	color: #449999;
 	font-size: 30px;
@@ -81,9 +82,15 @@
 @media(max-width: 600px) {
 	.nav {
 		background: #111;
-		eight: 0%;
 		overflow: hidden;
-		width: 100%;
+		transition: all 0.3s ease;
+		width: 0%;
+	}
+	.nav-active {
+		width: 80%;
+	}
+	.nav-btns-container {
+		margin-top: 30px;
 	}
 	.nav-btn {
 		border-bottom: 2px solid #222;
@@ -104,8 +111,8 @@
 	.nav-btn-text {
 		color: silver;
 		font-weight: 700;
-		letter-spacing: 6px;
-		margin-left: 30px;
+		letter-spacing: 3px;
+		margin-left: 10px;
 		opacity: 1;
 		position: relative;
 		top: auto;
@@ -118,6 +125,9 @@
 		border-bottom: 2px solid silver;
 		margin: 20px auto;
 		width: 80%;
+	}
+	.nav a {
+		display: inline;
 	}
 }
 @media (max-width: 400px) {

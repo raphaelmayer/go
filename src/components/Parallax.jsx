@@ -1,15 +1,21 @@
-import React from "react";
+import React, { Component } from "react";
 import "./css/Parallax.css";
 
 import "../helpers/fluid.js";
 
-const Parallax = () => {
-	setTimeout(startCanvasAnim, 60);
-	return (
-		<div className="parallax">
-	    	<canvas id="c"></canvas>
-	    </div>
-    );
+class Parallax extends Component {
+
+	componentDidMount() { setTimeout(startCanvasAnim, 60); }
+	
+	shouldComponentUpdate() { return false; }
+
+	render() {
+		return (
+			<div className="parallax">
+		    	<canvas id="c"></canvas>
+		    </div>
+	    );
+	}
 }
 
 export default Parallax;

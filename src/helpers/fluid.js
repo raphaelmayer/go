@@ -19,7 +19,7 @@
 
     const num_cols = canvas_width / resolution;
     const num_rows = canvas_height / resolution;
-    const speck_count = window.innerWidth * window.innerHeight / 100 / 4;
+    const speck_count = Math.floor(window.innerWidth * window.innerHeight / 100 / 4);
     
     const vec_cells = [];
     const particles = [];
@@ -36,7 +36,6 @@
         for (let i = 0; i < speck_count; i++) {
             particles.push(new particle(Math.random() * canvas_width, Math.random() * canvas_height));
         }
-
         for (let col = 0; col < num_cols; col++) { 
             
             vec_cells[col] = [];
@@ -93,8 +92,8 @@
         // canvas.addEventListener("mouseover", mouse_move_handler);
 
         //When the page is finished loading, run the draw() function.
-        // w.onload = draw;
-        draw();
+        w.onload = draw;
+        // draw();
 
     }
 

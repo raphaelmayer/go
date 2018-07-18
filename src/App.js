@@ -14,7 +14,7 @@ import Contact from './components/Contact';
 import pulse from './helpers/pulse';
 import { HexGridClear } from './components/Hexagon';
 
-function checkVisible(elm) {
+function isOnScreen(elm) {
   const rect = elm.getBoundingClientRect();
   const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
   return !(rect.bottom < 200 || rect.top - viewHeight >= -200);
@@ -39,7 +39,7 @@ class App extends Component {
         const sections = document.querySelectorAll("section");
         for (let i=0; i<sections.length; i++) {
             // console.log(sections[i].children)
-            if (checkVisible(sections[i])) {
+            if (isOnScreen(sections[i])) {
                 sections[i].className += " appear";
             } else {
                 sections[i].className = "";
@@ -50,7 +50,6 @@ class App extends Component {
         document.querySelector(".loading-screen").className += " ls-done";
     }
     handleMobileNav() {
-        console.log("MN")
         this.state.showMobileNav ? 
         this.setState({ showMobileNav: false }) : 
         this.setState({ showMobileNav: true });
@@ -63,8 +62,8 @@ class App extends Component {
 
                 <Thanks />
 
-                { window.innerWidth <= 600 ? <i onClick={ this.handleMobileNav } className="fas fa-bars"></i> : <Nav /> }
-                { showMobileNav ? <Nav /> : null }
+                { window.innerWidth <= 600 ? <i onClick={ this.handleMobileNav } className="fas fa-bars"></i> : null }
+                { showMobileNav && window.innerWidth <= 600 ? <Nav className="nav nav-active" /> : <Nav className="nav" /> }
 
                 <section id={0} className="appear " style={{ zIndex: 1, backgroundColor: "rgb(20, 20, 20)" }}>
                    {/* <HexGridClear color={'#444'} /> */}
