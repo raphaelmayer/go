@@ -19,13 +19,13 @@
 }
 section {
   box-sizing: border-box;
-  mrgin-left: 40px;
+  margin-left: 2%;
   margin-right: 0;
   min-height: 100vh;
   overflow: hidden;
   opacity: 0;
   padding: 2% 0;
-  padding-left: 2%;
+  adding-left: 2%;
   position: relative;
   transition: all .7s ease-out;
   width: 100vw;

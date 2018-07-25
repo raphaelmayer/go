@@ -70,15 +70,15 @@ class App extends Component {
                     <Front />
                 </section>
     
-				<div className="section-bg" style={{ backgroundColor: "rgb(28, 28, 28)" }}>
-                <section id={1}>
-                    <Services />
+                <div className="section-bg" style={{ backgroundColor: "rgb(28, 28, 28)" }}>
+                <section id={1} >
+                    <About />
                 </section>
-				</div>
+                </div>
     
 				<div className="section-bg" style={{ backgroundColor: "rgb(33, 33, 33)" }}>
-                <section id={2} >
-                    <About />
+                <section id={2}>
+                    <Services />
                 </section>
 				</div>
     

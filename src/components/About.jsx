@@ -11,27 +11,31 @@ const About = () => {
     <div id="about" className="about">
       <div className="about-box"><h1>who I am</h1>
         <div className="my-img" style={ style }></div>
-        <p className="quote">
-        <i className="fas fa-angle-double-left"></i> I am a naturally curious guy perpetually trying to improve his chops. <i className="fas fa-angle-double-right"></i>
-        </p>
-        <p>Hi, my name is Raphael. I'm a fullstack developer based in Innsbruck, Austria. For the past year I have worked as a freelancer building websites and applications for a number of clients both from online and offline.</p> 
-        <p>I specialize in everything Javascript, namely ReactJS, NodeJS and MongoDB, because I enjoy the fast and straight forward development process and flexibility. That being said I will make use of other technologies aswell; depending on the project, its requirements and its goals.</p>
+        
+        <p><i className="fas fa-angle-left"></i> Hi, my name is Raphael. I'm a fullstack developer based in Innsbruck, Austria. 
+        For the past year I have worked as a freelancer building websites and applications for a number of clients, mainly small to midsized businesses. <i className="fas fa-angle-right"></i></p>
+
+        <p><i className="fas fa-angle-left"></i> Being a naturally curious guy I enjoy diving into new things and figuring out problems as I stumble upon them. 
+        I like to prototype quickly for proof of concept, but am very critical about code I intend to push to production. <i className="fas fa-angle-right"></i></p>
+
+        <p><i className="fas fa-angle-left"></i> I specialize in everything Javascript, most notably ReactJS and NodeJS, because I enjoy the fast and straight forward development process as well as the modularity of the whole JS ecosystem. 
+        Modern Javascript with arrow functions and spread operators mixed with a bit of async/await can really make for beautiful and readable code! <i className="fas fa-angle-right"></i></p>
+        
+        <p><i className="fas fa-angle-left"></i> That being said I will make use of other technologies aswell; depending on the project, its requirements and its goals. <i className="fas fa-angle-right"></i></p>
         
         <div id="expanded" className="expanded-skills">
           <div className="expand-title">Frontend</div>
           <small>HTML5, CSS3, SASS, Bootstrap | Javascript(ES8), ReactJS, D3.js, jQuery</small>
           <div className="expand-title">Backend</div>
           <small>NodeJS, PHP, C | MongoDB, SQL</small>
-          <div className="expand-title">Tech</div>
-          <small>REST, AJAX, API's, XML, JSON, JWT, oAuth</small>
           <div className="expand-title">Tools</div>
           <small>Other tools I use include but are not limited to:<br />
-            <strong> Wordpress</strong>,
-            <strong> git</strong> for version control, 
-            <strong> Gulp</strong> task runner to automate redundant development steps, 
-            <strong> redux</strong> state management for react,
-            <strong> Babel</strong> and 
-            <strong> Webpack</strong>.
+            Wordpress,
+            Git(hub),
+            Gulp, 
+            Redux,
+            Babel,
+            Webpack.
           </small>
         </div>       
       </div>

@@ -5,8 +5,8 @@ import smoothScroll from "../helpers/smoothScroll";
 
 const sections = [
 	"Home",
-	"Services I Offer",
 	"About Me",
+	"Services I Offer",
 	"Featured Work",
 	"Get in Touch" 
 ];
