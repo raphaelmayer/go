@@ -1,17 +1,18 @@
 import React from 'react';
 import './css/About.css';
+import SocialMediaIcons from './SocialMediaIcons';
 
 const About = () => {
-  const style = { 
-      background: 'url(./images/atti.jpg)', 
-      backgroundPosition: 'center-top', 
-      backgroundSize: '140%',
-  };
   return(
     <div id="about" className="about">
-      <div className="about-box"><h1>who I am</h1>
-        <div className="my-img" style={ style }></div>
+      <div className="about-box">
+        <h1>who I am</h1>
         
+        <div className="about-float">
+          <div className="my-img"></div>
+          <SocialMediaIcons />    
+        </div>
+
         <p><i className="fas fa-angle-left"></i> Hi, my name is Raphael. I'm a fullstack developer based in Innsbruck, Austria. 
         For the past year I have worked as a freelancer building websites and applications for a number of clients, mainly small to midsized businesses. <i className="fas fa-angle-right"></i></p>
 

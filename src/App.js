@@ -11,6 +11,7 @@ import Console from './components/Console';
 import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
+import SocialMediaIcons from './components/SocialMediaIcons';
 import pulse from './helpers/pulse';
 import { HexGridClear } from './components/Hexagon';
 
@@ -92,7 +93,10 @@ class App extends Component {
                 <section id={4} >
                     <Contact />
                     { window.innerWidth <= 1000 ? null : <HexGridClear margin={{ marginTop: -270 + "px" }} color={'#444'} /> }
-                    <footer className="footer">2018 - designed and built by Raphael Mayer</footer>
+                    <footer className="footer">
+                    2018 - designed and built by Raphael Mayer
+                    <SocialMediaIcons />
+                    </footer>
                 </section>
 				</div>
             </div>

@@ -44,6 +44,14 @@
 	font-size: 30px;
 	padding-top: 8%;
 }
+footer .fab {
+	color: #555 !important;
+	font-size: 30px;
+}
+footer .fab:hover {
+	color: #111 !important;
+	font-size: 30px;
+}
 
 @media (max-width: 600px) {
 	.contact {

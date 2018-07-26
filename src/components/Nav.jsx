@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/Nav.css';
 
+import SocialMediaIcons from './SocialMediaIcons';
 import smoothScroll from "../helpers/smoothScroll";
 
 const sections = [
@@ -10,7 +11,8 @@ const sections = [
 	"Featured Work",
 	"Get in Touch" 
 ];
-
+// andersch glöst daweil
+/*
 const MobileNav = () => {
 	return (
 		<div></div>
@@ -21,6 +23,7 @@ const DesktopNav = () => {
 		<div></div>
 	);
 }
+*/
 const Nav = (props) => {
 console.log(window.innerWidth);
 	return (
@@ -39,9 +42,8 @@ console.log(window.innerWidth);
 			</div>	
 				
 			<div className='border'></div>
-			<a href="https://github.com/attiimaster" target="_blank" rel="noopener noreferrer" ><i className='fab fa-github'></i></a>
-			<a href="https://www.linkedin.com/in/raphael-mayer" target="_blank" rel="noopener noreferrer" ><i className='fab fa-linkedin'></i></a>
-		</div>
+			<SocialMediaIcons />
+			</div>
 	);
 }
 

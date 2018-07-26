@@ -92,8 +92,8 @@
         // canvas.addEventListener("mouseover", mouse_move_handler);
 
         //When the page is finished loading, run the draw() function.
-        w.onload = draw;
-        // draw();
+        //w.onload = draw;  // doesnt draw on refresh with onload
+        draw();
 
     }
 
