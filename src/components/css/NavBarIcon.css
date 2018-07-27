@@ -1,0 +1,34 @@
+.nav-icon {
+  cursor: pointer;
+  font-size: 30px;
+  position: fixed;
+  top: 3%;
+  left: 5%;
+  z-index: 10;
+}
+.nav-icon line {
+  stroke: azure;
+  stroke-width: 2px;
+  transition: all 0.5s ease;
+}
+.nav-icon-active line {
+}
+.nav-icon-active .line-1 {
+  stroke: rgb(200, 100, 200);
+  transform: translate(6px, 0px) rotate(45deg) skew(-180deg);
+}
+.nav-icon-active .line-2 {
+  transform: skew(-90deg);
+}
+.nav-icon-active .line-3 {
+  stroke: rgb(100, 200, 200);
+  transform: translate(-11px, 6px) rotate(-45deg) skew(180deg);
+}
+.nav-icon-active:hover .line-1 {
+  stroke: rgb(100, 200, 200);
+  transform: translate(6px, 0px) rotate(45deg) skew(-180deg);
+}
+.nav-icon-active:hover .line-3 {
+  stroke: rgb(200, 100, 200);
+  transform: translate(-11px, 6px) rotate(-45deg) skew(180deg);
+}

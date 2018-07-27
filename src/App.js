@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Nav from './components/Nav';
+import NavBarIcon from './components/NavBarIcon';
 import Parallax from './components/Parallax';
 import LoadingScreen from './components/LoadingScreen';
 import Thanks from './components/Thanks';
@@ -63,7 +64,7 @@ class App extends Component {
 
                 <Thanks />
 
-                { window.innerWidth <= 600 ? <i onClick={ this.handleMobileNav } className="fas fa-bars"></i> : null }
+                { window.innerWidth <= 600 ? <NavBarIcon onClick={ this.handleMobileNav } showMobileNav={ showMobileNav } /> : null }
                 { showMobileNav && window.innerWidth <= 600 ? <Nav className="nav nav-active" /> : <Nav className="nav" /> }
 
                 <section id={0} className="appear " style={{ zIndex: 1, backgroundColor: "rgb(20, 20, 20)" }}>
