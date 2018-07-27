@@ -15,6 +15,8 @@
 }
 .nav-icon-active .line-1 {
   stroke: rgb(200, 100, 200);
+  -ms-transform: translate(6px, 0px) rotate(45deg) skew(-180deg);
+  -webkit-transform: translate(6px, 0px) rotate(45deg) skew(-180deg);
   transform: translate(6px, 0px) rotate(45deg) skew(-180deg);
 }
 .nav-icon-active .line-2 {
@@ -22,13 +24,13 @@
 }
 .nav-icon-active .line-3 {
   stroke: rgb(100, 200, 200);
+  -ms-transform: translate(-11px, 6px) rotate(-45deg) skew(180deg);
+  -webkit-transform: translate(-11px, 6px) rotate(-45deg) skew(180deg);
   transform: translate(-11px, 6px) rotate(-45deg) skew(180deg);
 }
 .nav-icon-active:hover .line-1 {
   stroke: rgb(100, 200, 200);
-  transform: translate(6px, 0px) rotate(45deg) skew(-180deg);
 }
 .nav-icon-active:hover .line-3 {
   stroke: rgb(200, 100, 200);
-  transform: translate(-11px, 6px) rotate(-45deg) skew(180deg);
 }

@@ -1,6 +1,10 @@
 .contact {
 	box-sizing: border-box;
 }
+.contact p {
+	max-width: 80%;
+	margin: 0 auto;
+}
 .contact button {		
 	margin-top: 10px;
 	width: 500px;

@@ -4,7 +4,8 @@
     text-align: left;
 }
 .about-box {
-    margin: 6vh 20vw;
+    margin: 0 auto;
+    width: 60%;
 }
 .about-float {
     float: right;
@@ -70,6 +71,9 @@
         width: 200px;
         height: 200px;
     }
+    .about-box {
+        width: 70%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -78,7 +82,8 @@
         height: 100px;
     }
     .about-box {
-        margin: 6vh 8%;
+        margin: 6vh auto;
+        width: 84%;
     }
     .skills-box {
         margin: 6vh 2vw;

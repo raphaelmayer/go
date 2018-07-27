@@ -74,6 +74,11 @@
     color: white;
 }
 
+@media (max-width: 1000px) {
+    .services-text-box {
+        width: 70%;
+    }
+}
 @media (max-width: 676px) {
   .services-text-box {
       margin-bottom: 30px;
