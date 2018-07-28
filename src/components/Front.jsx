@@ -12,11 +12,11 @@ class Front extends Component {
         return (
             <div className="front">
             	<Parallax />
-                <div className="banner">
+                <header className="banner">
                 	<h1><span className="pulse-anim pulse-anim-1 pulse-anim-2">mayer.raphael</span></h1>
                 	<p>Web Developer | Programmer | Designer</p>
                 	<button props={ 4 } onClick={ (e) => smoothScroll(e) } className="asd">Hire Now</button>
-                </div>
+                </header>
             </div>
         );
     }

@@ -27,7 +27,7 @@ const DesktopNav = () => {
 const Nav = (props) => {
 console.log(window.innerWidth);
 	return (
-		<div className={ props.className }>
+		<nav className={ props.className }>
 			<i className='far fa-gem'></i>
 
 			<div className="nav-btns-container">
@@ -43,7 +43,7 @@ console.log(window.innerWidth);
 				
 			<div className='border'></div>
 			<SocialMediaIcons />
-			</div>
+		</nav>
 	);
 }
 

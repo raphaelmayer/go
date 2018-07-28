@@ -4,11 +4,13 @@ import './css/Services.css';
 const Services = () => {
   return( 
       <div> 
-        <div className="services-text-box">
+        <header className="services-text-box">
           <h1>Services I offer</h1> 
-          <p>In my time as a software developer building and maintaining a diverse set of applications I encountered a wide variety of problems and was able to acquire a diverse skillset. I can help you throughout your development process from conceptualizing prototypes to deploying a finished product.</p>
-          <p>Check out some of the services I offer down below.</p> 
-        </div>
+          <article>
+            <p>In my time as a software developer building and maintaining a diverse set of applications I encountered a wide variety of problems and was able to acquire a diverse skillset. I can help you throughout your development process from conceptualizing prototypes to deploying a finished product.</p>
+            <p>Check out some of the services I offer down below.</p> 
+          </article>
+        </header>
         <div className="serviceBoxes webDes col-lg-2 col-md-3">
           <div className="serviceCircle">
             <img alt="icon" className="icon" src="./icons/browser.png" />

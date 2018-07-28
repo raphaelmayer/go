@@ -12,17 +12,19 @@ const About = () => {
           <div className="my-img"></div>
           <SocialMediaIcons />    
         </div>
-
-        <p><i className="fas fa-angle-left"></i> Hi, my name is Raphael. I'm a fullstack developer based in Innsbruck, Austria. 
-        For the past year I have worked as a freelancer building websites and applications for a number of clients, mainly small to midsized businesses. <i className="fas fa-angle-right"></i></p>
-
-        <p><i className="fas fa-angle-left"></i> Being a naturally curious guy I enjoy diving into new things and figuring out problems as I stumble upon them. 
-        I like to prototype quickly for proof of concept, but am very critical about code I intend to push to production. <i className="fas fa-angle-right"></i></p>
-
-        <p><i className="fas fa-angle-left"></i> I specialize in everything Javascript, most notably ReactJS and NodeJS, because I enjoy the fast and straight forward development process as well as the modularity of the whole JS ecosystem. 
-        Modern Javascript with arrow functions and spread operators mixed with a bit of async/await can really make for beautiful and readable code! <i className="fas fa-angle-right"></i></p>
         
-        <p><i className="fas fa-angle-left"></i> That being said I will make use of other technologies aswell; depending on the project, its requirements and its goals. <i className="fas fa-angle-right"></i></p>
+        <article>
+          <p><i className="fas fa-angle-left"></i> Hi, my name is Raphael. I'm a fullstack developer based in Innsbruck, Austria. 
+          For the past year I have worked as a freelancer building websites and applications for a number of clients, mainly small to midsized businesses. <i className="fas fa-angle-right"></i></p>
+  
+          <p><i className="fas fa-angle-left"></i> Being a naturally curious guy I enjoy diving into new things and figuring out problems as I stumble upon them. 
+          I like to prototype quickly for proof of concept, but am very critical about code I intend to push to production. <i className="fas fa-angle-right"></i></p>
+  
+          <p><i className="fas fa-angle-left"></i> I specialize in everything Javascript, most notably ReactJS and NodeJS, because I enjoy the fast and straight forward development process as well as the modularity of the whole JS ecosystem. 
+          Modern Javascript with arrow functions and spread operators mixed with a bit of async/await can really make for beautiful and readable code! <i className="fas fa-angle-right"></i></p>
+          
+          <p><i className="fas fa-angle-left"></i> That being said I will make use of other technologies aswell; depending on the project, its requirements and its goals. <i className="fas fa-angle-right"></i></p>
+        </article>
         
         <div id="expanded" className="expanded-skills">
           <div className="expand-title">Frontend</div>

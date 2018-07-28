@@ -8,7 +8,6 @@ import LoadingScreen from './components/LoadingScreen';
 import Thanks from './components/Thanks';
 import Front from './components/Front';
 import Work from './components/Work';
-import Console from './components/Console';
 import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
