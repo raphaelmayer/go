@@ -9,7 +9,7 @@ const About = () => {
         <h1>who I am</h1>
         
         <div className="about-float">
-          <div className="my-img"></div>
+          <div className="my-img" style={{ backgroundImage: "url(./images/atti.jpg)" }}></div>
           <SocialMediaIcons />    
         </div>
         
