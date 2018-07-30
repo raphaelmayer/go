@@ -12,7 +12,7 @@
     text-align: center;
 }
 .my-img {
-    background: url("../../images/atti.jpg");
+    background: url("/images/atti.jpg");
     background-position: center-top;
     background-size: 140%;
     border-radius: 50%;

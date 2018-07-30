@@ -10,25 +10,24 @@
   position: relative;
   z-index: 2;
 }
-section {
+.section {
   box-sizing: border-box;
   margin-left: 2%;
-  margin-right: 0;
+  margin-right: -2%;
   min-height: 100vh;
   overflow: hidden;
   opacity: 0;
   padding: 2% 0;
-  adding-left: 2%;
   position: relative;
   transition: all .7s ease-out;
-  width: 100vw;
+  width: 100%;
   z-index: 3;
 }
 .appear {   /*  animation  */
   opacity: 1;
-  margin-left: 0;
-  padding-left: 0%;
-  width: 100vw !important;
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+  width: 100% !important;
 }
 
 h1 {

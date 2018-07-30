@@ -7,7 +7,7 @@
 
 .work-box {
 	background: #222;
-	box-shadow: 0px 0px 10px 1px #111;
+	box-shadow: 5px -6px 10px 1px #111;
 	color: silver;
 	cursor: pointer;
 	display: inline-flex;
@@ -21,7 +21,6 @@
 	width: 400px;
 }
 .work-box:hover {
-	box-shadow: 0px 0px 10px 1px #011;
 	color: #448888;
 }
 .work-box-img {

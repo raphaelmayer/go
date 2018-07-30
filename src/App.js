@@ -37,13 +37,13 @@ class App extends Component {
         window.removeEventListener('scroll', this.handleScroll);
     }
     handleScroll(e) {
-        const sections = document.querySelectorAll("section");
+        const sections = document.querySelectorAll(".section");
         for (let i=0; i<sections.length; i++) {
             // console.log(sections[i].children)
             if (isOnScreen(sections[i])) {
-                sections[i].className += " appear";
+                sections[i].className = "section appear";
             } else {
-                sections[i].className = "";
+                sections[i].className = "section";
             }
         }
     }
@@ -66,31 +66,30 @@ class App extends Component {
                 { window.innerWidth <= 600 ? <NavBarIcon onClick={ this.handleMobileNav } showMobileNav={ showMobileNav } /> : null }
                 { showMobileNav && window.innerWidth <= 600 ? <Nav className="nav nav-active" /> : <Nav className="nav" /> }
 
-                <section id={0} className="appear " style={{ zIndex: 1, backgroundColor: "rgb(20, 20, 20)" }}>
-                   {/* <HexGridClear color={'#444'} /> */}
+                <section id={0} className="section appear" style={{ zIndex: 1, backgroundColor: "rgb(20, 20, 20)" }}>
                     <Front />
                 </section>
     
                 <div className="section-bg" style={{ backgroundColor: "rgb(28, 28, 28)" }}>
-                <section id={1} >
+                <section id={1} className="section" >
                     <About />
                 </section>
                 </div>
     
 				<div className="section-bg" style={{ backgroundColor: "rgb(33, 33, 33)" }}>
-                <section id={2}>
+                <section id={2} className="section" >
                     <Services />
                 </section>
 				</div>
     
 				<div className="section-bg" style={{ backgroundColor: "rgb(28, 28, 28)" }}>
-                <section id={3} >
+                <section id={3} className="section" >
                     <Work />
                 </section>
 				</div>
     
 				<div className="section-bg" style={{ backgroundColor: "rgb(33, 33, 33)" }}>
-                <section id={4} >
+                <section id={4} className="section" >
                     <Contact />
                     { window.innerWidth <= 1000 ? null : <HexGridClear margin={{ marginTop: -270 + "px" }} color={'#444'} /> }
                     <footer className="footer">
