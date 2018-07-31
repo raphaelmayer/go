@@ -53,10 +53,13 @@ console.log(e.target.className)
         console.log("after", el.className);
     }
     handleOverlay(p) {  //overlay
-        this.state.overlay.visible ? 
+        if (this.state.overlay.visible) {
             this.setState({ overlay: { p: this.state.overlay.p, visible: false } }) 
-            : 
+            document.querySelector("body").className = "";
+        } else {
             this.setState({ overlay: { p: p, visible: true } });
+            document.querySelector("body").className = "noscroll";
+        }
     }
 
     render() {
