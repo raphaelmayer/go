@@ -4,7 +4,6 @@ import './css/Work.css';
 import myProjects from '../projects';
 import WorkBox from './WorkBox';
 import Filter from './Filter';
-import Overlay from './Overlay';
 
 class Work extends Component {
     constructor(props) {
@@ -12,10 +11,8 @@ class Work extends Component {
         this.state = {
             projects: myProjects,
             filter: false,
-            overlay: { p: null, visible: false },
         };
         this.handleFilter = this.handleFilter.bind(this);
-        this.handleOverlay = this.handleOverlay.bind(this);
     }
 
     handleFilter(e) {
@@ -47,15 +44,6 @@ class Work extends Component {
         if (!el) return;
         el.className = "work-box-img";
     }
-    handleOverlay(p) {  //overlay
-        if (this.state.overlay.visible) {
-            this.setState({ overlay: { p: this.state.overlay.p, visible: false } }) 
-            document.querySelector("body").className = "";
-        } else {
-            this.setState({ overlay: { p: p, visible: true } });
-            document.querySelector("body").className = "noscroll";
-        }
-    }
 
     render() {
         const projects = this.state.projects; //this.state.filter ? this.state.filtered : this.state.projects;
@@ -64,8 +52,6 @@ class Work extends Component {
         if (projects) {
             return (
                 <div className='work'>
-
-                    <Overlay p={ this.state.overlay.p } visible={ this.state.overlay.visible } handleOverlay={ this.handleOverlay } />
                     
                     <h1>Featured Work</h1>
 
@@ -80,9 +66,9 @@ class Work extends Component {
                         { //append Projects and alternate between bgColor
                         this.state.projects.map((p, i) => {
                             if( i % 2 === 0 ) {
-                                return(<WorkBox i={ icons[i] } p={ p } brightness="bright" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.handleOverlay(projects[i]) } key={i} />)
+                                return(<WorkBox i={ icons[i] } p={ p } brightness="bright" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.props.handleOverlay(projects[i]) } key={i} />)
                             } else {
-                                return(<WorkBox i={ icons[i] } p={ p } brightness="dark" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.handleOverlay(projects[i]) } key={i} />)
+                                return(<WorkBox i={ icons[i] } p={ p } brightness="dark" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.props.handleOverlay(projects[i]) } key={i} />)
                             }
                         })}               
 

@@ -14,6 +14,7 @@ import Contact from './components/Contact';
 import SocialMediaIcons from './components/SocialMediaIcons';
 import pulse from './helpers/pulse';
 import { HexagonGrid } from './components/Hexagon';
+import Overlay from './components/Overlay';
 
 function isOnScreen(elm) {
   const rect = elm.getBoundingClientRect();
@@ -24,8 +25,12 @@ function isOnScreen(elm) {
 class App extends Component {
     constructor() {
         super();
-        this.state = { showMobileNav: false };
+        this.state = { 
+            showMobileNav: false,
+            overlay: { p: null, visible: false }
+        };
         this.handleMobileNav = this.handleMobileNav.bind(this);
+        this.handleOverlay = this.handleOverlay.bind(this);
     }
     componentDidMount() {
         window.addEventListener('load', this.handleLoad);
@@ -55,13 +60,24 @@ class App extends Component {
         this.setState({ showMobileNav: false }) : 
         this.setState({ showMobileNav: true });
     }
+    handleOverlay(p) {  //overlay
+        if (this.state.overlay.visible) {
+            this.setState({ overlay: { p: this.state.overlay.p, visible: false } }) 
+            document.querySelector("body").className = "";
+        } else {
+            this.setState({ overlay: { p: p, visible: true } });
+            document.querySelector("body").className = "noscroll";
+        }
+    }
     render() { 
-        const { showMobileNav } = this.state;
+        const { showMobileNav, overlay } = this.state;
         return (
             <div className='App'>
                 <LoadingScreen />
 
                 <Thanks />
+
+                <Overlay p={ overlay.p } visible={ overlay.visible } handleOverlay={ this.handleOverlay } />
 
                 { window.innerWidth <= 600 ? <NavBarIcon onClick={ this.handleMobileNav } showMobileNav={ showMobileNav } /> : null }
                 { showMobileNav && window.innerWidth <= 600 ? <Nav className="nav nav-active" /> : <Nav className="nav" /> }
@@ -84,7 +100,7 @@ class App extends Component {
     
 				<div className="section-bg" style={{ backgroundColor: "rgb(28, 28, 28)" }}>
                 <section id={3} className="section" >
-                    <Work />
+                    <Work handleOverlay={ this.handleOverlay } />
                 </section>
 				</div>
     
