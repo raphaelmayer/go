@@ -84,10 +84,11 @@
 		background: #111;
 		overflow: hidden;
 		transition: all 0.3s ease;
-		width: 0%;
+		width: 80%;
+		transform: translateX(-100%);
 	}
 	.nav-active {
-		width: 80%;
+		transform: translateX(0%);
 	}
 	.nav-btns-container {
 		margin-top: 30px;

@@ -14,7 +14,7 @@ export const Overlay = (props) => {
                     <p>{ p.features.map((f, i) => <li key={ i }> { f } </li>) }</p>
                     <h3>Details</h3>
                     <p>{ p.description }</p>
-                    <a href={ p.link }><button className="overlay-btn">View live</button></a>
+                    <a href={ p.link } target="_blank" rel="noopener noreferrer"><button className="overlay-btn">View live</button></a>
                 </div>
                 <div className="overlay-img-box">
                     {
@@ -35,7 +35,7 @@ export const Overlay = (props) => {
                     <p>{ p.features.map((f, i) => <li key={ i }> { f } </li>) }</p>
                     <h3>Details</h3>
                     <p>{ p.description }</p>
-                    <a href={ p.link }><button className="overlay-btn">View live</button></a>
+                    <a href={ p.link } target="_blank" rel="noopener noreferrer"><button className="overlay-btn">View live</button></a>
                 </div>
                 <div className="overlay-img-box">
                     {

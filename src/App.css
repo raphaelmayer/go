@@ -40,43 +40,7 @@
   width: 100% !important;
 }
 
-h1 {
-  color: #448888;
-  font-family: 'Audiowide';
-  font-size: 50px;
-  padding: 10px 0;
-}
-h2 {
-  color: #448888;
-  font-family: 'Audiowide';
-}
-h3 {
-  color: #559999;
-  font-family: 'raleway';
-  margin: 0;
-  padding: 0;
-}
-p {
-  font-family: 'raleway';
-}
 
-button {
-  background: none;
-  border: 2px solid #889999;
-  border-radius: 4px;
-  color: #889999;
-  cursor: pointer;
-  font-size: 20px;
-  margin: auto;
-  padding: 3px 6px;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-}
-button:hover {
-  border: 2px solid #226666;
-  color: #339999;
-  letter-spacing: 2px;
-}
 
 /*pulse-anim */
 .pulse-anim {
@@ -114,10 +78,4 @@ button:hover {
 }
 .thanks div {
   margin: auto;
-}
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 40px;
-  }
 }

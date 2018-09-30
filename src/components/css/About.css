@@ -9,6 +9,7 @@
 }
 .about-float {
     float: right;
+    margin-left: 40px;
     text-align: center;
 }
 .my-img {
