@@ -12,11 +12,22 @@
 }
 .section {
   box-sizing: border-box;
-  margin-left: 2%;
-  margin-right: -2%;
+  margin: 0;
   min-height: 100vh;
   overflow: hidden;
   opacity: 0;
+  padding: 2% 0;
+  position: relative;
+  transform: translateX(2%);
+  transition: all .7s ease-out;
+  width: 100%;
+  z-index: 3;
+}
+.section-front {  /* section with parallax fix because position:fixed and transform does not work together*/
+  box-sizing: border-box;
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
   padding: 2% 0;
   position: relative;
   transition: all .7s ease-out;
@@ -25,8 +36,7 @@
 }
 .appear {   /*  animation  */
   opacity: 1;
-  margin-left: 0% !important;
-  margin-right: 0% !important;
+  transform: translateX(0%);
   width: 100% !important;
 }
 
@@ -54,7 +64,6 @@ button {
   background: none;
   border: 2px solid #889999;
   border-radius: 4px;
-  box-shadow: 6px -6px 4px 1px #111;
   color: #889999;
   cursor: pointer;
   font-size: 20px;

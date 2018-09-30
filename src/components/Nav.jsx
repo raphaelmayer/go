@@ -11,23 +11,10 @@ const sections = [
 	"Featured Work",
 	"Get in Touch" 
 ];
-// andersch glöst daweil
-/*
-const MobileNav = () => {
+
+const Nav = ({ className }) => {
 	return (
-		<div></div>
-	);
-}
-const DesktopNav = () => {
-	return (
-		<div></div>
-	);
-}
-*/
-const Nav = (props) => {
-console.log(window.innerWidth);
-	return (
-		<nav className={ props.className }>
+		<nav className={ className }>
 			<i className='far fa-gem'></i>
 
 			<div className="nav-btns-container">

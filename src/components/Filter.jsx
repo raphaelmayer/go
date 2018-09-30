@@ -1,10 +1,7 @@
 import React from 'react';
 import './css/Filter.css';
 
-const FilterBtn = (props) => {
-    
-    const { keyword, isActive, onClick } = props;
-    
+const FilterBtn = ({ keyword, isActive, onClick }) => {
     return(
         isActive === keyword ?
             <button className="filter-btn-active" onClick={ onClick }>{ keyword }</button>
@@ -13,10 +10,7 @@ const FilterBtn = (props) => {
     );
 }
 
-const Filter = (props) => {
-    
-    const { isActive, onClick } = props;
-    
+const Filter = ({ isActive, onClick }) => {
     return(
         <div className='filter-container'>
             <div className='filter'>

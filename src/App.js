@@ -13,7 +13,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import SocialMediaIcons from './components/SocialMediaIcons';
 import pulse from './helpers/pulse';
-import { HexGridClear } from './components/Hexagon';
+import { HexagonGrid } from './components/Hexagon';
 
 function isOnScreen(elm) {
   const rect = elm.getBoundingClientRect();
@@ -66,7 +66,7 @@ class App extends Component {
                 { window.innerWidth <= 600 ? <NavBarIcon onClick={ this.handleMobileNav } showMobileNav={ showMobileNav } /> : null }
                 { showMobileNav && window.innerWidth <= 600 ? <Nav className="nav nav-active" /> : <Nav className="nav" /> }
 
-                <section id={0} className="section appear" style={{ zIndex: 1, backgroundColor: "rgb(20, 20, 20)" }}>
+                <section id={0} className="section-front" style={{ zIndex: 1, backgroundColor: "rgb(20, 20, 20), transform: none" }}>
                     <Front />
                 </section>
     
@@ -91,7 +91,7 @@ class App extends Component {
 				<div className="section-bg" style={{ backgroundColor: "rgb(33, 33, 33)" }}>
                 <section id={4} className="section" >
                     <Contact />
-                    { window.innerWidth <= 1000 ? null : <HexGridClear margin={{ marginTop: -270 + "px" }} color={'#444'} /> }
+                    { window.innerWidth <= 1000 ? null : <HexagonGrid margin={{ marginTop: -270 + "px" }} color={'#444'} /> }
                     <footer className="footer">
                     2018 - designed and built by Raphael Mayer
                     <SocialMediaIcons />

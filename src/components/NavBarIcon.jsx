@@ -1,9 +1,7 @@
 import React from "react";
 import "./css/NavBarIcon.css";
 
-const NavBarIcon = (props) => {
-
-    const { onClick, showMobileNav } = props;
+const NavBarIcon = ({ onClick, showMobileNav }) => {
 
     return (
         <svg height="24" width="26" className={ showMobileNav ? "nav-icon nav-icon-active" : "nav-icon" } onClick={ onClick } >

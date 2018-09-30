@@ -21,21 +21,18 @@ class Work extends Component {
     handleFilter(e) {
         const keyword = e.target.innerHTML;
         const btn  = e.target;
-console.log(e.target.className)
+        
         // turn filter on
         if (!this.state.filter) {
             const filtered = myProjects.filter(p => p.tech.indexOf(keyword) >= 0);
-            this.setState({ filter: keyword });
-            this.setState({ projects: filtered });
+            this.setState({ filter: keyword, projects: filtered });
         // switch filter
         } else if (this.state.filter !== keyword) {
             const filtered = myProjects.filter(p => p.tech.indexOf(keyword) >= 0);
-            this.setState({ filter: keyword });
-            this.setState({ projects: filtered });
+            this.setState({ filter: keyword, projects: filtered });
         // turn filter off
         } else {
-            this.setState({ filter: false });
-            this.setState({ projects: myProjects });
+            this.setState({ filter: false, projects: myProjects });
         }
     }
     onMouseEnter(e) {   // start animation for WorkBox
@@ -48,9 +45,7 @@ console.log(e.target.className)
     onMouseLeave(e) {   //reset animation
         const el = e.target.childNodes[0];
         if (!el) return;
-        console.log("before", el.className);
         el.className = "work-box-img";
-        console.log("after", el.className);
     }
     handleOverlay(p) {  //overlay
         if (this.state.overlay.visible) {
@@ -89,9 +84,7 @@ console.log(e.target.className)
                             } else {
                                 return(<WorkBox i={ icons[i] } p={ p } brightness="dark" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.handleOverlay(projects[i]) } key={i} />)
                             }
-                        })}
-                    
-{/* projects.map((p, i) => <WorkBox project={p} key={i} />) */}                
+                        })}               
 
                 </div>
             );

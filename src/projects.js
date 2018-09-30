@@ -45,7 +45,7 @@ const projects = [{ "title": "YouVote - create and share polls",
                     "tagline": "A single page app to discover movies. It is powered by TMDB API.",
                     "description": "My girlfriend and I spent way too much time scrolling through Netflix to find something to watch. This is what happened next.",
                     "features": [ "Discover by actor or movie. Additional filter and sort functionality.",
-                                  "Results are paginated to ensure a crisp performance throughout."
+                                  "Results are paginated to ensure a crisp performance throughout.",
                                   "The app is linked with Youtube so you can watch trailers without searching first.",
                                   "Be up to date on new movie releases and popular movies within the community."],
                     "images": [ "GMAGM-preview.jpg",
