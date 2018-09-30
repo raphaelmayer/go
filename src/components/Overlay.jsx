@@ -5,7 +5,7 @@ export const Overlay = (props) => {
 	const { p, visible } = props;
 	if (visible && p) {
 		return(
-        	<div className="overlay" style={{ width: 100 + "%", opacity: 1, visibility: "visible" }}>
+        	<div className="overlay" style={{ transform: "translateX(0)", opacity: 1, visibility: "visible" }}>
         		<i className="far fa-circle" onClick={ props.handleOverlay }></i>
         		<div className="overlay-text-box">
                     <h2>{ p.title }</h2>
