@@ -8,7 +8,6 @@
         py: 0,
         down: true
     };
-    console.log(5000/1920)
 
     const canvas_width = Math.round(window.innerWidth / 10)*10;
     const canvas_height = Math.round(window.innerHeight / 10)*10;
@@ -19,7 +18,8 @@
 
     const num_cols = canvas_width / resolution;
     const num_rows = canvas_height / resolution;
-    const speck_count = Math.floor(window.innerWidth * window.innerHeight / 100 / 4);
+    const speck_count = Math.floor(window.innerWidth * window.innerHeight / 100 / 4 / 2);
+    console.log(speck_count);
     
     const vec_cells = [];
     const particles = [];

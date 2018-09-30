@@ -32,6 +32,7 @@ class Work extends Component {
             this.setState({ filter: false, projects: myProjects });
         }
     }
+    
     onMouseEnter(e) {   // start animation for WorkBox
         const el = e.target.childNodes[0] || e.target.parentNode.childNodes[0];
         if (!el) { console.error("Work44:", "!el"); return; }
@@ -39,6 +40,7 @@ class Work extends Component {
         setTimeout(() => el.classList += " work-box-img-extend", 300);
         setTimeout(() => el.classList += " work-box-img-active", 900);
     }
+    
     onMouseLeave(e) {   //reset animation
         const el = e.target.childNodes[0];
         if (!el) return;

@@ -17,9 +17,9 @@ export const Overlay = (props) => {
                     <a href={ p.link }><button className="overlay-btn">View live</button></a>
                 </div>
                 <div className="overlay-img-box">
-                    <img alt="p-img" src={ "./images/" + p.images[1] }></img>
-                    <div className="light-border"></div>
-                    <div className="overlay-img-pre">{ p.images.map((img, i) => <img alt="p-img" src={ "./images/" + img }></img>) }</div>
+                    {
+                        p.images.map((img, i) => i === 0 ? null : <img className="overlay-img" alt="p-img" src={ `./images/${img}` } />)
+                    }
                 </div>
             </div>
 		)
@@ -38,9 +38,9 @@ export const Overlay = (props) => {
                     <a href={ p.link }><button className="overlay-btn">View live</button></a>
                 </div>
                 <div className="overlay-img-box">
-                    <img alt="p-img" src={ "./images/" + p.images[1] }></img>
-                    <div className="light-border"></div>
-                    <div className="overlay-img-pre">{ p.images.map((img, i) => <img alt="p-img" src={ "./images/" + img }></img>) }</div>
+                    {
+                        p.images.map((img, i) => i === 0 ? null : <img alt="p-img" src={ `./images/${img}` } />)
+                    }
                 </div>
         	</div>
 		)

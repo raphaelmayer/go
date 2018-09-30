@@ -11,39 +11,47 @@ const Services = () => {
             <p>Check out some of the services I offer down below.</p> 
           </article>
         </header>
-        <div className="serviceBoxes webDes col-lg-2 col-md-3">
-          <div className="serviceCircle">
-            <img alt="icon" className="icon" src="./icons/browser.png" />
-          </div> 
-          <div className="serviceTitle">WEBDESIGN</div>
-          <div className="serviceBorder"></div>
-          <div className="serviceText"><p>Each of my designs begins with a blank canvas which allows your content to guide the layout.</p></div>
-        </div>    
-        <div className="serviceBoxes webDev col-lg-2 col-md-3">
-          <div className="serviceCircle">
-            <img alt="icon" className="icon" src="./icons/settings.png" />
-          </div>
-          <div className="serviceTitle">WEBDEVELOPMENT</div>
-          <div className="serviceBorder"></div>
-          <div className="serviceText"><p>Custom applications tailored to fit your exact need, built with the newest technologies available.</p></div>
-        </div>    
-        <div className="serviceBoxes backend col-lg-2 col-md-3">
-          <div className="serviceCircle">
-            <img alt="icon" className="icon" src="./icons/database.png" />
-          </div>
-          <div className="serviceTitle">BACK-END SOLUTIONS</div>
-          <div className="serviceBorder"></div>
-          <div className="serviceText"><p>Database and network solutions for your business to save you time, money and nerves.</p></div>
-        </div>    
-        <div className="serviceBoxes socialMedia col-lg-2 col-md-3">
-          <div className="serviceCircle">
-            <img alt="icon" className="icon" src="./icons/users.png" />
-          </div>
-          <div className="serviceTitle">SOCIAL MEDIA</div>
-          <div className="serviceBorder"></div>
-          <div className="serviceText"><p>People don't watch TV ads. Get on the next level and start advertising online.</p></div>
-        </div>
+
+        {
+          content.map((c, i) => <ServiceBox { ...c } key={i} />)
+        }
       </div>
         );
 } 
 export default Services;
+
+const ServiceBox = ({ title, text, icon }) => {
+  return (
+    <div className="serviceBox webDes">
+      <div className="serviceCircle">
+        <img alt="icon" className="icon" src={ `./icons/${icon}` } />
+      </div> 
+      <div className="serviceTitle">{ title }</div>
+      <div className="serviceBorder"></div>
+      <div className="serviceText"><p>{ text }</p></div>
+    </div>
+  );
+}
+
+const content = [
+  {
+    title: "WEBDESIGN",
+    text: "Each of my designs begins with a blank canvas which allows your content to guide the layout.",
+    icon: "browser.png"   
+  },
+  {
+    title: "WEBDEVELOPMENT",
+    text: "Custom applications tailored to fit your exact need, built with the newest technologies available.",
+    icon: "settings.png"   
+  },
+  {
+    title: "BACK-END SOLUTIONS",
+    text: "Database and network solutions for your business to save you time, money and nerves.",
+    icon: "database.png"   
+  },
+  {
+    title: "SOCIAL MEDIA",
+    text: "People don't watch TV ads. Get on the next level and start advertising online.",
+    icon: "users.png"   
+  },
+]
