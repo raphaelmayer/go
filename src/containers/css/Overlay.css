@@ -42,10 +42,10 @@
 	margin: 10px auto;
 	max-width: 98%;
 }
-.overlay .fa-circle {
+.overlay .fa-times-circle {
 	color: azure;
 	cursor: pointer;
-	font-size: 24px;
+	font-size: 30px;
 	position: absolute;
 	top: 2%;
 	right: 2%;

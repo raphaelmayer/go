@@ -13,6 +13,7 @@ const About = () => {
           <div className="my-img" style={{ backgroundImage: "url(./images/atti.jpg)" }}></div>
           <SocialMediaIcons />    
         </div>
+        
         <p className="about-L">Hi, my name is <b>Raphael</b>.
           <br/>
           I'm a <b>fullstack developer</b> based in <b>Innsbruck, Austria</b>.
@@ -30,7 +31,7 @@ const About = () => {
 
       <div className="about-service-container"> 
       {
-        content2.map((c, i) => <ServiceBox { ...c } key={i} />)
+        content.map((c, i) => <ServiceBox { ...c } key={i} />)
       }
       </div>
     </div>
@@ -38,13 +39,6 @@ const About = () => {
 }
 
 export default About;
-
-const Paragraph = ({ content }) => {
-  return (
-    <p className="about-S"><i className="fas fa-angle-left"></i> { content } <i className="fas fa-angle-right"></i></p>
-
-  );
-}
 
 const ServiceBox = ({ title, text, icon }) => {
   return (
@@ -59,7 +53,7 @@ const ServiceBox = ({ title, text, icon }) => {
   );
 }
 
-const content2 = [
+const content = [
   {
     title: "WEBDESIGN",
     text: "Each of my designs begins with a blank canvas which allows your content to guide the layout.",

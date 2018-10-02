@@ -50,8 +50,11 @@ button:hover {
   letter-spacing: 2px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   h1 {
     font-size: 40px;
+  }
+  p {
+    font-size: 18px;
   }
 }

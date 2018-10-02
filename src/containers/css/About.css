@@ -34,7 +34,6 @@
 
 .about-service-container {
     box-sizing: border-box;
-    display: flex;
     display: none;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -130,41 +129,44 @@
         width: 84%;
     }
     .about-service-container {
-        display: block;
+        isplay: block;
         justify-content: none;
         padding: 0 5vw 0 10vw;
     }
-  .services-text-box {
-      margin-bottom: 30px;
-      width: 90%;
-  }
-  .serviceBox {
-    position: relative;
-    margin-top: 20px;
-    min-width: none;
-    width: 100%;
-  }
-  .serviceCircle {
-    float: left;
-    margin-top: 0%;
-    text-align: left;
-    height: 14vw;
-    width: 14vw;
-  }
-  .serviceTitle {
-    float: left;
-    padding: 0;
-    text-align: left;
-    width: 80%;
-  }
-  .serviceBorder {
-    display: none;
-  }
-  .serviceText {
-    margin-right: 4%;
-    padding: 0;
-    position: relative;
-    text-align: left;
-    width: 80%;
-  }
+    .about-L {
+        font-size: 26px
+    }
+    .about-S {
+        font-size: 20px;
+    }
+
+    .serviceBox {
+      position: relative;
+      margin-top: 20px;
+      min-width: none;
+      width: 100%;
+    }
+    .serviceCircle {
+      float: left;
+      margin-top: 0%;
+      text-align: left;
+      height: 14vw;
+      width: 14vw;
+    }
+    .serviceTitle {
+      float: left;
+      padding: 0;
+      text-align: left;
+      width: 80%;
+    }
+    .serviceBorder {
+      display: none;
+    }
+    .serviceText {
+      margin-right: 4%;
+      padding: 0;
+      position: relative;
+      text-align: left;
+      width: 80%;
+    }
 }
