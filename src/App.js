@@ -5,16 +5,15 @@ import Nav from './components/Nav';
 import NavBarIcon from './components/NavBarIcon';
 import Parallax from './components/Parallax';
 import LoadingScreen from './components/LoadingScreen';
-import Thanks from './components/Thanks';
-import Front from './components/Front';
-import Work from './components/Work';
-import Services from './components/Services';
-import About from './components/About';
-import Contact from './components/Contact';
+import Thanks from './containers/Thanks';
+import Front from './containers/Front';
+import Work from './containers/Work';
+import About from './containers/About';
+import Contact from './containers/Contact';
 import SocialMediaIcons from './components/SocialMediaIcons';
 import pulse from './helpers/pulse';
 import { HexagonGrid } from './components/Hexagon';
-import Overlay from './components/Overlay';
+import Overlay from './containers/Overlay';
 
 function isOnScreen(elm) {
   const rect = elm.getBoundingClientRect();
@@ -79,8 +78,8 @@ class App extends Component {
 
                 <Overlay p={ overlay.p } visible={ overlay.visible } handleOverlay={ this.handleOverlay } />
 
-                { window.innerWidth <= 600 ? <NavBarIcon onClick={ this.handleMobileNav } showMobileNav={ showMobileNav } /> : null }
-                { showMobileNav && window.innerWidth <= 600 ? <Nav className="nav nav-active" /> : <Nav className="nav" /> }
+                { window.innerWidth <= 800 ? <NavBarIcon onClick={ this.handleMobileNav } showMobileNav={ showMobileNav } /> : null }
+                { showMobileNav && window.innerWidth <= 800 ? <Nav className="nav nav-active" /> : <Nav className="nav" /> }
 
                 <section id={0} className="section-front" style={{ zIndex: 1, backgroundColor: "rgb(20, 20, 20), transform: none" }}>
                     <Front />
@@ -92,13 +91,7 @@ class App extends Component {
                 </section>
                 </div>
     
-				<div className="section-bg" style={{ backgroundColor: "rgb(33, 33, 33)" }}>
-                <section id={2} className="section" >
-                    <Services />
-                </section>
-				</div>
-    
-				<div className="section-bg" style={{ backgroundColor: "rgb(28, 28, 28)" }}>
+				<div className="section-bg" style={{ ackgroundColor: "rgb(28, 28, 28)" }}>
                 <section id={3} className="section" >
                     <Work handleOverlay={ this.handleOverlay } />
                 </section>

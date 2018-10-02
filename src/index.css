@@ -22,11 +22,13 @@ h2 {
 h3 {
   color: #559999;
   font-family: 'raleway';
-  margin: 0;
+  font-weight: 500;
+  margin: 10px auto;
   padding: 0;
 }
 p {
   font-family: 'raleway';
+  font-size: 20px;
   line-height: 1.6;
 }
 

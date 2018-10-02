@@ -1,4 +1,5 @@
 .contact {
+	padding-top: 3%;
 	box-sizing: border-box;
 }
 .contact p {
@@ -47,6 +48,7 @@
 	font-family: 'caveat';
 	font-size: 30px;
 	padding-top: 8%;
+	padding-bottom: 2%;
 }
 footer .fab {
 	color: #555 !important;

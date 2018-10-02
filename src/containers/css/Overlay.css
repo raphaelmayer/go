@@ -42,7 +42,7 @@
 	margin: 10px auto;
 	max-width: 98%;
 }
-.overlay i {
+.overlay .fa-circle {
 	color: azure;
 	cursor: pointer;
 	font-size: 24px;
@@ -51,7 +51,7 @@
 	right: 2%;
 	transition: all 0.2s ease-in-out;
 }
-.overlay i:hover {
+.overlay .fa-circle:hover {
 	color: tomato;
 }
 

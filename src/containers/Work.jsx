@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './css/Work.css';
 
 import myProjects from '../projects';
-import WorkBox from './WorkBox';
-import Filter from './Filter';
+import WorkBox from '../components/WorkBox';
+import Filter from '../components/Filter';
 
 class Work extends Component {
     constructor(props) {

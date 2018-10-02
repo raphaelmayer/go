@@ -97,7 +97,7 @@ const projects = [{ "title": "YouVote - create and share polls",
                     "features": [ "Comming soon",],
                     "images": [ "placeholder.jpg",],
                     "link": "",
-                    "tech": ["Full-Stack", "React.js", "Node.js", "Redux"]}, 
+                    "tech": ["Full-Stack", "React.js", "Node.js"]}, 
 ];
 //
 export default projects;

@@ -1,8 +1,9 @@
 .work {
-  text-align: center;
-  margin: 0 auto;
-  rosition: relative;
-  width: 80%;
+	box-sizing: border-box;
+	min-height: 100vh;
+    padding: 3%;
+  	text-align: center;
+  	margin: 0 auto;
 }
 
 .work-box {
