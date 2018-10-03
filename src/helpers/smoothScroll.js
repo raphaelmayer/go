@@ -1,9 +1,9 @@
-const smoothScroll = (e) => {	// not well supported though
+const smoothScroll = (e) => {	
 	const key = e.target.attributes.props.value;
 	const element = document.getElementById(key);
-
+	
+	// not well supported though
 	element.scrollIntoView({ behavior: 'smooth' });
-	//element.className += " appear";
 }
 
 export default smoothScroll;
