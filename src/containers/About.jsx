@@ -7,7 +7,6 @@ const About = () => {
     <div id="about" className="about">
 
       <div className="about-box">
-        <h1>who I am</h1>
         
         <div className="about-float">
           <div className="my-img" style={{ backgroundImage: "url(./images/atti.jpg)" }}></div>
@@ -16,7 +15,7 @@ const About = () => {
         
         <p className="about-L">Hi, my name is <b>Raphael</b>.
           <br/>
-          I'm a <b>fullstack developer</b> based in <b>Innsbruck, Austria</b>.
+          I'm a <b>full stack developer</b> based in <b>Innsbruck, Austria</b>.
         </p>
         <p className="about-S">
           Currently I work as a contractor building websites and applications for clients from all around the globe.

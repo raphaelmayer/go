@@ -15,7 +15,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://attiimaster.github.io/go",
+  "homepage": "https://raphaelmayer.github.io/go",
   "devDependencies": {
     "gh-pages": "^1.2.0"
   }

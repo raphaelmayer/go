@@ -1,8 +1,7 @@
 import React from 'react';
 
 const Thanks = () => {
-    const url = window.location.href.split("/")
-    console.log(url[url.length-1] === "thanks")
+    const url = window.location.href.split("/");
 
 	if (url[url.length-1] === "thanks") {
 		return (

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './css/Front.css';
 
 import smoothScroll from "../helpers/smoothScroll";
@@ -11,7 +11,7 @@ const Front = () => {
             <header className="banner">
             	<h1><span className="pulse-anim pulse-anim-1 pulse-anim-2">mayer.raphael</span></h1>
             	<p>Web Developer | Programmer | Designer</p>
-            	<button props={ 4 } onClick={ (e) => smoothScroll(e) } className="asd">Hire Now</button>
+            	<button props={ 3 } onClick={ (e) => smoothScroll(e) } className="asd">Hire Now</button>
             </header>
             <Parallax />
         </div>

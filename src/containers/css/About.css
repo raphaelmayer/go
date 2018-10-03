@@ -1,6 +1,6 @@
 .about {
     height: 100%;
-    padding-bottom: 3%;
+    padding: 3% 0;
     position: relative;
     text-align: left;
 }
@@ -22,11 +22,13 @@
     font-size: 22px;
 }
 .my-img {
+    border: 1px solid black;
     background-position: center-top;
     background-size: 140%;
     border-radius: 2px;
     height: 300px;
     margin: 5px;
+    margin-top: 10%;
     opacity: 0.9;
     width: 300px;
     transform: rotate(10deg) translateY(-40px);
@@ -121,12 +123,15 @@
 
 @media (max-width: 767px) {
     .my-img {
-        width: 100px;
-        height: 100px;
+        height: 150px;
+        width: 150px;
     }
     .about-box {
         margin: 6vh auto;
         width: 84%;
+    }
+    .about-float {
+        padding-left: 10px;
     }
     .about-service-container {
         isplay: block;

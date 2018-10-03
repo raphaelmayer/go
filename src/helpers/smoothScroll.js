@@ -4,7 +4,6 @@ const smoothScroll = (e) => {	// not well supported though
 
 	element.scrollIntoView({ behavior: 'smooth' });
 	//element.className += " appear";
-	console.log(element)
 }
 
 export default smoothScroll;

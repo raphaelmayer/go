@@ -7,14 +7,10 @@
 	z-index: 8;
 }
 .nav-active {}
-.nav .fa-gem {
-	color: #449999;
-	font-size: 30px;
-	margin-top: 40px;
-	margin-bottom: 0px;
-	padding: 0 30px;
+.nav-logo-container {
+	display: flex;
+	padding: 40px 0 50px 0;
 }
-
 .nav-btns-container {
 	margin-top: 150px;
 }
@@ -90,6 +86,9 @@
 	.nav-active {
 		transform: translateX(0%);
 	}
+	.nav-logo-container {
+		padding: 80px 0 50px 0;
+	}
 	.nav-btns-container {
 		margin-top: 30px;
 	}
@@ -138,4 +137,19 @@
 	.nav-btn-text {
 		font-size: 13px;
 	}
+}
+.Logo {
+	background: radial-gradient(to top, #111, #011);
+	box-shadow: 0px 0px 6px 1px #188;
+	border-radius: 4px;
+	display: flex;
+	margin: auto;
+	height: 34px;
+	width: 36px;
+}
+.Logo div {
+	color: azure;
+	font-family: "lato";
+	font-size: 17px;
+	margin: auto;
 }

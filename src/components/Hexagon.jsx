@@ -12,9 +12,7 @@ export const Hexagon = (props) => {
 }
 
 export const HexagonGrid = (props) => {
-  const c = props.color;
   const m = props.margin;
-  console.log(m)
     return(
         <div className='clear-hex-grid' style={ m ? m : null }>
             <div className='clear-hex-row-even'>

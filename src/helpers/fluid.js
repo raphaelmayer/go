@@ -19,7 +19,7 @@
     const num_cols = canvas_width / resolution;
     const num_rows = canvas_height / resolution;
     const speck_count = Math.floor(window.innerWidth * window.innerHeight / 100 / 4 / 2);
-    console.log(speck_count);
+    console.log(`speck_count: ${speck_count} particles`);
     
     const vec_cells = [];
     const particles = [];
@@ -105,8 +105,8 @@
 
             if (p.x >= 0 && p.x < canvas_width && p.y >= 0 && p.y < canvas_height) {
 
-                const col = parseInt(p.x / resolution);
-                const row = parseInt(p.y / resolution);
+                const col = parseInt(p.x / resolution, 10);
+                const row = parseInt(p.y / resolution, 10);
 
                 const cell_data = vec_cells[col][row];
                 
@@ -292,7 +292,6 @@
 
     }
 
-  
     function particle(x, y) {
         this.x = this.px = x;
         this.y = this.py = y;

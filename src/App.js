@@ -3,7 +3,6 @@ import './App.css';
 
 import Nav from './components/Nav';
 import NavBarIcon from './components/NavBarIcon';
-import Parallax from './components/Parallax';
 import LoadingScreen from './components/LoadingScreen';
 import Thanks from './containers/Thanks';
 import Front from './containers/Front';
@@ -14,6 +13,7 @@ import SocialMediaIcons from './components/SocialMediaIcons';
 import pulse from './helpers/pulse';
 import { HexagonGrid } from './components/Hexagon';
 import Overlay from './containers/Overlay';
+import throttle from "./helpers/throttle";
 
 function isOnScreen(elm) {
   const rect = elm.getBoundingClientRect();
@@ -33,17 +33,16 @@ class App extends Component {
     }
     componentDidMount() {
         window.addEventListener('load', this.handleLoad);
-        window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener('scroll', throttle(this.handleScroll, 100));
         setInterval(pulse, 1500);
     }
     componentWillUnmount() {
         window.removeEventListener('load', this.handleLoad);
         window.removeEventListener('scroll', this.handleScroll);
     }
-    handleScroll(e) {
+    handleScroll(e) {  
         const sections = document.querySelectorAll(".section");
         for (let i=0; i<sections.length; i++) {
-            // console.log(sections[i].children)
             if (isOnScreen(sections[i])) {
                 sections[i].className = "section appear";
             } else {
@@ -78,7 +77,7 @@ class App extends Component {
 
                 <Overlay p={ overlay.p } visible={ overlay.visible } handleOverlay={ this.handleOverlay } />
 
-                { window.innerWidth <= 800 ? <NavBarIcon onClick={ this.handleMobileNav } showMobileNav={ showMobileNav } /> : null }
+                { window.innerWidth <= 800 ? <NavBarIcon onClick={ this.handleMobileNav } transform={ showMobileNav } /> : null }
                 { showMobileNav && window.innerWidth <= 800 ? <Nav className="nav nav-active" /> : <Nav className="nav" /> }
 
                 <section id={0} className="section-front" style={{ zIndex: 1, backgroundColor: "rgb(20, 20, 20), transform: none" }}>
@@ -92,13 +91,13 @@ class App extends Component {
                 </div>
     
 				<div className="section-bg" style={{ ackgroundColor: "rgb(28, 28, 28)" }}>
-                <section id={3} className="section" >
+                <section id={2} className="section" >
                     <Work handleOverlay={ this.handleOverlay } />
                 </section>
 				</div>
     
 				<div className="section-bg" style={{ backgroundColor: "rgb(33, 33, 33)" }}>
-                <section id={4} className="section" >
+                <section id={3} className="section" >
                     <Contact />
                     { window.innerWidth <= 1000 ? null : <HexagonGrid margin={{ marginTop: -270 + "px" }} color={'#444'} /> }
                     <footer className="footer">

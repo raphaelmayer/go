@@ -42,13 +42,14 @@
 	margin: 10px auto;
 	max-width: 98%;
 }
-.overlay .fa-times-circle {
+.overlay .nav-icon {
 	color: azure;
 	cursor: pointer;
 	font-size: 30px;
 	position: absolute;
 	top: 2%;
 	right: 2%;
+	left: auto;
 	transition: all 0.2s ease-in-out;
 }
 .overlay .fa-circle:hover {

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const WorkBox = (props) => {
     const { p, i, brightness, onClick, onMouseEnter, onMouseLeave } = props;

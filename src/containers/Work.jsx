@@ -17,7 +17,6 @@ class Work extends Component {
 
     handleFilter(e) {
         const keyword = e.target.innerHTML;
-        const btn  = e.target;
         
         // turn filter on
         if (!this.state.filter) {
