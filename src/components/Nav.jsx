@@ -38,7 +38,7 @@ export default Nav;
 const Logo = () => {
 	return (
 		<div className="Logo">
-			<div>MR</div>
+			<div>RM</div>
 		</div>
 	);
 }
