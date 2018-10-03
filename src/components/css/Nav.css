@@ -138,6 +138,7 @@
 		font-size: 13px;
 	}
 }
+/*	Logo 1. draft
 .Logo {
 	background: radial-gradient(to top, #111, #011);
 	border-left: 1px solid rgb(200, 100, 200);
@@ -154,5 +155,28 @@
 	color: azure;
 	font-family: "lato";
 	font-size: 17px;
+	margin: auto;
+}
+*/
+.logo-container {
+	background: linear-gradient(to top right, tomato 20%, rgb(200, 100, 200) 20%, rgb(100, 200, 200));
+	border-radius: 4px;
+	display: inline-flex;
+	margin: auto;
+	padding: 1px;
+}
+.Logo {
+	background: radial-gradient(to top, #111, #011);
+	border: 1px solid transparent;
+	border-radius: 4px;
+	display: flex;
+	margin: auto;
+	height: 38px;
+	width: 40px;
+}
+.Logo div {
+	color: azure;
+	font-family: "lato";
+	font-size: 20px;
 	margin: auto;
 }

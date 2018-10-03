@@ -37,8 +37,10 @@ export default Nav;
 
 const Logo = () => {
 	return (
-		<div className="Logo">
-			<div>RM</div>
+		<div class="logo-container">
+			<div class="Logo">
+				<div>RM</div>
+			</div>
 		</div>
 	);
 }
