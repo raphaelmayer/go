@@ -14,7 +14,7 @@
 .nav-icon-active line {
 }
 .nav-icon-active .line-1 {
-  stroke: rgb(200, 100, 200);
+  stroke: #db2e56;
   -ms-transform: translate(6px, 0px) rotate(45deg) skew(-180deg);
   -webkit-transform: translate(6px, 0px) rotate(45deg) skew(-180deg);
   transform: translate(6px, 0px) rotate(45deg) skew(-180deg);
@@ -32,5 +32,5 @@
   stroke: rgb(100, 200, 200);
 }
 .nav-icon-active:hover .line-3 {
-  stroke: rgb(200, 100, 200);
+  stroke: #db2e56;
 }

@@ -159,7 +159,7 @@
 }
 */
 .logo-container {
-	background: linear-gradient(to top right, tomato 20%, rgb(200, 100, 200) 20%, rgb(100, 200, 200));
+	background: linear-gradient(to top right, tomato 10%, #db2e56 40%, rgb(100, 200, 200));
 	border-radius: 4px;
 	display: inline-flex;
 	margin: auto;
