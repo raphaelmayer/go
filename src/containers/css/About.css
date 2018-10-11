@@ -10,7 +10,7 @@
 }
 .about-float {
     float: right;
-    padding-left: 10vw;
+    padding-left: 5vw;
     text-align: center;
 }
 .about-L {
@@ -131,6 +131,9 @@
         width: 84%;
     }
     .about-float {
+        isplay: none;
+        pacity: 0;
+        isibility: hidden;
         padding-left: 10px;
     }
     .about-service-container {
