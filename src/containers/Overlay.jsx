@@ -2,7 +2,7 @@ import React from 'react';
 import './css/Overlay.css';
 import NavBarIcon from "../components/NavBarIcon";
 
-export const Overlay = (props) => {
+const Overlay = (props) => {
 	const { p, visible } = props;
 	if (p) {
 		return(
