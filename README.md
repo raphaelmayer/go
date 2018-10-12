@@ -1,5 +1,5 @@
-## Welcome to my Portfolio Source.
+## Welcome to my Portfolio.
 
 ### You can view my portfolio live on: 
 
-Link: *https://attiimaster.github.io/go*
+Link: *https://raphaelmayer.github.io/go*
