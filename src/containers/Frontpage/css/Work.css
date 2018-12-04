@@ -1,0 +1,12 @@
+.work {
+	box-sizing: border-box;
+	min-height: 100vh;
+  	text-align: center;
+  	margin: 0 auto;
+  	padding-bottom: 50px;
+}
+.work-box-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}

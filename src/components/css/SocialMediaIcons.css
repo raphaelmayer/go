@@ -1,0 +1,29 @@
+.social-media-icons {
+	display: flex;
+}
+.social-media-icons a {
+	display: flex;
+	margin: auto 5px;
+}
+.fa-github, .fa-linkedin {
+	color: #118888;
+	cursor: pointer;
+	font-size: 22px;
+	padding: 2px 4px;
+	transition: all 0.2s ease;
+}
+.fa-github:hover {
+	color: azure;
+}
+.fa-linkedin:hover {
+	color: azure;
+}
+
+@media (max-width: 600px) {
+	.social-media-icons {
+		justify-content: space-around;
+		argin: auto;
+		margin-right: 0;
+		padding: 0 30%;
+	}
+}

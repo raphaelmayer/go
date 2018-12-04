@@ -1,40 +1,33 @@
 import React from 'react';
 import './css/About.css';
-import SocialMediaIcons from '../components/SocialMediaIcons';
+import SocialMediaIcons from '../../components/SocialMediaIcons';
 
 const About = () => {
   return(
     <div id="about" className="about">
-
-      <div className="about-box">
-        
-        <div className="about-float">
-          <div className="my-img" style={{ backgroundImage: "url(./images/atti.jpg)" }}></div>
-          <SocialMediaIcons />    
-        </div>
-        
-        <p className="about-L">Hi, my name is <b>Raphael</b>.
-          <br/>
-          I'm a <b>full stack developer</b> based in <b>Innsbruck, Austria</b>.
-        </p>
+      <span className="toAppear">
         <p className="about-S">
-          Currently I work as a contractor building websites and applications for clients from all around the globe.
+          <i className="fas fa-quote-left"></i><br />
+          Being a naturally curious guy I <b>enjoy diving into new things</b> and <b>figuring out 
+          problems</b> as I stumble upon them.
         </p>
-        
+      </span>
+      
+      <span className="toAppear">
         <p className="about-S">
-          Being a naturally curious guy I enjoy diving into new things and figuring out 
-          problems as I stumble upon them. I like to prototype quickly for proof of concept, 
-          but am very critical about code I intend to push to production.
-        </p>  
-      </div>
+          I like to <b>prototype quickly</b> for proof of concept, 
+          but am very <b>critical about code</b> I intend to push to production.<br />
+          <i className="fas fa-quote-right"></i>
+        </p> 
+      </span> 
 
       <div className="about-service-container"> 
-      {
-        content.map((c, i) => <ServiceBox { ...c } key={i} />)
-      }
+        {
+          content.map((c, i) => <ServiceBox { ...c } key={i} />)
+        }
       </div>
     </div>
-    )
+  )
 }
 
 export default About;

@@ -1,0 +1,21 @@
+.FeaturedWork {
+	display: flex;
+	padding: 50px;
+}
+.FeaturedWork .image {
+	margin: auto;
+	overflow: hidden;
+}
+.FeaturedWork .image img {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: auto;
+	width: 500px;
+	position: relative;
+	z-index: -1;
+}
+.FeaturedWork .text {
+	border: 1px solid white;
+	margin: auto;
+}

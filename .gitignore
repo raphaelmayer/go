@@ -3,6 +3,10 @@
 # dependencies
 /node_modules
 
+# media
+/public/images
+/public/icons
+
 # testing
 /coverage
 

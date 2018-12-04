@@ -4,30 +4,15 @@ import './css/Nav.css';
 import SocialMediaIcons from './SocialMediaIcons';
 import smoothScroll from "../helpers/smoothScroll";
 
-const sections = [
-	"Home",
-	"About Me",
-	//"Services I Offer",
-	"Featured Work",
-	"Get in Touch" 
-];
+const sections = [ "Home", "Work", "Contact" ];
 
-const Nav = ({ className }) => {
+const Nav = ({ className, bg, handleMobileNav }) => {
 	return (
-		<nav className={ className }>
-			<div className="nav-logo-container"><Logo /></div>
+		<nav className={ className } style={ bg ? { backgroundColor: "rgb(28, 28, 28)", padding: "2vh 5%"} : {} } >
 			<div className="nav-btns-container">
-				{ sections.map((str, i) => {
-					return (
-						<div className='nav-btn' props={i} key={i} onClick={ (e) => smoothScroll(e) } >
-							<i className='far fa-circle' props={ i }></i>
-							<div className='nav-btn-text' props={ i }> { str } </div>
-						</div>
-					);
-				}) }
-			</div>	
-				
-			<div className='border'></div>
+				{/* sections.map((data, i) => <NavBtn { ...data } key={i} onClick={ handleMobileNav } /> ) */}
+				{ sections.map((data, i) => <NavBtn text={ data } key={i} onClick={ e => {smoothScroll(e);handleMobileNav();} } /> ) }
+			</div>
 			<SocialMediaIcons />
 		</nav>
 	);
@@ -35,12 +20,11 @@ const Nav = ({ className }) => {
 
 export default Nav;
 
-const Logo = () => {
+const NavBtn = ({ text, onClick }) => {
 	return (
-		<div class="logo-container">
-			<div class="Logo">
-				<div>RM</div>
-			</div>
+		<div props={ text } className='nav-btn' onClick={ onClick } >
+				<div props={ text } className='nav-btn-text'> { text } </div>
+				<div props={ text } className="nav-btn-border"></div>
 		</div>
 	);
 }

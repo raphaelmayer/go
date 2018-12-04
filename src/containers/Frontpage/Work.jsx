@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './css/Work.css';
 
-import myProjects from '../projects';
-import WorkBox from '../components/WorkBox';
-import Filter from '../components/Filter';
+import myProjects from '../../projects';
+import WorkBox from '../../components/WorkBox';
+import Filter from '../../components/Filter';
 
 class Work extends Component {
     constructor(props) {
@@ -31,32 +31,19 @@ class Work extends Component {
             this.setState({ filter: false, projects: myProjects });
         }
     }
-    
-    onMouseEnter(e) {   // start animation for WorkBox
-        const el = e.target.childNodes[0] || e.target.parentNode.childNodes[0];
-        if (!el) { console.error("Work44:", "!el"); return; }
-        el.className = "work-box-img";
-        setTimeout(() => el.classList += " work-box-img-extend", 300);
-        setTimeout(() => el.classList += " work-box-img-active", 900);
-    }
-    
-    onMouseLeave(e) {   //reset animation
-        const el = e.target.childNodes[0];
-        if (!el) return;
-        el.className = "work-box-img";
-    }
 
     render() {
         const projects = this.state.projects; //this.state.filter ? this.state.filtered : this.state.projects;
-        const icons = [ "fas fa-chart-pie", "fas fa-cloud", "fas fa-circle", "fas fa-film", "fas fa-map", "fas fa-clock", "fas fa-desktop", "fas fa-th", "fas fa-calculator" ];
-
+        const { handleOverlay } = this.props;
         if (projects) {
             return (
-                <div className='work'>
-                    
+                <div className='work' id="Work">
+                    <span className="toAppear">
                     <h1>Featured Work</h1>
-
+                    </span>
+                    <span className="toAppear">
                     <Filter isActive={ this.state.filter } onClick={ this.handleFilter } />
+                    </span>
                     
                     { //if no projects with currently active filter
                         this.state.filter && !this.state.projects[0] ? 
@@ -64,15 +51,11 @@ class Work extends Component {
                         : null 
                     }
 
-                        { //append Projects and alternate between bgColor
-                        this.state.projects.map((p, i) => {
-                            if( i % 2 === 0 ) {
-                                return(<WorkBox i={ icons[i] } p={ p } brightness="bright" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.props.handleOverlay(projects[i]) } key={i} />)
-                            } else {
-                                return(<WorkBox i={ icons[i] } p={ p } brightness="dark" onMouseEnter={ this.onMouseEnter } onMouseLeave={ this.onMouseLeave } onClick={ e => this.props.handleOverlay(projects[i]) } key={i} />)
-                            }
-                        })}               
-
+                    <div className="work-box-container">
+                        {   // append Projects and alternate between bgColor
+                            this.state.projects.map((p, i) => <span className="toAppear appear"><WorkBox p={p} i={i} onClick={ handleOverlay } key={i} /></span>)
+                        }               
+                    </div>
                 </div>
             );
         } else { return ( <div> no projects </div> ); }

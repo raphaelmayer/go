@@ -1,0 +1,52 @@
+.work-box {
+	background: #222;
+	border-bottom-left-radius: 12px;
+	border-top-right-radius: 12px;
+	color: silver;
+	cursor: pointer;
+	font-family: 'raleway';
+	font-size: 20px;
+	margin: 10px;
+	overflow: hidden;
+	position: relative;
+	transition: all 0.5s ease-out;
+	width: 400px !important;
+	max-width: 100%;
+}
+.work-box-img {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+	height: 280px;
+	width: 100%;
+
+	transition: all 0.5s ease-out;
+}
+.work-box-title {
+	background: #222;
+	margin: auto;
+	padding: 20px 5px;
+	position: relative;
+	z-index: 2;
+}
+.work-box:hover .work-box-img {
+	transform: scale(1.2);
+}
+
+.no-projects {
+	margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+	.work-box {
+		margin: 10px auto;
+		max-width: 90% !important;
+	}
+}
+
+@media (max-width: 420px) {
+	.work-box-img {
+		height: 200px;
+	}
+}

@@ -1,0 +1,14 @@
+
+.StyledButton {
+	letter-spacing: 2px;
+	margin: 40px 5px;
+	padding-left: 20px; 
+	padding-right: 20px;
+	position: relative;
+	z-index: 1;
+}
+.StyledButton:hover {
+	letter-spacing: 5px;
+	padding-left: 24px; 
+	padding-right: 24px; 
+}

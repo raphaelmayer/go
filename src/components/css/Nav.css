@@ -1,108 +1,78 @@
 .nav {
 	ackground: rgba(255, 255, 255, 0.1);
+	display: flex;
+	padding: 6vh 5vw;
 	position: fixed;
 	top: 0; 
-	bottom: 0;
+	right: 0;
 	left: 0;
+	text-align: left;
+	transition: all 0.5s ease;
 	z-index: 8;
 }
-.nav-active {}
-.nav-logo-container {
-	display: flex;
-	padding: 40px 0 50px 0;
-}
 .nav-btns-container {
-	margin-top: 150px;
+	display: flex;
+	margin: auto;
+	margin-left: 0px;
 }
 .nav-btn {
-	order: 1px solid black;
-	color: silver;
+	color: #118888;
 	cursor: pointer;
-	display: list-item;
-	list-style: none;
-	padding: 8px 40px;
-	position: relative;
+	letter-spacing: 1px;
+	margin: auto 40px auto 0;
+	padding: 10px 0;
 	transition: all 0.2s ease-out;
 }
 .nav-btn-text {
-	color: aqua;
-	font-size: 92%;
-	font-weight: 500;
-	letter-spacing: 1px;
-	opacity: 0;
-	position: absolute;
-	top: 24.5%;
-	right: -70%;
-	text-align: left;
+}
+.nav-btn-border {
+	border-bottom: 2px solid #226666;
+	margin-top: 2px;
+	width: 10%;
 	transition: all 0.2s ease-out;
-	visibility: hidden;
-	white-space: nowrap;
-	width: 0%;	
 }
-.nav-btn:hover {
-	color: #666;
+.nav-btn:hover .nav-btn-border {
+	width: 100%;
 }
-.nav-btn:hover .nav-btn-text {
-	color: #eee;
-	opacity: 1;
-	position: absolute;
-	visibility: visible;
+.nav-btn.active {
+	color: azure;
+}
+.nav-btn.active .nav-btn-border {
+	border-bottom: 1px solid azure;
 	width: 100%;
 }
 
-.border {
-	border-bottom: 2px solid silver;
-	margin: 8px 28px;
-	width: 40px;
-}
-.active {
-	color: lime;
-}
-.nav a {
-	display: block;
-}
-.fa-github, .fa-linkedin {
-	color: silver;
-	cursor: pointer;
-	font-size: 30px;
-	padding: 8px 12px !important;
-	transition: all 0.2s ease;
-}
-.fa-github:hover {
-	color: azure;
-}
-.fa-linkedin:hover {
-	color: azure;
-}
-
-@media(max-width: 800px) {
+@media(max-width: 600px) {
 	.nav {
+		display: block;
 		background: #111;
-		overflow: hidden;
+		overflow-y: auto;
 		transition: all 0.3s ease;
-		width: 80%;
 		transform: translateX(-100%);
+		height: 100vh;
+		max-width: 70%;
 	}
 	.nav-active {
 		transform: translateX(0%);
 	}
-	.nav-logo-container {
-		padding: 80px 0 50px 0;
-	}
 	.nav-btns-container {
-		margin-top: 30px;
+		display: block;
+		margin-top: 10%;
+		margin-bottom: 10%;
 	}
 	.nav-btn {
-		border-bottom: 2px solid #222;
-		display: flex;
+		isplay: flex;
 		margin: 0 5%;
 	}
 	.nav-btn:hover {
-		border-bottom: 2px solid #122;
-		color: #666;
+		color: #118888;
+	}
+	.nav-btn-border {
+		border-color: #333;
+		width: 100%;
 	}
 	.nav-btn:hover .nav-btn-text {
-		color: #777;
+		color: #118888;
 		opacity: 1;
 		position: relative;
 		visibility: visible;
@@ -128,14 +98,6 @@
 	}
 	.nav a {
 		display: inline;
-	}
-}
-@media (max-width: 400px) {
-	.nav-btn {
-		padding: 8px 10px;
-	}
-	.nav-btn-text {
-		font-size: 13px;
 	}
 }
 /*	Logo 1. draft

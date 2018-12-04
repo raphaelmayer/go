@@ -18,13 +18,16 @@
 
     const num_cols = canvas_width / resolution;
     const num_rows = canvas_height / resolution;
-    const speck_count = Math.floor(window.innerWidth * window.innerHeight / 100 / 4 / 2);
+    const speck_count = Math.floor(window.innerWidth * window.innerHeight / 100 / 4 / 2 / 2);
     console.log(`speck_count: ${speck_count} particles`);
     
-    const vec_cells = [];
-    const particles = [];
+    let vec_cells = [];
+    let particles = [];
 
     const init = () => {
+        // resetting particles and cells when remounting (hacky)
+        vec_cells = [];
+        particles = [];
         
         canvas = document.getElementById("c");
         ctx = canvas.getContext("2d");

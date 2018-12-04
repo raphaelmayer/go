@@ -1,26 +1,31 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
 html {
   	margin: 0;
   	padding: 0;
 }
 body {
 	color: silver;
-  	margin: 0;
-  	padding: 0;
-  	font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'raleway', sans-serif;
 }
 
 h1 {
-  color: #448888;
+  color: #118888;
   font-family: 'Audiowide';
   font-size: 50px;
-  padding: 10px 0;
+  padding: 50px 0;
 }
 h2 {
-  color: #448888;
-  font-family: 'Audiowide';
+  color: #118888;
+  ont-family: 'Audiowide';
 }
 h3 {
-  color: #559999;
+  color: #118888;
   font-family: 'raleway';
   font-weight: 500;
   margin: 10px auto;
@@ -39,8 +44,10 @@ button {
   color: #889999;
   cursor: pointer;
   font-size: 20px;
+  letter-spacing: 1px;
   margin: auto;
   padding: 3px 6px;
+  pointer-events: auto;
   transition: all 0.3s ease;
   white-space: nowrap;
 }
@@ -48,6 +55,9 @@ button:hover {
   border: 2px solid #226666;
   color: #339999;
   letter-spacing: 2px;
+}
+a {
+  text-decoration: none;
 }
 
 @media (max-width: 767px) {
