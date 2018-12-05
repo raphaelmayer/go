@@ -20,7 +20,7 @@ const Overlay = (props) => {
                 <div className="overlay-img-box">
                     {
                         p.images &&        // dont render preview image ([0])
-                        p.images.map((img, i) => i === 0 ? null : <img className="overlay-img" alt="p-img" src={ `/images/${img}` } />)
+                        p.images.map((img, i) => i === 0 ? null : <img className="overlay-img" alt="p-img" src={ `${process.env.PUBLIC_URL}/images/${img}` } />)
                     }
                 </div>
             </div>

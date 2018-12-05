@@ -1,0 +1,26 @@
+.logo-container {
+	background: linear-gradient(to top right, tomato 20%, rgb(200, 100, 200) 20%, rgb(100, 200, 200));
+	border-radius: 4px;
+	display: inline-flex;
+	margin: auto;
+	margin-left: 0;
+	padding: 1px;
+}
+.Logo {
+	background: #222;
+	border-left: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-top: 1px solid transparent;
+	border-radius: 4px;
+	display: flex;
+	margin: auto;
+	height: 38px;
+	width: 40px;
+}
+.Logo div {
+	color: azure;
+	font-family: "lato";
+	font-size: 20px;
+	margin: auto;
+}

@@ -18,6 +18,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: block;
+	object-fit: cover;
 	height: 280px;
 	width: 100%;
 

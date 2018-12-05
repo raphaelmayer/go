@@ -30,18 +30,6 @@
     text-align: right;
     width: 100%;
 }
-.my-img {
-    border: 1px solid black;
-    background-position: center-top;
-    background-size: 140%;
-    border-radius: 2px;
-    height: 300px;
-    margin: 5px;
-    margin-top: 10%;
-    opacity: 0.9;
-    width: 300px;
-    transform: rotate(10deg) translateY(-40px);
-}
 
 .about-service-container {
     box-sizing: border-box;
@@ -139,19 +127,13 @@
         margin: 6vh auto;
         width: 84%;
     }
-    .about-float {
-        isplay: none;
-        pacity: 0;
-        isibility: hidden;
-        padding-left: 10px;
-    }
     .about-service-container {
         isplay: block;
         justify-content: none;
         padding: 0 5vw 0 10vw;
     }
     .about-L {
-        font-size: 26px
+        font-size: 20px;
     }
     .about-S {
         font-size: 20px;

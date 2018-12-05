@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/Nav.css';
 
+import Logo from "./Logo";
 import SocialMediaIcons from './SocialMediaIcons';
 import smoothScroll from "../helpers/smoothScroll";
 

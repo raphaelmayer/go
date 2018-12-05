@@ -4,8 +4,8 @@ import "./css/WorkBox.css";
 const WorkBox = ({ p, i, onClick }) => {
     return(
         <div className="work-box" onClick={ e => onClick(p) }>
-            <div className="work-box-img" alt="" style={{ backgroundImage: `url("/images/${p.images[0]}")` }}></div>
-            <p className="work-box-title" style={{ background: makeBlue(i) }} >{ p.title }</p>
+            <img className="work-box-img" alt="" src={`${process.env.PUBLIC_URL}/images/${p.images[0]}`} />
+            <p className="work-box-title" style={{ background: `linear-gradient(to right, ${makeBlue(i)}, ${makeBlue(i+1)})` }} >{ p.title }</p>
         </div>
     );
 }
