@@ -306,7 +306,7 @@
         e.preventDefault();
         mouse.down = true;
     }
-
+/*
     const mouse_click_handler = (e) => {
         mouse.down = mouse.down ? false : true; 
     }
@@ -314,7 +314,7 @@
     const mouse_up_handler = (e) => {
         mouse.down = false; 
     }
-    
+*/    
     const touch_end_handler = (e) => {
         if (!e.touches) mouse.down = false;
     }

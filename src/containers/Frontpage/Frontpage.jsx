@@ -1,14 +1,10 @@
 import React, { Component } from "react";
 
 import Head from './Head';
-import FeaturedWork from './FeaturedWork';
 import About from './About';
 import Work from "./Work";
 import Contact from './Contact';
 import { HexagonGrid } from '../../components/Hexagon';
-import SocialMediaIcons from '../../components/SocialMediaIcons';
-
-import projects from "../../projects";
 
 class Frontpage extends Component {
 	constructor(props) {

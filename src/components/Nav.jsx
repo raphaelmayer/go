@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Nav.css';
 
-import Logo from "./Logo";
+// import Logo from "./Logo";
 import SocialMediaIcons from './SocialMediaIcons';
 import smoothScroll from "../helpers/smoothScroll";
 
@@ -9,9 +9,8 @@ const sections = [ "Home", "Work", "Contact" ];
 
 const Nav = ({ className, bg, handleMobileNav }) => {
 	return (
-		<nav className={ className } style={ bg ? { backgroundColor: "rgb(28, 28, 28)", padding: "2vh 5%"} : {} } >
+		<nav className={ className } style={ bg ? { backgroundColor: "rgb(28, 28, 28)", padding: "1vh 5vw"} : {} } >
 			<div className="nav-btns-container">
-				{/* sections.map((data, i) => <NavBtn { ...data } key={i} onClick={ handleMobileNav } /> ) */}
 				{ sections.map((data, i) => <NavBtn text={ data } key={i} onClick={ e => {smoothScroll(e);handleMobileNav();} } /> ) }
 			</div>
 			<SocialMediaIcons />
