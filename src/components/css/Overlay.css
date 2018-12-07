@@ -59,6 +59,7 @@
 .overlay-btn {
 	border: 2px solid #779999;
 	color: #779999;
+	margin: auto 10px;
 }
 
 @media (max-width: 1000px) {
