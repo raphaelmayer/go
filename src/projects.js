@@ -11,7 +11,7 @@ const projects = [{ "title": "YouVote - create and share polls",
                                 "youvote-new.png",
                                 "youvote-poll.png",
                                 "youvote-my.png" ],
-                    "link": "https://youvote.glitch.me",
+                    "link": "https://raphaelmayer.github.io/youvote",
                     "tech": ["Full-Stack", "React.js", "Node.js", "MongoDB"]},
 //
                   { "title": "Weather App", 
