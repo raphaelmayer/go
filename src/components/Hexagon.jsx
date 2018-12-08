@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/Hexagon.css";
 
-export const Hexagon = (props) => {
+const Hexagon = () => {
     return(
         <div className="hexagon">
             <div className="hex-top"></div>
@@ -11,10 +11,9 @@ export const Hexagon = (props) => {
     );
 }
 
-export const HexagonGrid = (props) => {
-  const m = props.margin;
+const HexagonGrid = () => {
     return(
-        <div className="hex-grid" style={ m ? m : null }>
+        <div className="hex-grid">
             <div className="hex-row-even">
                 <Hexagon />
                 <Hexagon />
@@ -46,3 +45,5 @@ export const HexagonGrid = (props) => {
         </div>
     );
 }
+
+export default HexagonGrid;

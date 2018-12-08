@@ -23,8 +23,8 @@ export default Nav;
 const NavBtn = ({ text, onClick }) => {
 	return (
 		<div props={ text } className='nav-btn' onClick={ onClick } >
-				<div props={ text } className='nav-btn-text'> { text } </div>
-				<div props={ text } className="nav-btn-border"></div>
+			<div props={ text } className='nav-btn-text'> { text } </div>
+			<div props={ text } className="nav-btn-border"></div>
 		</div>
 	);
 }

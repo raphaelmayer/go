@@ -5,9 +5,13 @@ import "../helpers/fluid.js";
 
 class Parallax extends Component {
 
-	componentDidMount() { setTimeout(startCanvasAnim, 60); }
+	componentDidMount() {
+		setTimeout(startCanvasAnim, 60);
+	}
 	
-	shouldComponentUpdate() { return false; }
+	shouldComponentUpdate() {
+		return false;
+	}
 
 	render() {
 		return (

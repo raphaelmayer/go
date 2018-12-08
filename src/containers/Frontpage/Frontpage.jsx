@@ -4,13 +4,9 @@ import Head from './Head';
 import About from './About';
 import Work from "./Work";
 import Contact from './Contact';
-import { HexagonGrid } from '../../components/Hexagon';
+import HexagonGrid from '../../components/Hexagon';
 
 class Frontpage extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {  };
-	}
 	componentDidMount() {
 		const banner = document.getElementById("banner");
 		banner && setTimeout(() => banner.className += " appear", 50);
@@ -31,14 +27,10 @@ class Frontpage extends Component {
 	            <div className="section-bg" style={{ backgroundColor: "rgb(33, 33, 33)" }}>
 	                <About />
 	            </div>
-	    
-	            <div className="section-bg" style={{ backgroundColor: "rgb(28, 28, 28)" }}>
-	                {/* <Blog /> */}
-	            </div>
 
 	            <div className="section-bg" style={{ backgroundColor: "rgb(28, 28, 28)", overflow: "hidden" }}>
 	                <Contact />
-	                { window.innerWidth <= 1000 ? null : <HexagonGrid margin={{ marginTop: -270 + "px" }} color={'#444'} /> }
+	                { window.innerWidth <= 1000 ? null : <HexagonGrid /> }
 	                <footer className="footer">2018 - designed and built by Raphael Mayer</footer>
 	            </div>
 	        </div>

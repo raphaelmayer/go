@@ -1,7 +1,6 @@
 import React from "react";
 import "./css/NavBarIcon.css";
 
-// show 
 const NavBarIcon = ({ onClick, transform }) => {
 
     return (

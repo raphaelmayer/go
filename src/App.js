@@ -74,10 +74,9 @@ class App extends Component {
         return (
             <div className='App'>
                 <LoadingScreen />
-                <Overlay p={ overlay.p } 
-                         visible={ overlay.visible } 
-                         handleOverlay={ this.handleOverlay } />
+                <Overlay p={ overlay.p } visible={ overlay.visible } handleOverlay={ this.handleOverlay } />
                 <Parallax />
+                
                 { window.innerWidth <= 600 ? 
                     <NavBarIcon 
                         onClick={ this.handleMobileNav } 
