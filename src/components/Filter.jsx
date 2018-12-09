@@ -14,11 +14,11 @@ const Filter = ({ isActive, onClick }) => {
     return(
         <div className='filter-container'>
             <div className='filter'>
-                <FilterBtn isActive={ isActive } onClick={ onClick } keyword="Website"></FilterBtn>
-                <FilterBtn isActive={ isActive } onClick={ onClick } keyword="Full-Stack"></FilterBtn>
-                <FilterBtn isActive={ isActive } onClick={ onClick } keyword="React.js"></FilterBtn>
-                <FilterBtn isActive={ isActive } onClick={ onClick } keyword="jQuery"></FilterBtn>
-                <FilterBtn isActive={ isActive } onClick={ onClick } keyword="d3.js"></FilterBtn>
+                <FilterBtn isActive={ isActive } onClick={ onClick } keyword="front end"></FilterBtn>
+                <FilterBtn isActive={ isActive } onClick={ onClick } keyword="full stack"></FilterBtn>
+                <FilterBtn isActive={ isActive } onClick={ onClick } keyword="misc"></FilterBtn>
+                <FilterBtn isActive={ isActive } onClick={ onClick } keyword="react.js"></FilterBtn>
+                <FilterBtn isActive={ isActive } onClick={ onClick } keyword="node.js"></FilterBtn>
             </div>
             { isActive ? <p>Active Filter: <strong>{ isActive }</strong></p> : <p>Active Filter: none</p> }
         </div>

@@ -9,6 +9,7 @@ const Overlay = ({ p, visible, handleOverlay }) => {
                 <NavBarIcon onClick={ handleOverlay } transform={ true } />
         		<div className="overlay-text-box">
                     <h2>{ p.title }</h2>
+                    <p>{ p.tech.join(" / ") }</p>
                     <p><em>{ p.tagline }</em></p>
                     <h3>Main Features</h3>
                     <p>{ p.features && p.features.map((f, i) => <li key={ i }> { f } </li>) }</p>

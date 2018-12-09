@@ -14,20 +14,26 @@
 	width: 100%;
 	z-index: 10;
 }
+.overlay h2 {
+	padding-bottom: 10px;
+}
+.overlay h3 {
+	padding-top: 10px;
+}
 .overlay-text-box, .overlay-img-box {
 	box-sizing: border-box;
 	height: 100%;
+	padding: 50px;
 	width: 50%;
 }
 .overlay-text-box {
 	overflow: auto;
-	padding-left: 150px;
+	padding-left: 5vw;
 	text-align: left;
 	white-space: pre-wrap;
 }
 .overlay-text-box p {
-	margin-bottom: 36px;
-	width: 80%;
+	margin: 10px;
 }
 .overlay-text-box li {
 	list-style: circle;
@@ -73,7 +79,6 @@
 		order: 1px solid white;
 		box-sizing: border-box;
 		height: auto;
-		padding: 50px;
 		width: 100%;
 	}
 	.overlay-text-box p {

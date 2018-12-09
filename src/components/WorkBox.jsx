@@ -14,5 +14,5 @@ export default WorkBox;
 
 const makeBlue = i => {
 	const arr = ["#112222", "#113333", "#114444", "#115555", "#116666", "#117777", "#115555", "#114444", "#113333", "#112222"];
-	return arr[i] || "azure";
+	return arr[i] || "#115555";
 }
