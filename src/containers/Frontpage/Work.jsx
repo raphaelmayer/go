@@ -42,7 +42,7 @@ class Work extends Component {
                     <h1>Featured Work</h1>
                     </span>
                     <span className="toAppear">
-                    <Filter isActive={ this.state.filter } onClick={ this.handleFilter } />
+                    <Filter isActive={ this.state.filter } onClick={ this.handleFilter } count={ projects.length } />
                     </span>
                     
                     { //if no projects with currently active filter

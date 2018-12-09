@@ -8,8 +8,13 @@ import smoothScroll from "../helpers/smoothScroll";
 const sections = [ "Home", "Work", "Contact" ];
 
 const Nav = ({ className, bg, handleMobileNav }) => {
+	const style = {
+		backgroundColor: "rgb(28, 28, 28)",
+		padding: window.innerWidth <= 800 ? "6vh 5vw" : "1vh 5vw",
+		boxShadow: "0px 0px 6px 1px #111"
+	};
 	return (
-		<nav className={ className } style={ bg ? { backgroundColor: "rgb(28, 28, 28)", padding: "1vh 5vw"} : {} } >
+		<nav className={ className } style={ bg ? style : {} } >
 			<div className="nav-btns-container">
 				{ sections.map((data, i) => <NavBtn text={ data } key={i} onClick={ e => {smoothScroll(e);handleMobileNav();} } /> ) }
 			</div>

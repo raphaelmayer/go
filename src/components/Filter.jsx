@@ -10,7 +10,7 @@ const FilterBtn = ({ keyword, isActive, onClick }) => {
     );
 }
 
-const Filter = ({ isActive, onClick }) => {
+const Filter = ({ isActive, onClick, count }) => {
     return(
         <div className='filter-container'>
             <div className='filter'>
@@ -21,6 +21,7 @@ const Filter = ({ isActive, onClick }) => {
                 <FilterBtn isActive={ isActive } onClick={ onClick } keyword="node.js"></FilterBtn>
             </div>
             { isActive ? <p>Active Filter: <strong>{ isActive }</strong></p> : <p>Active Filter: none</p> }
+            { <div>{ count } projects found</div> }
         </div>
     );
 }

@@ -1,4 +1,4 @@
-.work-box {
+.workbox {
 	background: #222;
 	border-bottom-left-radius: 12px;
 	border-top-right-radius: 12px;
@@ -13,7 +13,7 @@
 	width: 400px !important;
 	max-width: 100%;
 }
-.work-box-img {
+.workbox-img {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -24,14 +24,14 @@
 
 	transition: all 0.5s ease-out;
 }
-.work-box-title {
+.workbox-title {
 	background: #222;
 	margin: auto;
 	padding: 20px 5px;
 	position: relative;
 	z-index: 2;
 }
-.work-box:hover .work-box-img {
+.workbox:hover .workbox-img {
 	transform: scale(1.2);
 }
 
@@ -40,14 +40,14 @@
 }
 
 @media (max-width: 700px) {
-	.work-box {
+	.workbox {
 		margin: 10px auto;
 		max-width: 90% !important;
 	}
 }
 
 @media (max-width: 420px) {
-	.work-box-img {
+	.workbox-img {
 		height: 200px;
 	}
 }

@@ -19,7 +19,7 @@
 	color: azure;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 	.social-media-icons {
 		justify-content: space-around;
 		argin: auto;

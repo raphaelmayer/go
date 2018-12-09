@@ -77,7 +77,7 @@ class App extends Component {
                 <Overlay p={ overlay.p } visible={ overlay.visible } handleOverlay={ this.handleOverlay } />
                 <Parallax />
                 
-                { window.innerWidth <= 600 ? 
+                { window.innerWidth <= 800 ? 
                     <NavBarIcon 
                         onClick={ this.handleMobileNav } 
                         transform={ showMobileNav } /> 
