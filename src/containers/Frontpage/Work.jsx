@@ -46,9 +46,7 @@ class Work extends Component {
                     </span>
                     
                     { //if no projects with currently active filter
-                        this.state.filter && !this.state.projects[0] ? 
-                        <div className="no-projects"><h2>No projects found.</h2><p>I update these regularly so you could perhaps consider checking back in a bit..</p></div> 
-                        : null 
+                        this.state.filter && !this.state.projects[0] && <NoProjects /> 
                     }
 
                     <div className="work-box-container">
@@ -63,3 +61,12 @@ class Work extends Component {
 }
 
 export default Work;
+
+const NoProjects = () => {
+    return (
+        <div className="no-projects">
+            <h2>No projects found.</h2>
+            <p>I update these regularly so you could perhaps consider checking back in a bit..</p>
+        </div>
+    );
+}

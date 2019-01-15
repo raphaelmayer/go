@@ -52,8 +52,12 @@ class App extends Component {
             }
         }
     }
-    handleLoad() {
+    handleLoad() {  
+        // remove loadingscreen
         document.querySelector(".loading-screen").className += " ls-done";
+        // make bannertext appear
+        const banner = document.getElementById("banner");
+        banner && setTimeout(() => banner.className += " appear", 50);
     }
     handleMobileNav() {
         this.state.showMobileNav ? 
