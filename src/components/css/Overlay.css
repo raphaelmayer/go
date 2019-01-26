@@ -33,6 +33,7 @@
 	white-space: pre-wrap;
 }
 .overlay-text-box p {
+	line-height: 1.5;
 	margin: 10px;
 }
 .overlay-text-box li {
@@ -82,7 +83,7 @@
 		width: 100%;
 	}
 	.overlay-text-box p {
-		width: 98%;
+		width: 100%;
 	}
 }
 @media (max-width: 600px) {
