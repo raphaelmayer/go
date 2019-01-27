@@ -1,0 +1,106 @@
+.services-text-box {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 60%;
+}
+.services-text-box p {
+    padding: 0 2%;
+    text-align: left;
+}
+.serviceBox {
+    display: inline-block;
+    margin-top: 10vh;
+    text-align: center;
+    width: 20%;
+    min-width: 300px;
+}
+.about-service-container {
+    box-sizing: border-box;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 5vw;
+    width: 100%;
+}
+.serviceCircle {
+    border-radius: 50%;
+    height: 10vw;
+    position: relative;
+    margin: 0 auto;
+    width: 10vw;
+    transition: all 0.3s ease;
+}
+.icon {
+    text-align: center;
+    position: relative;
+    top: 20%;
+    width:60%;
+}
+.serviceTitle {
+    color: #448888;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 0px 30px 0px;
+}
+.serviceBorder {
+    border-bottom: 1px solid #11ffff;
+    box-shadow: 0px 0px 4px 1px #118888;
+    border-radius: 50%;
+    margin: 0px 5vw;
+}
+.serviceText {
+    color: silver;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 1vw 10vh 1vw;
+    width: 70%;
+}
+.webDes {
+    color: #d16455;
+}
+.webDev {
+    color: #714089;
+}
+.backend {
+    color: #1ec503;
+}
+.socialMedia {
+    color: #58b2d8;
+}
+
+@media (max-width: 767px) {
+    .about-service-container {
+        isplay: block;
+        justify-content: none;
+        padding: 0 5vw 0 10vw;
+    }
+    .serviceBox {
+      position: relative;
+      margin-top: 20px;
+      min-width: none;
+      width: 100%;
+    }
+    .serviceCircle {
+      float: left;
+      margin-top: 0%;
+      text-align: left;
+      height: 14vw;
+      width: 14vw;
+    }
+    .serviceTitle {
+      float: left;
+      padding: 0;
+      text-align: left;
+      width: 80%;
+    }
+    .serviceBorder {
+      display: none;
+    }
+    .serviceText {
+      margin-right: 4%;
+      padding: 0;
+      position: relative;
+      text-align: left;
+      width: 80%;
+    }
+}

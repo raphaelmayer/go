@@ -19,6 +19,14 @@
   width: 50%;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+.flex-container * {
+  margin: auto;
+}
+
 .section-bg {
   position: relative;
   z-index: 2;

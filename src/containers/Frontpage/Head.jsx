@@ -8,7 +8,7 @@ const Head = () => {
         <div className="Head" id="Home">
           <span className="toAppear" id="banner" style={{ display: "flex", margin: "auto" }}>
             <header className="banner">
-              <p className="about-L">Hi, my name is <b>Raphael</b>.
+              <p className="text">Hi, my name is <b>Raphael</b>.
                 <br />
                 I'm a <b>full stack developer</b> based in <b>Innsbruck, Austria</b>.
                 <br />

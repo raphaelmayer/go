@@ -57,6 +57,19 @@
 	.nav-active {
 		transform: translateX(0%);
 	}
+	.nav-active .nav-btn.btn0 {
+		transform: translateX(0%) !important;
+		transition: all .4s ease-in-out;
+	}
+	.nav-active .nav-btn.btn1 {
+		transform: translateX(0%) !important;
+		transition: all .7s ease-in-out;
+	}
+	.nav-active .nav-btn.btn2 {
+		transform: translateX(0%) !important;
+		transition: all 1.0s ease-in-out;
+	}
+
 	.nav-btns-container {
 		display: block;
 		margin-top: 20%;
@@ -66,6 +79,7 @@
 		font-size: 14px;
 		isplay: flex;
 		margin: 0 5%;
+		transform: translateX(-50%);
 	}
 	.nav-btn:hover {
 		color: #118888;

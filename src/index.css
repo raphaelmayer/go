@@ -16,23 +16,23 @@ body {
 
 h1 {
   color: #118888;
-  font-family: 'Audiowide';
-  font-size: 50px;
+  font-family: 'audiowide', sans-serif;
+  font-size: 40px;
   padding: 50px 0;
 }
 h2 {
   color: #118888;
-  font-family: 'raleway';
+  font-family: 'raleway', sans-serif;
 }
 h3 {
   color: #118888;
-  font-family: 'raleway';
+  font-family: 'raleway', sans-serif;
   font-weight: 500;
   margin: 10px auto;
   padding: 0;
 }
 p {
-  font-family: 'raleway';
+  font-family: 'raleway', sans-serif;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -45,7 +45,7 @@ button {
   cursor: pointer;
   font-size: 20px;
   letter-spacing: 1px;
-  margin: auto;
+  margin: 5px;
   padding: 3px 6px;
   pointer-events: auto;
   transition: all 0.3s ease;
@@ -66,5 +66,8 @@ a {
   }
   p {
     font-size: 16px;
+  }
+  button {
+    font-size: 18px;
   }
 }

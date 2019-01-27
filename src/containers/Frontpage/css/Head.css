@@ -4,3 +4,19 @@
 	min-height: 100vh;
 	pointer-events: none;
 }
+.Head .text {
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: left;
+}
+.Head .text b {
+    color: #118888;
+}
+@media(max-width: 767px) {
+    .Head .text {
+        font-size: 20px;
+    }
+}

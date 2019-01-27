@@ -16,7 +16,7 @@ const Nav = ({ className, bg, handleMobileNav }) => {
 	return (
 		<nav className={ className } style={ bg ? style : {} } >
 			<div className="nav-btns-container">
-				{ sections.map((data, i) => <NavBtn text={ data } key={i} onClick={ e => {smoothScroll(e);handleMobileNav();} } /> ) }
+				{ sections.map((data, i) => <NavBtn text={ data } nbr={i} key={i} onClick={ e => {smoothScroll(e);handleMobileNav();} } /> ) }
 			</div>
 			<SocialMediaIcons />
 		</nav>
@@ -25,9 +25,9 @@ const Nav = ({ className, bg, handleMobileNav }) => {
 
 export default Nav;
 
-const NavBtn = ({ text, onClick }) => {
+const NavBtn = ({ text, onClick, nbr }) => {
 	return (
-		<div props={ text } className='nav-btn' onClick={ onClick } >
+		<div props={ text } className={`nav-btn btn${nbr}`} onClick={ onClick } >
 			<div props={ text } className='nav-btn-text'> { text } </div>
 			<div props={ text } className="nav-btn-border"></div>
 		</div>
