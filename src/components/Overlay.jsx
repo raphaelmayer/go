@@ -7,22 +7,37 @@ const Overlay = ({ p, visible, handleOverlay }) => {
 		return(
         	<div className="overlay" style={ visible ? { transform: "translateX(0)", opacity: 1, visibility: "visible" } : null }>
                 <NavBarIcon onClick={ handleOverlay } transform={ true } />
-        		<div className="overlay-text-box">
+        		<div className="overlay-container">
                     <h2>{ p.title }</h2>
-                    <p>{ p.tech.join(" / ") }</p>
-                    <p><em>{ p.tagline }</em></p>
-                    <h3>Main Features</h3>
-                    <p>{ p.features && p.features.map((f, i) => <li key={ i }> { f } </li>) }</p>
-                    <h3>Details</h3>
-                    <p>{ p.description }</p>
                     { p.link && <a href={ p.link } target="_blank" rel="noopener noreferrer"><button className="overlay-btn">View live</button></a> }
                     { p.repo && <a href={ p.repo } target="_blank" rel="noopener noreferrer"><button className="overlay-btn">View repository</button></a> }
-                </div>
-                <div className="overlay-img-box">
+                    <p><em>{ p.tagline }</em></p>
+                    
+                    {/*
+                        p.features &&
+                        p.features.map((f, i) => <p style={{ textAlign: "left" }}>{ f }</p>)
+                    */}
+                    
+                    <div className="overlay-image-container">
+                    {/*
+                        p.images &&
+                        p.images.map((img, i) => <img className="overlay-img" 
+                                                      alt="p-img" 
+                                                      src={ `${process.env.PUBLIC_URL}/images/${img}` } />)
+                    */}
+
                     {
-                        p.images &&        // dont render preview image ([0])
-                        p.images.map((img, i) => /* i === 0 ? null : */ <img className="overlay-img" alt="p-img" src={ `${process.env.PUBLIC_URL}/images/${img}` } />)
+                        p.features.map((f, i) => {
+                            return (
+                                <TextImgBox text={ f } img={ p.images[i] && `${process.env.PUBLIC_URL}/images/${p.images[i]}` } i={i} />
+                            );
+                        })
                     }
+                    </div>
+                    
+                    <div className="tech">
+                        { p.tech.map((t, i) => <button>{ t }</button>) }
+                    </div>
                 </div>
             </div>
 		)
@@ -33,3 +48,12 @@ const Overlay = ({ p, visible, handleOverlay }) => {
 }
 
 export default Overlay;
+
+const TextImgBox = ({ text, img, i }) => {
+    return (
+        <div className="TextImgBox" style={ i % 2 !== 0 ? { textAlign: "right" } : null } >
+            { text && <p>{ text }</p> }
+            { img && <img src={ img } className="overlay-img" alt="p-img" /> } 
+        </div>
+    );
+}

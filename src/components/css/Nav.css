@@ -59,15 +59,15 @@
 	}
 	.nav-active .nav-btn.btn0 {
 		transform: translateX(0%) !important;
-		transition: all .4s ease-in-out;
+		transition: all .4s ease;
 	}
 	.nav-active .nav-btn.btn1 {
 		transform: translateX(0%) !important;
-		transition: all .7s ease-in-out;
+		transition: all .7s ease;
 	}
 	.nav-active .nav-btn.btn2 {
 		transform: translateX(0%) !important;
-		transition: all 1.0s ease-in-out;
+		transition: all 1.0s ease;
 	}
 
 	.nav-btns-container {
@@ -78,7 +78,7 @@
 	.nav-btn {
 		font-size: 14px;
 		isplay: flex;
-		margin: 0 5%;
+		margin: 10px 5%;
 		transform: translateX(-50%);
 	}
 	.nav-btn:hover {
@@ -97,7 +97,7 @@
 	}
 	.nav-btn-text {
 		color: silver;
-		font-weight: 700;
+		ont-weight: 700;
 		letter-spacing: 3px;
 		margin-left: 10px;
 		opacity: 1;

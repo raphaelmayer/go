@@ -1,51 +1,46 @@
 .overlay {
 	background: rgba(20, 20, 20, 0.9);
-	display: flex;
-	opacity: 0;
-	padding: 6px 0;
+	overflow: auto;
+	padding: 50px;
 	position: fixed;
-	top: 10%;
+	top: 0;
 	right: 0;
-	bottom: 10%;
+	bottom: 0;
 	transition: all 0.5s ease;
-	transform: translateX(100vw);
+	transform: translateX(100vw) skew(10deg);
 	visibility: hidden;
 	white-space: nowrap;
 	width: 100%;
 	z-index: 10;
 }
 .overlay h2 {
-	padding-bottom: 10px;
+	padding-top: 50px;
+	padding-bottom: 20px;
 }
-.overlay h3 {
-	padding-top: 10px;
+.overlay h2 small {
+	background: #111;
+	border-bottom-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-size: 13px;
+	margin: auto;
+	margin-left: 20px;
+	padding: 2px 4px;
 }
-.overlay-text-box, .overlay-img-box {
-	box-sizing: border-box;
-	height: 100%;
-	padding: 50px;
-	width: 50%;
-}
-.overlay-text-box {
-	overflow: auto;
-	padding-left: 5vw;
-	text-align: left;
+.overlay-container {
+	margin: auto;
 	white-space: pre-wrap;
+	width: 90%;
+	max-width: 1100px;
 }
-.overlay-text-box p {
-	line-height: 1.5;
-	margin: 10px;
+.overlay-container p {
+	margin: 20px auto;
 }
-.overlay-text-box li {
-	list-style: circle;
-	margin: 5px 20px;
-}
-.overlay-img-box {
-	overflow-y: auto;
+.overlay-image-container {
+	margin: 60px auto;
 }
 .overlay-img {
 	display: block;
-	width: 700px;
+	width: 1000px;
 	margin: 10px auto;
 	max-width: 98%;
 }
@@ -54,40 +49,47 @@
 	cursor: pointer;
 	font-size: 30px;
 	position: absolute;
-	top: 2%;
-	right: 2%;
+	top: 3%;
+	right: 3%;
 	left: auto;
 	transition: all 0.2s ease-in-out;
-}
-.overlay .fa-circle:hover {
-	color: tomato;
 }
 
 .overlay-btn {
 	border: 2px solid #779999;
 	color: #779999;
-	margin: auto 10px;
+}
+
+.tech {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.TextImgBox {
+	text-align: left;
+}
+.TextImgBox p {
+	font-family: "montserrat";
 }
 
 @media (max-width: 1000px) {
 	.overlay {
 		display: inline-block;
-		top: 0;
-		bottom: 0;
-		overflow: auto;
+		padding: 50px 30px;
 	}
-	.overlay-text-box, .overlay-img-box {
-		order: 1px solid white;
+	.overlay-container {
 		box-sizing: border-box;
 		height: auto;
 		width: 100%;
 	}
-	.overlay-text-box p {
-		width: 100%;
+	.overlay-container p {
+		text-align: left;
 	}
 }
 @media (max-width: 600px) {
-	.overlay-text-box, .overlay-img-box {
-		padding: 20px;
+	.overlay {
+		padding: 50px 20px;
 	}
 }
