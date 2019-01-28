@@ -12,3 +12,9 @@
 	margin: auto;
 	width: 80%
 }
+
+@media (max-width: 1200px) {
+.work-box-container {
+	width: 100%
+}
+}
