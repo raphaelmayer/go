@@ -56,8 +56,12 @@ class App extends Component {
         // remove loadingscreen
         document.querySelector(".loading-screen").className += " ls-done";
         // make bannertext appear
-        const banner = document.getElementById("banner");
-        banner && setTimeout(() => banner.className += " appear", 50);
+        const bannertext = document.querySelectorAll(".appearOnLoad");
+        console.log(bannertext)
+        bannertext.forEach((el, i) => {
+            el && setTimeout(() => el.className += " appear", 30*i);
+        })
+        
     }
     handleMobileNav() {
         this.state.showMobileNav ? 
@@ -76,7 +80,7 @@ class App extends Component {
     render() { 
         const { showMobileNav, navColor, overlay } = this.state;
         return (
-            <div className='App'>
+            <div className="App">
                 <LoadingScreen />
                 <Overlay p={ overlay.p } visible={ overlay.visible } handleOverlay={ this.handleOverlay } />
                 <Parallax />
@@ -90,7 +94,7 @@ class App extends Component {
                     <Nav className="nav nav-active" handleMobileNav={ this.handleMobileNav } />
                   : <Nav className="nav" bg={ navColor } handleMobileNav={ this.handleMobileNav } /> }
 
-                <Frontpage handleOverlay={ this.handleOverlay } />
+                <Frontpage handleOverlay={ this.handleOverlay } isHidden={ overlay.visible } />
             </div>
         );
     }

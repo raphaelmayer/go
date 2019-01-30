@@ -5,7 +5,7 @@ import NavBarIcon from "../components/NavBarIcon";
 const Overlay = ({ p, visible, handleOverlay }) => {
 	if (p) {
 		return(
-        	<div className="overlay" style={ visible ? { transform: "translateX(0)", opacity: 1, visibility: "visible" } : null }>
+        	<div className={ visible ? "overlay overlay-active" : "overlay" }>
                 <NavBarIcon onClick={ handleOverlay } transform={ true } />
         		<div className="overlay-container">
                     <h2>{ p.title }</h2>

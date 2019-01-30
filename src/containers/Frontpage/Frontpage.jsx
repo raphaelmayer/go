@@ -6,9 +6,9 @@ import Work from "./Work";
 import Contact from './Contact';
 import HexagonGrid from '../../components/Hexagon';
 
-const Frontpage = ({ handleOverlay }) => {
+const Frontpage = ({ handleOverlay, isHidden }) => {
 	return (
-	    <div className="FrontPage">
+	    <div className={`FrontPage ${isHidden && "FrontPage-hidden"}`}>
 
 	        <div>
 	            <Head />
