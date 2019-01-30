@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/go/static/js/runtime~main.1f171de5.js"
   },
   {
-    "revision": "93df27bc384c5aad7c78",
-    "url": "/go/static/js/main.93df27bc.chunk.js"
+    "revision": "bb35b7b052bfd77333db",
+    "url": "/go/static/js/main.bb35b7b0.chunk.js"
   },
   {
     "revision": "0a8772e40fa3157aa51f",
     "url": "/go/static/js/1.0a8772e4.chunk.js"
   },
   {
-    "revision": "93df27bc384c5aad7c78",
-    "url": "/go/static/css/main.bb5b0950.chunk.css"
+    "revision": "bb35b7b052bfd77333db",
+    "url": "/go/static/css/main.4d1efcd9.chunk.css"
   },
   {
-    "revision": "86fe3cb34813a676fe8f99610380d39c",
+    "revision": "f2e871db6c3fb4b0d358f16dc65a14fc",
     "url": "/go/index.html"
   }
 ];
