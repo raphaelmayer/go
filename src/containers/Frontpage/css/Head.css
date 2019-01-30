@@ -15,6 +15,11 @@
 .Head .text b {
     color: #118888;
 }
+@media(max-width: 1100px) {
+    .Head .text {
+        font-size: 24px;
+    }
+}
 @media(max-width: 767px) {
     .Head .text {
         font-size: 20px;

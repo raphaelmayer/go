@@ -1,9 +1,12 @@
 .work {
+	background: rgb(28, 28, 28);
 	box-sizing: border-box;
+  	margin: 0 auto;
 	min-height: 100vh;
   	text-align: center;
-  	margin: 0 auto;
   	padding-bottom: 50px;
+  	position: relative;
+  	z-index: 2;
 }
 .work-box-container {
 	display: flex;

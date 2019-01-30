@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 import Head from './Head';
 import About from './About';
+import Services from './Services';
 import Work from "./Work";
 import Contact from './Contact';
-import HexagonGrid from '../../components/Hexagon';
 
 const Frontpage = ({ handleOverlay, isHidden }) => {
 	return (
@@ -13,20 +13,15 @@ const Frontpage = ({ handleOverlay, isHidden }) => {
 	        <div>
 	            <Head />
 			</div>
-			
-	        <div className="section-bg" style={{ backgroundColor: "rgb(28, 28, 28)" }} >
-	        	<Work handleOverlay={ handleOverlay } />
-	        </div>
 	
-	        <div className="section-bg" style={{ backgroundColor: "rgb(33, 33, 33)" }}>
+	            {/*<Services />*/}
+			
+	        	<Work handleOverlay={ handleOverlay } />
+	
 	            <About />
-	        </div>
 
-	        <div className="section-bg" style={{ backgroundColor: "rgb(28, 28, 28)", overflow: "hidden" }}>
 	            <Contact />
-	            { window.innerWidth <= 1000 ? null : <HexagonGrid /> }
 	            <footer className="footer">{ new Date().getFullYear() } - designed and built by Raphael Mayer</footer>
-	        </div>
 	    </div>
 	);
 }

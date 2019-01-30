@@ -1,5 +1,8 @@
 .contact {
+	background: rgb(28, 28, 28);
 	box-sizing: border-box;
+	position: relative;
+	z-index: 2;
 }
 .contact p {
 	max-width: 80%;
@@ -37,12 +40,21 @@
 	color: #338888;
 }
 
+.hex-grid {
+	opacity: 0.4;
+	position: absolute;
+	bottom: -30%;
+	right: 0;
+}
+
 .footer {
+	background: rgb(28, 28, 28);
 	color: #555;
 	font-family: 'caveat';
 	font-size: 30px;
 	padding-top: 8%;
 	padding-bottom: 3%;
+	position: relative;
 }
 footer .fab {
 	color: #555 !important;

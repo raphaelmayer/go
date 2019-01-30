@@ -1,49 +1,59 @@
 import React from "react";
+import "./css/Services.css";
 
 const Services = () => {
 	return (
-      <div className="service-box-container"> 
-        {
-          content.map((c, i) => <ServiceBox { ...c } key={i} />)
-        }
+      <div className="Services"> 
+        <span className="toAppear">
+          <h1>Services</h1>
+        </span>
+        <div className="service-box-container">
+          {
+            content.map((c, i) => <ServiceBox { ...c } i={i} key={i} />)
+          }
+        </div>
       </div>
 	);
 }
 
 export default Services;
 
-const ServiceBox = ({ title, text, icon }) => {
+const ServiceBox = ({ title, text, icon, i }) => {
   return (
-    <div className="serviceBox webDes">
-      <div className="serviceCircle">
-        <img alt="icon" className="icon" src={ `./icons/${icon}` } />
-      </div> 
-      <h3 className="serviceTitle">{ title }</h3>
-      <div className="serviceBorder"></div>
-      <div className="serviceText"><p>{ text }</p></div>
+    <span className="toAppear">
+    <div className={`ServiceBox ${ i % 2 === 0 ? "left" : ""}`}>
+      <i className={`icon ${icon}`}></i>
+      <h3 className="title">{ title }</h3>
+      <div className="service-border"></div>
+      <p className="text">{ text }</p>
     </div>
+    </span>
   );
 }
 
 const content = [
   {
-    title: "WEBDESIGN",
+    title: "Web Design",
     text: "Each of my designs begins with a blank canvas which allows your content to guide the layout.",
-    icon: "browser.png"   
+    iicon: "browser.png",
+    icon: "fas fa-desktop"   
   },
   {
-    title: "WEBDEVELOPMENT",
+    title: "Web Development",
     text: "Custom applications tailored to fit your exact need, built with the newest technologies available.",
-    icon: "settings.png"   
+    iicon: "settings.png",
+    icon: "fas fa-cog"  
   },
-  {
-    title: "BACK-END SOLUTIONS",
+  /*{
+    title: "Back-End Solutions",
     text: "Database and network solutions for your business to save you time, money and nerves.",
-    icon: "database.png"   
-  },
+    iicon: "database.png",
+    icon: "fas fa-server"   
+  },*/
   {
-    title: "SOCIAL MEDIA",
+    title: "Online Marketing & SEO",
     text: "People don't watch TV ads. Get on the next level and start advertising online.",
-    icon: "users.png"   
+    iicon: "users.png",
+    icon: "fas fa-users"  
   },
 ]
