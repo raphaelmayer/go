@@ -13,7 +13,7 @@ const Head = () => {
   return (
       <div className="Head" id="Home">
           <header className="banner">
-            <NewBannerComp text={ text } />
+            <Banner text={ text } />
             <span className="toAppear appearOnLoad">
               <StyledButton scrollTo="Contact" />
             </span>
@@ -24,30 +24,21 @@ const Head = () => {
 
 export default Head;
 
-const OldBannerComp = () => {
+const Banner = ({ text }) => {
   return (
-    <p className="text">Hi, my name is <b>Raphael</b>.
-      <br />
-      I'm a <b>full stack developer</b> based in <b>Innsbruck, Austria</b>.
-      <br />
-      Currently I work as a freelancer building websites and applications for clients from all parts of the globe.
-    </p>
-  );
-}
-
-// with animation
-const NewBannerComp = ({ text }) => {
-  return (
-    <p className="text">
+    <div className="banner">
       {
         text.map((line, i) => {
           return (
-            <div className="toAppear appear">
-              { line.split(" ").map(word => <span className="appearOnLoad" dangerouslySetInnerHTML={{__html: ` ${word}`}}></span>) }
-            </div>
+            <p className="toAppear appear" key={i}>
+              { /* margin between Austria and Currently */ 
+                i === 2 && <div style={{ margin: "6px" }} />
+              }
+              { line.split(" ").map((word, i) => <span className="appearOnLoad" dangerouslySetInnerHTML={{__html: ` ${word}`}} key={i}></span>) }
+            </p>
           );
         })
       }
-    </p>
+    </div>
   );
 }

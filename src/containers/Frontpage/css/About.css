@@ -1,18 +1,18 @@
 .about {
-  background: rgb(33, 33, 33);
+    background: rgb(33, 33, 33);
     height: 100%;
     padding: 3% 15%;
     position: relative;
     text-align: center;
-}
-.about .text b {
-    color: #118888;
 }
 .about .text {
     font-size: 22px;
     margin: 6px auto;
     max-width: 700px;
     text-align: left;
+}
+.about .text b {
+    color: #118888;
 }
 .about .text i.fa-quote-left { 
     margin-left: -20px;  
@@ -65,6 +65,9 @@
 }
 
 @media (max-width: 767px) {
+    .about {
+        padding: 3% 9%;
+    }
     .about-img {
         height: 150px;
         width: 150px;

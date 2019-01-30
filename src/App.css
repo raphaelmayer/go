@@ -5,16 +5,6 @@
   text-align: center;
   transition: all 0.2s ease;
 }
-
-.banner {
-  margin: auto;
-  position: relative;
-  max-width: 1020px;
-  width: 92%;
-}
-.banner * {
-  margin: auto;
-}
 .half-screen {
   display: flex;
   width: 50%;
