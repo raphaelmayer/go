@@ -4,8 +4,8 @@
 /node_modules
 
 # media
-/public/images
-/public/icons
+#/public/images
+#/public/icons
 /public/googled8597358be70dd15.html
 
 # testing
