@@ -58,7 +58,7 @@ const projects = [{ "title": "YouVote - create and share polls",
                     "images": [ "weatherApp.png", "weatherApp_mobile.png" ],
                     "link": "https://raphaelmayer.github.io/weather-app",
                     "repo": "https://github.com/raphaelmayer/weather-app",
-                    "tech": ["front end", "jQuery", "javascript"]}, 
+                    "tech": ["front end", "javascript"]}, 
 //
                   { "title": "Simon Game", 
                     "tagline": "Simon Says is a classic game where the player has to reproduce a given sequence of button presses. With animation and sound.",
