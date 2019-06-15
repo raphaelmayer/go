@@ -9,7 +9,7 @@ export const Contact = () => {
       { window.innerWidth <= 1000 ? null : <HexagonGrid /> }
       <span className="toAppear"><h1>get in touch</h1></span>
       <span className="toAppear"><p><em><b>I am open for inquiries.</b></em></p></span>
-      <span className="toAppear"><p>Whether you have a project you'd like to discuss or you just want to say <b>hello</b>, shoot me an email right away and I will get back to you soon.</p></span>
+      <span className="toAppear"><p>Whether you have a project you'd like to discuss or you just want to say <b>hello</b>, shoot me an email and I will get back to you soon.</p></span>
       
         <form action="https://formcarry.com/s/WlOMZiyHGVI" method="POST" acceptCharset="UTF-8"> 
           <span className="toAppear">   

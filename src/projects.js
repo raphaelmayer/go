@@ -41,7 +41,7 @@ const projects = [{ "title": "YouVote - create and share polls",
 //
                   { "title": "For Reddit, to Go", 
                     "tagline": "Listen to Reddit while getting stuff done - through the power of Text to Speech. - Currently in BETA. You may encounter unintended behaviour. Everything is subject to change.",
-                    "features": [ "Comming soon" ],
+                    "features": [ "" ],
                     "thumbnail": "rtg_bg.png",
                     "images": [ "rtg_bg.png" ],
                     "link": "https://raphaelmayer.github.io/ForRedditToGo",
@@ -80,7 +80,7 @@ const projects = [{ "title": "YouVote - create and share polls",
                     "repo": "https://github.com/raphaelmayer/choropleth_map",
                     "tech": ["misc", "d3.js", "javascript"]}, 
 //
-                  { "title": "simple hotel landing page", 
+/*                  { "title": "simple hotel landing page", 
                     "tagline": "My client wanted simple, easy to navigate landing page for his hotel to add to his online presence.",
                     "features": [ "Simple design and clear structure",
                                       "Integrated Google Maps API",
@@ -89,25 +89,25 @@ const projects = [{ "title": "YouVote - create and share polls",
                     "images": [ "hotel2.jpg" ],
                     "link": "",
                     "repo": "",
-                    "tech": ["front end", "javascript", "Google Maps API"]},
+                    "tech": ["front end", "javascript", "Google Maps API"]},*/
 //
                   { "title": "FoodShare", 
                     "tagline": "A Platform as a Service that aims to reduce the amount of food that gets thrown away.",
-                    "features": [ "Comming soon" ],
+                    "features": [ "Coming soon" ],
                     "thumbnail": "placeholder.jpg",
                     "images": [ "placeholder.jpg" ],
                     "link": "",
                     "repo": "https://github.com/raphaelmayer/food-share",
                     "tech": ["full stack", "react.js", "node.js", "redux", "mongoDB"]}, 
 //
-                  { "title": "QuoteFactory", 
+/*                  { "title": "QuoteFactory", 
                     "tagline": "Coming soon - Realtime quote image generator with loads of options including font styles, filters and animations.",
-                    "features": [ "Comming soon" ],
+                    "features": [ "Coming soon" ],
                     "thumbnail": "placeholder.jpg",
                     "images": [ "placeholder.jpg" ],
                     "link": "",
                     "repo": "",
-                    "tech": ["full stack", "react.js", "node.js"]}, 
+                    "tech": ["full stack", "react.js", "node.js"]}, */
 ];
 //
 export default projects;
