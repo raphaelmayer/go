@@ -19,14 +19,14 @@
   box-shadow: 0px 0px 30px 1px #00ffff;
   height: 6px;
   width: 0%;
-  transition: all 1s ease;
+  transition: width 1s ease;
 }
 .loading-bar.loading-bar60 {
   width: 60%;
-  transition: all 0.1s ease-in;
 }
 .loading-bar.loading-bar100 {
   width: 100%;
+  transition: width 0.1s ease-in;
 }
 .loading-screen .spinner {
   color: #117777;

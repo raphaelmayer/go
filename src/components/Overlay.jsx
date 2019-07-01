@@ -8,16 +8,20 @@ const Overlay = ({ p, visible, handleOverlay }) => {
         	<div className={ visible ? "overlay overlay-active" : "overlay" }>
                 <NavBarIcon onClick={ handleOverlay } transform={ true } />
         		<div className="overlay-container">
-                    <h2>{ p.title }</h2>
-                    { p.link && <Button src={ p.link } text={ "demo" } /> }
-                    { p.repo ? <Button src={ p.repo } text={ "source" } /> : <Button src={ p.repo } text={ "source unavailable" } /> }
-                    <p><em>{ p.tagline }</em></p>
-                    
-                    <div className="flex">
+
+                    <div className="overlay-head" style={{ backgroundImage: `url(/images/${p.thumbnail})` }}>
+                        <div className="darken-bg"></div>
+                        <h1>{ p.title.toLowerCase() }</h1><p>
+                        <em>{ p.tagline }</em></p>
+                        <br/>
+                        { p.link && <Button src={ p.link } text={ "demo" } /> }
+                        { p.repo ? <Button src={ p.repo } text={ "source" } /> : <Button src={ p.repo } text={ "source unavailable" } /> }
+                    </div>
+
                     <div className="overlay-section">
                         <h3>in a nutshell</h3>
                         <ul>
-                        { p.features && p.features.map((f, i) => <li>{ f }</li>) }
+                        { p.features && p.features.map((f, i) => <li>{ "> " + f }</li>) }
                         </ul>
                     </div>
                     <div className="overlay-section">
@@ -25,7 +29,6 @@ const Overlay = ({ p, visible, handleOverlay }) => {
                         <ul className="tech">
                             { p.tech.map((t, i) => <li>{ t } </li>) }
                         </ul>
-                    </div>
                     </div>
 
                     <div className="overlay-image-container">
