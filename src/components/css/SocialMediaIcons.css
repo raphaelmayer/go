@@ -5,7 +5,7 @@
 	display: flex;
 	margin: auto 5px;
 }
-.fa-github, .fa-linkedin {
+.fa-github, .fa-linkedin, .fa-envelope {
 	color: #118888;
 	cursor: pointer;
 	font-size: 22px;

@@ -1,5 +1,5 @@
 .loading-screen {
-  background: rgba(35, 35, 35, 0.95);
+  background: rgb(23, 23, 23);
   display: flex;
   position: fixed;
   top: 0;
@@ -8,6 +8,25 @@
   right: 0;
   transition: all 0.3s ease-in-out;
   z-index: 20;
+}
+.center-piece {
+  background: rgb(28, 28, 28);
+  margin: auto;
+  width: 100%;
+}
+.loading-bar {
+  background: #119999;
+  box-shadow: 0px 0px 30px 1px #00ffff;
+  height: 6px;
+  width: 0%;
+  transition: all 1s ease;
+}
+.loading-bar.loading-bar60 {
+  width: 60%;
+  transition: all 0.1s ease-in;
+}
+.loading-bar.loading-bar100 {
+  width: 100%;
 }
 .loading-screen .spinner {
   color: #117777;

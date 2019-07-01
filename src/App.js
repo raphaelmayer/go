@@ -31,6 +31,7 @@ class App extends Component {
         this.handleOverlay = this.handleOverlay.bind(this);
     }
     componentDidMount() {
+        setTimeout(() => document.querySelector(".loading-bar").className += " loading-bar60", 50);
         window.addEventListener('load', this.handleLoad);
         window.addEventListener('scroll', throttle(this.handleScroll, 50));
     }
@@ -53,8 +54,11 @@ class App extends Component {
         }
     }
     handleLoad() {  
+        // really bad lol
         // remove loadingscreen
-        document.querySelector(".loading-screen").className += " ls-done";
+        document.querySelector(".loading-bar").className += " loading-bar100";
+        setTimeout(() => document.querySelector(".loading-screen").className += " ls-done", 200);
+        
         // make bannertext appear
         const bannertext = document.querySelectorAll(".appearOnLoad");
         console.log(bannertext)

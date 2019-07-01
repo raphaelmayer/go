@@ -18,6 +18,23 @@
 	opacity: 1;
 	visibility: visible;
 }
+.overlay .overlay-section {
+	margin: 34px auto;
+}
+.overlay .overlay-section ul {
+	list-style: none;
+}
+.overlay .overlay-section ul li  {
+	padding: 5px 0;
+}
+.overlay .overlay-section .tech {
+	display: flex;
+	justify-content: center;
+}
+.overlay .overlay-section .tech li {
+	letter-spacing: 1px;
+	margin: auto 6px;
+}
 .overlay h2 {
 	padding-top: 50px;
 	padding-bottom: 20px;
@@ -45,7 +62,7 @@
 }
 .overlay-img {
 	display: block;
-	width: 1000px;
+	width: 800px;
 	margin: 10px auto;
 	max-width: 98%;
 }
@@ -64,19 +81,13 @@
 	border: 2px solid #779999;
 	color: #779999;
 }
-
-.tech {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-bottom: 50px;
+.overlay-btn.grey {
+	border: none;
+	color: silver;
+	cursor: default;
 }
-
-.TextImgBox {
-	text-align: left;
-}
-.TextImgBox p {
-	font-family: "montserrat";
+.overlay-btn.grey:hover {
+	letter-spacing: 1px;
 }
 
 @media (max-width: 1000px) {

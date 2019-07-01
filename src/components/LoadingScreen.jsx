@@ -4,7 +4,9 @@ import './css/LoadingScreen.css';
 const LoadingScreen = () => {
 	return (
         <div className="loading-screen">
-            <Spinner />
+        <div className="center-piece">
+        	<div className="loading-bar"></div>
+        </div>
         </div>
     )
 }
