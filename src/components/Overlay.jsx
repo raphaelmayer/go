@@ -9,7 +9,7 @@ const Overlay = ({ p, visible, handleOverlay }) => {
                 <NavBarIcon onClick={ handleOverlay } transform={ true } />
         		<div className="overlay-container">
 
-                    <div className="overlay-head" style={{ backgroundImage: `url(/images/${p.thumbnail})` }}>
+                    <div className="overlay-head" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/${p.thumbnail})` }}>
                         <div className="darken-bg"></div>
                         <h1>{ p.title.toLowerCase() }</h1><p>
                         <em>{ p.tagline }</em></p>

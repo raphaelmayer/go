@@ -25,6 +25,7 @@
 	background-size: cover;
 	background-position: center;
 	box-shadow: -8px 8px 30px 1px #111;
+	margin-bottom: 50px;
 	padding: 0 20px 50px 20px;
 	position: relative;
 }
@@ -137,7 +138,7 @@
 }
 @media (max-width: 600px) {
 	.overlay {
-		padding: 50px 20px;
+		padding: 20px;
 	}
 	.overlay h1 {
 		font-size: 40px;
@@ -145,6 +146,9 @@
 	}
 	.overlay .overlay-section {
 		margin: 34px 0;
+	}
+	.overlay .overlay-head {
+		margin-bottom: 0px;
 	}
 	.overlay .overlay-section .tech {
 		display: block;
