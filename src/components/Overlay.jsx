@@ -2,20 +2,19 @@ import React from 'react';
 import './css/Overlay.css';
 import NavBarIcon from "../components/NavBarIcon";
 
-const Overlay = ({ p, visible, handleOverlay }) => {
+const Overlay = ({ p, visible, handleOverlay, themeMode }) => {
 	if (p) {
 		return(
-        	<div className={ visible ? "overlay overlay-active" : "overlay" }>
+        	<div className={ visible ? "overlay overlay-active " + themeMode : "overlay " + themeMode }>
                 <NavBarIcon onClick={ handleOverlay } transform={ true } />
         		<div className="overlay-container">
-
                     <div className="overlay-head" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/${p.thumbnail})` }}>
                         <div className="darken-bg"></div>
-                        <h1>{ p.title.toLowerCase() }</h1><p>
-                        <em>{ p.tagline }</em></p>
+                        <h1>{ p.title.toLowerCase() }</h1>
+                        <p><em>{ p.tagline }</em></p>
                         <br/>
                         { p.link && <Button src={ p.link } text={ "demo" } /> }
-                        { p.repo ? <Button src={ p.repo } text={ "source" } /> : <Button src={ p.repo } text={ "source unavailable" } /> }
+                        { p.repo && <Button src={ p.repo } text={ "source" } /> }
                     </div>
 
                     <div className="overlay-section">
@@ -53,7 +52,7 @@ export default Overlay;
 const Button = ({ src, text }) => {
     return (
          <a href={ src === "" ? null : src } target="_blank" rel="noopener noreferrer">
-            <button className={ text === "source unavailable" ? "overlay-btn grey" : "overlay-btn" }>{ text }</button>
+            <button className="overlay-btn">{ text }</button>
          </a>
     );
 }

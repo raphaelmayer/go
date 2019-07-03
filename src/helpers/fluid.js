@@ -1,5 +1,4 @@
 (function(w) {
-
     let canvas, ctx;
     let mouse = {
         x: 0,
@@ -20,11 +19,15 @@
     const num_rows = canvas_height / resolution;
     const speck_count = Math.floor(window.innerWidth * window.innerHeight / 100 / 4 / 2 / 2);
     console.log(`speck_count: ${speck_count} particles`);
+    let themeMode;
     
     let vec_cells = [];
     let particles = [];
 
-    const init = () => {
+    let animId;
+
+    const init = (themeModee) => {
+        themeMode = themeModee;
         // resetting particles and cells when remounting (hacky)
         vec_cells = [];
         particles = [];
@@ -190,7 +193,7 @@
         
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         
-        ctx.strokeStyle = "#00ffff";
+        ctx.strokeStyle = themeMode === "dark" ? "#00ffff" : "#000";
 
         update_particle();
 
@@ -208,7 +211,9 @@
         mouse.px = mouse.x;
         mouse.py = mouse.y;
 
-        requestAnimationFrame(draw);
+        // console.log("before: ", animId)
+        window.Fluid.animId = requestAnimationFrame(draw);
+        // console.log("after: ", animId)
 
     }
     const change_cell_velocity = (cell_data, mvelX, mvelY, pen_size) => {
@@ -339,7 +344,8 @@
     }
 
     w.Fluid = {
-        initialize: init
+        initialize: init,
+        animId: animId
     }
 
 }(window));

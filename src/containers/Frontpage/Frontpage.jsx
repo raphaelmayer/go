@@ -6,22 +6,22 @@ import Services from './Services';
 import Work from "./Work";
 import Contact from './Contact';
 
-const Frontpage = ({ handleOverlay, isHidden }) => {
+const Frontpage = ({ handleOverlay, isHidden, themeMode }) => {
 	return (
 	    <div className={`FrontPage ${isHidden && "FrontPage-hidden"}`}>
 
 	        <div>
-	            <Head />
+	            <Head themeMode={ themeMode } />
 			</div>
 	
 	            {/*<Services />*/}
 			
-	        	<Work handleOverlay={ handleOverlay } />
+	        	<Work handleOverlay={ handleOverlay } themeMode={ themeMode } />
 	
-	            <About />
+	            <About themeMode={ themeMode } />
 
-	            <Contact />
-	            <footer className="footer">{ new Date().getFullYear() } - designed and built by Raphael Mayer</footer>
+	            <Contact themeMode={ themeMode } />
+	            <footer className={ "footer " + themeMode }>{ new Date().getFullYear() } - designed and built by Raphael Mayer</footer>
 	    </div>
 	);
 }

@@ -1,10 +1,10 @@
 .App {
-  background: linear-gradient(to top, #111, #122);
   min-height: 100vh;
   overflow: hidden;
   text-align: center;
-  transition: all 0.2s ease;
+  transition: background 0.3s ease;
 }
+
 .half-screen {
   display: flex;
   width: 50%;
@@ -18,10 +18,6 @@
   margin: auto;
 }
 
-.section-bg {
-  position: relative;
-  z-index: 2;
-}
 .toAppear {
   overflow: hidden;
   opacity: 0;
@@ -40,7 +36,6 @@
   transform: scale(0.96);
   transition: all 1.6s ease;
 }
-
 
 .noscroll {
   overflow: hidden;

@@ -1,8 +1,8 @@
 .Head {
-	background: linear-gradient(to top, #111, #122);
 	display: flex;
 	min-height: 100vh;
 	pointer-events: none;
+    transition: background 0.3s ease;
 }
 .banner {
   margin: auto;
@@ -16,9 +16,6 @@
     letter-spacing: 1px;
     line-height: 1.5;
     text-align: left;
-}
-.Head p b {
-    color: #118888;
 }
 @media(max-width: 1100px) {
     .Head p {

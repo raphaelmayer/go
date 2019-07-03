@@ -3,10 +3,9 @@
 }
 .social-media-icons a {
 	display: flex;
-	margin: auto 5px;
+	margin: auto 15px;
 }
-.fa-github, .fa-linkedin, .fa-envelope {
-	color: #118888;
+.social-media-icons i {
 	cursor: pointer;
 	font-size: 22px;
 	padding: 2px 4px;

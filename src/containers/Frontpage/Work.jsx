@@ -34,10 +34,10 @@ class Work extends Component {
 
     render() {
         const projects = this.state.projects; //this.state.filter ? this.state.filtered : this.state.projects;
-        const { handleOverlay } = this.props;
+        const { handleOverlay, themeMode } = this.props;
         if (projects) {
             return (
-                <div className='work' id="Work">
+                <div className={ 'work ' + themeMode } id="Work">
                     <span className="toAppear">
                     <h1>Featured Work</h1>
                     </span>

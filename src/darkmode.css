@@ -1,0 +1,195 @@
+/*
+todo:
+	contact form
+*/
+/*
+	nav background is inline because 
+	of the onScroll background change
+*/
+.dark {
+  background: rgb(28, 28, 28);
+  color: silver;
+}
+.light {
+  background: rgb(246, 246, 246);
+  color: #666;
+}
+
+.App.dark {
+  background: rgb(20, 20, 20);
+}
+.App.light {
+  background: rgb(255, 255, 255);
+}
+
+.light h1 {
+  color: #db2e56;
+}
+.dark h1 {
+  color: #118888;
+}
+.light h2 {
+  color: #db2e56;
+}
+.dark h2 {
+  color: #118888;
+}
+.light h3 {
+  color: #db2e56;
+}
+.dark h3 {
+  color: #118888;
+}
+
+.dark button {
+  border: 2px solid silver;
+  color: silver;
+}
+.light button {
+  border: 2px solid #666;
+  color: #666;
+}
+.dark button:hover {
+  border: 2px solid #228888;
+  color: #55dddd;
+}
+.light button:hover {
+  border: 2px solid #db2e56;
+  color: #db0e56;
+}
+.dark b {
+    color: #118888;
+}
+.light b {
+    color: #db2e56;
+}
+
+.Head.dark {
+    background: linear-gradient(to bottom, #133, transparent);
+}
+.Head.light {
+    background: linear-gradient(to bottom, #ddd, transparent);
+}
+.about.dark {
+  background: rgb(33, 33, 33);
+}
+.about.light {
+  background: #eee;
+}
+
+.dark .darken-bg {
+	background: linear-gradient(to right, black, #112222);
+}
+.light .darken-bg {
+	background: linear-gradient(to right, white, #dd8888);
+}
+
+
+.dark .nav-btn {
+    color: silver;
+}
+.light .nav-btn {
+    color: #333;
+}
+.dark .nav-btn:hover {
+    color: #118888;
+}
+.light .nav-btn:hover {
+    color: #db2e56;
+}
+.dark .nav-btn-border {
+	border-bottom: 2px solid #226666;
+}
+.light .nav-btn-border {
+	border-bottom: 2px solid #db2e56;
+}
+.dark .nav-btn:hover .nav-btn-border {
+	/*border-bottom: 2px solid silver;*/
+}
+.light .nav-btn:hover .nav-btn-border {
+	/*border-bottom: 2px solid #333;*/
+}
+.dark .social-media-icons i {
+	color: #118888;
+}
+.light .social-media-icons i {
+	color: #db2e56;
+}
+.dark .social-media-icons i:hover {
+	color: silver;
+}
+.light .social-media-icons i:hover {
+	color: #333;
+}
+@media(max-width: 800px) {
+	.nav {
+		display: block;
+		ackground: #111;
+		overflow-y: auto;
+		transition: all 0.3s ease;
+		transform: translateX(-100%);
+		height: 100vh;
+		max-width: 400px;
+		width: 100%;
+	}
+	.dark .nav {
+		background: #111;
+	}
+	.light .nav {
+		background: #ddd;
+	}
+}
+
+.dark .overlay-head {
+	box-shadow: -8px 8px 30px 1px #111;
+}
+.light .overlay-head {
+	box-shadow: -8px 8px 30px 1px #ddd;
+}
+
+/* NavBarIcon */
+.dark .nav-icon line {
+  stroke: azure;
+}
+.light .nav-icon line {
+  stroke: #666;
+}
+.dark .nav-icon-active .line-1, .light .nav-icon-active .line-1 {
+  stroke: #db2e56;
+}
+.light .nav-icon-active .line-3, .dark .nav-icon-active .line-3 {
+  stroke: rgb(100, 200, 200);
+}
+
+.dark .nav-icon-active:hover .line-1 {
+  stroke: rgb(100, 200, 200);
+}
+.light .nav-icon-active:hover .line-3 {
+  stroke: #db2e56;
+}
+
+
+.dark .hex-grid {
+	opacity: 0.4;
+}
+.light .hex-grid {
+	opacity: 1;
+}
+.dark .hex-top {
+  border-bottom: 30px solid #144;
+}
+.light .hex-top {
+  border-bottom: 30px solid #ddd;
+}
+.dark .hex-body {
+  background: #122;
+}
+.light .hex-body {
+  background: #de5978;
+}
+.dark .hex-bot {
+  border-top: 30px solid #111;
+}
+.light .hex-bot {
+  border-top: 30px solid #db2e56;
+}

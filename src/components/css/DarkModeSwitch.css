@@ -1,0 +1,86 @@
+.switch {
+	margin: auto 0;
+	margin-left: 15px;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+.switch:hover .slider:before {
+	background-color: #999;
+}
+
+/* Hide default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #288;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* button */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #333;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: 2;
+}
+
+input:checked + .slider {
+  background-color: #db3e56;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #db3e56;
+}
+
+input:checked + .slider:before {
+  background-color: white;
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch i {
+	cursor: pointer;
+	font-size: 14px;
+	position: absolute;
+	z-index: 1;
+}
+.switch .fa-sun {
+	color: white;
+	right: 5px;
+	top: 5px;
+}
+.switch .fa-moon {
+	color: #333;
+	left: 5px;
+	top: 5px;
+}

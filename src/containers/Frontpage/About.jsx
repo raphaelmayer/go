@@ -1,9 +1,9 @@
 import React from 'react';
 import './css/About.css';
 
-const About = () => {
+const About = ({ themeMode }) => {
   return(
-    <div id="about" className="about">
+    <div id="about" className={ "about " + themeMode }>
       <span className="toAppear">
         <p className="text">
           <i className="fas fa-quote-left"></i><br />
@@ -19,21 +19,6 @@ const About = () => {
           <i className="fas fa-quote-right"></i>
         </p> 
       </span> 
-      {/*
-      <span className="vertical-line" />
-      
-      <span className="toAppear">
-      <div className="flex-container">
-        <i className="fab fa-linkedin"></i>
-        <i className="fab fa-twitter"></i>
-
-        <div className="about-img"></div>
-
-        <i className="fab fa-github"></i>
-        <i className="fas fa-envelope"></i>
-        </div>
-      </span>
-      */} 
     </div>
   )
 }

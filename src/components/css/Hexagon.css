@@ -4,22 +4,23 @@
     margin-bottom: -20px;
 }
 .hex-top {
-  border-bottom: 30px solid #144;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
   width: 0;
+  transition: border-bottom 0.3s ease;
 }
 .hex-body {
-  background: #122;
   height: 60px; 
   width: 104px;
+  transition: background 0.3s ease;
 }
 .hex-bot {
-  border-top: 30px solid #111;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
   width: 0;
+  transition: border-top 0.3s ease;
 }
+
 .hex-row {
   background: green;
 }

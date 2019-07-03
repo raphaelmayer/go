@@ -1,5 +1,4 @@
 .work {
-	background: rgb(28, 28, 28);
 	box-sizing: border-box;
   	margin: 0 auto;
 	min-height: 100vh;
@@ -7,6 +6,7 @@
   	padding-bottom: 50px;
   	position: relative;
   	z-index: 2;
+  	transition: background 0.3s ease;
 }
 .work-box-container {
 	display: flex;

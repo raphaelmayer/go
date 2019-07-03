@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './darkmode.css';
 
 import Frontpage from "./containers/Frontpage/Frontpage";
 
@@ -24,16 +25,19 @@ class App extends Component {
         this.state = { 
             showMobileNav: false,
             navColor: false,
-            overlay: { p: null, visible: false }
+            overlay: { p: null, visible: false },
+            themeMode: "dark"
         };
         this.handleMobileNav = this.handleMobileNav.bind(this);
         this.handleScroll = this.handleScroll.bind(this);
         this.handleOverlay = this.handleOverlay.bind(this);
+        this.toggleDarkMode = this.toggleDarkMode.bind(this);
     }
     componentDidMount() {
         setTimeout(() => document.querySelector(".loading-bar").className += " loading-bar60", 50);
         window.addEventListener('load', this.handleLoad);
         window.addEventListener('scroll', throttle(this.handleScroll, 50));
+        // check themeMode localStorage
     }
     componentWillUnmount() {
         window.removeEventListener('load', this.handleLoad);
@@ -81,13 +85,18 @@ class App extends Component {
             document.querySelector("body").className = "noscroll";
         }
     }
+    toggleDarkMode(e) {
+        // const themeMode = localStorage.setItem();
+        const themeMode = this.state.themeMode === "dark" ? "light" : "dark";
+        this.setState({ themeMode });
+    }
     render() { 
-        const { showMobileNav, navColor, overlay } = this.state;
+        const { showMobileNav, navColor, overlay, themeMode } = this.state;
         return (
-            <div className="App">
+            <div className={ "App " + themeMode }>
                 <LoadingScreen />
-                <Overlay p={ overlay.p } visible={ overlay.visible } handleOverlay={ this.handleOverlay } />
-                <Parallax />
+                <Overlay p={ overlay.p } visible={ overlay.visible } handleOverlay={ this.handleOverlay } themeMode={ themeMode } />
+                <Parallax themeMode={ themeMode } />
                 
                 { window.innerWidth <= 800 ? 
                     <NavBarIcon 
@@ -95,10 +104,10 @@ class App extends Component {
                         transform={ showMobileNav } /> 
                   : null }
                 { showMobileNav && window.innerWidth <= 800 ? 
-                    <Nav className="nav nav-active" handleMobileNav={ this.handleMobileNav } />
-                  : <Nav className="nav" bg={ navColor } handleMobileNav={ this.handleMobileNav } /> }
+                    <Nav className="nav nav-active" handleMobileNav={ this.handleMobileNav } themeMode={ themeMode } toggleDarkMode={ this.toggleDarkMode } />
+                  : <Nav className="nav" bg={ navColor } handleMobileNav={ this.handleMobileNav } themeMode={ themeMode } toggleDarkMode={ this.toggleDarkMode } /> }
 
-                <Frontpage handleOverlay={ this.handleOverlay } isHidden={ overlay.visible } />
+                <Frontpage handleOverlay={ this.handleOverlay } isHidden={ overlay.visible } themeMode={ themeMode} />
             </div>
         );
     }

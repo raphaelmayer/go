@@ -3,7 +3,7 @@ import './css/Head.css';
 
 import StyledButton from "../../components/StyledButton";
 
-const Head = () => {
+const Head = ({ themeMode }) => {
   const text =  [
     `Hi, my name is <b>Raphael</b>.`,
     `I'm a <b>full</b> <b>stack</b> <b>developer</b> based in <b>Innsbruck,</b> <b>Austria</b>.`,
@@ -11,7 +11,7 @@ const Head = () => {
   ];
   
   return (
-      <div className="Head" id="Home">
+      <div className={ "Head " + themeMode } id="Home">
           <header className="banner">
             <Banner text={ text } />
             <span className="toAppear appearOnLoad">
