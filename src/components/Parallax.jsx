@@ -15,13 +15,12 @@ class Parallax extends Component {
 	}
 	
 	shouldComponentUpdate(newProps) {
-		// only rerender, if revieving new theme
+		// only rerender, if recieving new theme
 		if (newProps.themeMode === this.props.themeMode) return false;
 		return true;
 	}
 
 	render() {
-		const { themeMode } = this.props;
 		return (
 			<div className="parallax">
 		    	<canvas id="c"></canvas>

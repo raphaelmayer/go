@@ -2,7 +2,7 @@ import React from "react";
 
 import Head from './Head';
 import About from './About';
-import Services from './Services';
+// import Services from './Services';
 import Work from "./Work";
 import Contact from './Contact';
 

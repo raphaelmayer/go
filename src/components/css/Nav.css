@@ -23,8 +23,6 @@
 	padding: 10px 0;
 	transition: all 0.2s ease-out;
 }
-.dark .nav-btn {}
-.light .nav-btn {}
 .nav-btn-text {}
 .nav-btn-border {
 	margin-top: 2px;
@@ -34,6 +32,7 @@
 .nav-btn:hover .nav-btn-border {
 	width: 100%;
 }
+
 .nav-btn.active {
 	color: azure;
 }

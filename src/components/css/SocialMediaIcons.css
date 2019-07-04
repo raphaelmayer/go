@@ -9,13 +9,7 @@
 	cursor: pointer;
 	font-size: 22px;
 	padding: 2px 4px;
-	transition: all 0.2s ease;
-}
-.fa-github:hover {
-	color: azure;
-}
-.fa-linkedin:hover {
-	color: azure;
+	transition: color 0.2s ease;
 }
 
 @media (max-width: 800px) {
