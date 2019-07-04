@@ -37,7 +37,11 @@ class App extends Component {
         setTimeout(() => document.querySelector(".loading-bar").className += " loading-bar60", 50);
         window.addEventListener('load', this.handleLoad);
         window.addEventListener('scroll', throttle(this.handleScroll, 50));
-        // check themeMode localStorage
+
+        const themeMode = localStorage.getItem("themeMode");
+        if (themeMode && themeMode === "light") {
+            this.setState({ themeMode: "light"});
+        }
     }
     componentWillUnmount() {
         window.removeEventListener('load', this.handleLoad);
@@ -86,8 +90,8 @@ class App extends Component {
         }
     }
     toggleDarkMode(e) {
-        // const themeMode = localStorage.setItem();
         const themeMode = this.state.themeMode === "dark" ? "light" : "dark";
+        localStorage.setItem("themeMode", themeMode);
         this.setState({ themeMode });
     }
     render() { 

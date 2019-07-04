@@ -20,7 +20,7 @@ const Nav = ({ className, bg, handleMobileNav, themeMode, toggleDarkMode }) => {
 				{ sections.map((data, i) => <NavBtn text={ data } nbr={i} key={i} onClick={ e => {smoothScroll(e);handleMobileNav();} } /> ) }
 			</div>
 			<SocialMediaIcons />
-			<DarkModeSwitch toggleDarkMode={ toggleDarkMode } />
+			<DarkModeSwitch themeMode={ themeMode } toggleDarkMode={ toggleDarkMode } />
 		</nav>
 	);
 }
