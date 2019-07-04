@@ -1,8 +1,4 @@
 /*
-todo:
-	contact form
-*/
-/*
 	nav background is inline because 
 	of the onScroll background change
 */
@@ -169,17 +165,34 @@ todo:
 }
 
 
+.dark .form-group input, .dark .form-group textarea {
+  border-bottom: 2px solid #444;
+  color: #668888;
+}
+.light .form-group input, .light .form-group textarea {
+  border-bottom: 2px solid silver;
+  color: #de5978;
+}
+.dark .form-group input:focus, .dark .form-group textarea:focus {
+  border-bottom: 2px solid #339999;
+  color: #338888;
+}
+.light .form-group input:focus, .light .form-group textarea:focus {
+  border-bottom: 2px solid #db2e56;
+  color: #db0e56;
+}
+
 .dark .hex-grid {
 	opacity: 0.4;
 }
 .light .hex-grid {
-	opacity: 1;
+	opacity: .2;
 }
 .dark .hex-top {
   border-bottom: 30px solid #144;
 }
 .light .hex-top {
-  border-bottom: 30px solid #ddd;
+  border-bottom: 30px solid #bbb;
 }
 .dark .hex-body {
   background: #122;

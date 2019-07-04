@@ -12,7 +12,7 @@ const Nav = ({ className, bg, handleMobileNav, themeMode, toggleDarkMode }) => {
 	const style = { // used for scroll anim
 		backgroundColor: themeMode === "dark" ? "rgb(28, 28, 28)" : "#eee",
 		padding: window.innerWidth <= 800 ? "6vh 5vw" : "1vh 5vw",
-		boxShadow: "0px 0px 6px 1px #111"
+		boxShadow: themeMode === "dark" ? "0px 0px 6px 1px #111" : "0px 0px 6px 1px #bbb"
 	};
 	return (
 		<nav className={ className + " " + themeMode } style={ bg ? style : {} } >

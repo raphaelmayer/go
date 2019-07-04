@@ -21,21 +21,12 @@
 	box-sizing: border-box;
 	background: none;
 	border: none;
-	border-bottom: 2px solid #444;
-	color: #668888;
 	font-size: 18px;
 	margin: 20px;
-	transition: all 0.3s ease;
 	padding: 5px;
 	width: 500px;
-}
-.form-group input:focus {
-	border-bottom: 2px solid #339999;
-	color: #338888;
-}
-.form-group textarea:focus {
-	border-bottom: 2px solid #339999;
-	color: #338888;
+	transition: color .3s ease, 
+		border-bottom .3s ease;
 }
 
 .hex-grid {
