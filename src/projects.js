@@ -10,17 +10,6 @@ const projects = [
                     "type": "front end"
                     },
 //
-				  { "title": "Jonny Hill", 
-                    "tagline": "Designed and developed a new homepage with a store front and CMS capabilities.",
-                    "features": [ "e-commerce", "persistent shopping cart", "integrated payment options", "automated emails", "admin interface" ],
-                    "thumbnail": "jh.jpg",
-                    "images": [ "jh-front.jpg" ],
-                    "link": "https://jonny-hill.info",
-                    "repo": "",
-                    "tech": ["react.js", "node.js", "mysql", "strapi", "braintree"],
-                    "type": "full stack"
-                    },
-//
                   { "title": "Crawl-Unsplash-CLI", 
                     "tagline": "Small command line utility for crawling and downloading royalty-free images from unsplash.com.",
                     "features": [ "query images by category", "download images", "ensures unique directories recursively" ],
