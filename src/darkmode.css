@@ -206,3 +206,11 @@
 .light .hex-bot {
   border-top: 30px solid #db2e56;
 }
+
+.dark .workbox-title {
+  background: linear-gradient(to top right, #222, #133);
+}
+.light .workbox-title {
+  background: linear-gradient(to top right, #eee, #db2e56);
+  color: #333;
+}
