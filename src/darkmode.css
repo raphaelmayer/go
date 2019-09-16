@@ -18,6 +18,25 @@
   background: rgb(255, 255, 255);
 }
 
+.dark .loading-screen {
+  background: rgb(23, 23, 23);
+}
+.dark .center-piece {
+  background: rgb(50, 50, 50);
+}
+.dark .loading-bar {
+  background: #119999;
+}
+.light .loading-screen {
+  background: #ddd;
+}
+.light .center-piece {
+  background: silver;
+}
+.light .loading-bar {
+  background: #db2e56;
+}
+
 .light h1 {
   color: #db2e56;
 }
