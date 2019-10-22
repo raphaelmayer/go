@@ -7,7 +7,7 @@ import Frontpage from "./containers/Frontpage/Frontpage";
 import Nav from './components/Nav';
 import NavBarIcon from './components/NavBarIcon';
 import LoadingScreen from './components/LoadingScreen';
-import Overlay from "./components/Overlay";
+import Overlay from "./components/Overlayy";
 import Parallax from "./components/Parallax";
 
 import throttle from "./helpers/throttle";

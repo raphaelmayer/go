@@ -1,0 +1,190 @@
+.overlay {
+	background: rgba(20, 20, 20, 0.7);
+	display: flex;
+	overflow: auto;
+	padding: 50px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	text-align: left;
+	transition: all 0.1s ease-in-out;
+	visibility: hidden;
+	white-space: nowrap;
+	width: 100%;
+	z-index: 10;
+}
+.overlay-active {
+	transform: translateX(0);
+	opacity: 1;
+	visibility: visible;
+}
+.overlay-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.overlay-head {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	margin-bottom: 0px;
+	padding: 30px 20px;
+	position: relative;
+}
+.overlay-head h1 {
+	margin: auto;
+}
+.overlay-container {
+	font-size: 12px;
+	margin: auto;
+	transition: transform 0.1s ease-in-out;
+	transform: scale(0);
+	white-space: pre-wrap;
+	width: 80%;
+	max-width: 500px;
+	ax-height: 90%;
+}
+.overlay-active .overlay-container {
+  animation: bounce 0.6s 0s;
+  transform: scale(1);
+}
+
+.overlay-head h1, .overlay-head p, .overlay-head .overlay-btn {
+	position: relative;
+	z-index: 2;
+}
+.overlay p {
+	font-size: 14px;
+	margin: 20px 0;
+}
+
+.darken-bg {
+	opacity: 0.9;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	transition: background 0.3s ease;
+}
+
+.overlay .overlay-section {
+	border-left: 1px solid #555;
+	margin: 20px;
+	overflow-y: auto;
+	padding-left: 20px;
+}
+.overlay .overlay-section ul {
+	list-style: none;
+}
+.overlay .overlay-section ul li  {
+	font-size: 14px;
+	padding: 5px 0;
+	transition: padding 0.3s ease;
+}
+.overlay .overlay-section ul li:hover  {
+	padding: 5px;
+}
+.overlay .overlay-section .tech {
+	display: flex;
+	flex-wrap: wrap;
+}
+.overlay .overlay-section .tech button {
+	background: #222;
+	border: none;
+	border-radius: 2px;
+	cursor: default;
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin: 6px;
+	padding: 7px;
+}
+
+.overlay-image-container {
+	margin: 60px auto;
+}
+.overlay-img {
+	display: block;
+	width: 800px;
+	margin: 10px auto;
+	max-width: 98%;
+}
+.overlay .nav-icon {
+	color: azure;
+	cursor: pointer;
+	font-size: 30px;
+	position: absolute;
+	top: 3%;
+	right: 3%;
+	left: auto;
+	transition: all 0.2s ease-in-out;
+}
+
+.overlay-btn {
+	border: 2px solid #779999;
+	color: #779999;
+	font-size: 16px;
+	margin: 20px 0px 20px 20px;
+}
+.overlay-btn i {
+	font-size: 14px;
+	margin-right: 4px;
+}
+
+@media (max-width: 1000px) {
+	.overlay {
+		display: inline-block;
+		padding: 50px 30px;
+	}
+	.overlay-container {
+		box-sizing: border-box;
+	}
+}
+@media (max-width: 600px) {
+	.overlay {
+	}
+	.overlay h1 {
+		font-size: 40px;
+		padding: 30px 0;
+	}
+	.overlay .overlay-head {
+		margin-bottom: 0px;
+	}
+}
+
+.bounce {
+  animation: bounce 1s .5s;
+  transform: scale(0.85);
+}
+
+@keyframes bounce {
+  0% { transform: scale(0) }
+  40% { transform: scale(1.1) }
+  70% { transform: scale(0.95) }
+  100% { transform: scale(1) }
+}
+
+/*
+  0% { transform: scale(0) }
+  40% { transform: scale(1.1) }
+  58% { transform: scale(0.8) }
+  74% { transform: scale(1.05) }
+  85% { transform: scale(0.95) }
+  94% { transform: scale(1.02) }
+  100% { transform: scale(1) }
+
+  0% { transform: scale(0) }
+  40% { transform: scale(1.1) }
+  60% { transform: scale(0.8) }
+  75% { transform: scale(1.05) }
+  85% { transform: scale(0.95) }
+  94% { transform: scale(1.02) }
+  100% { transform: scale(1) }
+
+*/

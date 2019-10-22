@@ -104,6 +104,17 @@ const projects = [
                     "type": "full stack"
                     },
 //
+                  { "title": "tbd", 
+                    "tagline": "A platform to share and sell gigs.",
+                    "features": [ "authentication", "messaging", "rating system" ],
+                    "thumbnail": "placeholder.jpg",
+                    "images": [ "placeholder.jpg" ],
+                    "link": "",
+                    "repo": "https://github.com/raphaelmayer/food-share",
+                    "tech": ["react.js", "node.js", "mongoDB", "redux", "mongoDB", "react.js", "node.js", "redux"], 
+                    "type": "full stack"
+                    },
+//
 /*                  { "title": "QuoteFactory", 
                     "tagline": "Coming soon - Realtime quote image generator with loads of options including font styles, filters and animations.",
                     "features": [ "Coming soon" ],

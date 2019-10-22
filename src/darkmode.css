@@ -3,7 +3,7 @@
 	of the onScroll background change
 */
 .dark {
-  background: rgb(28, 28, 28);
+  background: rgb(38, 38, 38);
   color: silver;
 }
 .light {
@@ -156,10 +156,22 @@
 }
 
 .dark .overlay-head {
-	box-shadow: -8px 8px 30px 1px #111;
+  ox-shadow: -8px 8px 30px 1px #111;
 }
 .light .overlay-head {
-	box-shadow: -8px 8px 30px 1px #ddd;
+  ox-shadow: -8px 8px 30px 1px #ddd;
+}
+.dark .overlay-container {
+  background: #333;
+}
+.light .overlay-container {
+  background: #eee;
+}
+.dark .overlay .overlay-section .tech button {
+  background: #222;
+}
+.light .overlay .overlay-section .tech button {
+  background: #ddd;
 }
 
 /* NavBarIcon */
@@ -231,5 +243,5 @@
 }
 .light .workbox-title {
   background: linear-gradient(to top right, #eee, #db2e56);
-  color: #333;
+  color: #444;
 }

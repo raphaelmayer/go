@@ -47,7 +47,7 @@
   }
 }
 
-
+/* disabled for new overlay animation i am building
 .FrontPage {
   transition: all 0.5s ease-in-out;
   opacity: 1;
@@ -56,3 +56,4 @@
   transform: translateX(-100%);
   opacity: 0;
 }
+*/
