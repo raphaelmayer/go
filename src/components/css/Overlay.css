@@ -2,7 +2,7 @@
 	background: rgba(20, 20, 20, 0.7);
 	display: flex;
 	overflow: auto;
-	padding: 50px;
+	padding: 70px 10px;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -120,13 +120,15 @@
 @media (max-width: 1000px) {
 	.overlay {
 		display: inline-block;
-		padding: 50px 30px;
 	}
 	.overlay-container {
 		box-sizing: border-box;
 	}
 }
 @media (max-width: 600px) {
+	.overlay {
+		padding: 60px 10px;
+	}
 	.overlay h1 {
 		font-size: 40px;
 		padding: 30px 0;
