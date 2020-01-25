@@ -20,11 +20,11 @@ class Work extends Component {
         
         // turn filter on
         if (!this.state.filter) {
-            const filtered = myProjects.filter(p => p.tech.indexOf(keyword) >= 0);
+            const filtered = myProjects.filter(p => p.tech.indexOf(keyword) >= 0 || p.type === keyword);
             this.setState({ filter: keyword, projects: filtered });
         // switch filter
         } else if (this.state.filter !== keyword) {
-            const filtered = myProjects.filter(p => p.tech.indexOf(keyword) >= 0);
+            const filtered = myProjects.filter(p => p.tech.indexOf(keyword) >= 0 || p.type === keyword);
             this.setState({ filter: keyword, projects: filtered });
         // turn filter off
         } else {

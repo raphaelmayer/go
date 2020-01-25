@@ -1,14 +1,15 @@
 .overlay {
-	ackground: #222;
+	background: rgba(20, 20, 20, 0.7);
+	display: flex;
 	overflow: auto;
 	padding: 50px;
 	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
+	opacity: 0;
 	text-align: left;
-	transition: all 0.5s ease-in-out;
-	transform: translateX(100vw);
+	transition: all 0.1s ease-in-out;
 	visibility: hidden;
 	white-space: nowrap;
 	width: 100%;
@@ -19,31 +20,47 @@
 	opacity: 1;
 	visibility: visible;
 }
+.overlay-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
 
 .overlay-head {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	margin-bottom: 50px;
-	padding: 0 20px 50px 20px;
+	display: flex;
+	margin-bottom: 0px;
+	padding: 30px 20px;
 	position: relative;
-	transition: box-shadow 0.3s ease;
+}
+.overlay-head h1 {
+	margin: auto;
 }
 .overlay-container {
+	font-size: 12px;
 	margin: auto;
+	transition: transform 0.1s ease-in-out;
+	transform: scale(0);
 	white-space: pre-wrap;
-	width: 90%;
-	max-width: 1100px;
+	width: 80%;
+	max-width: 500px;
+	ax-height: 90%;
+}
+.overlay-active .overlay-container {
+  animation: bounce 0.6s 0s;
+  transform: scale(1);
 }
 
 .overlay-head h1, .overlay-head p, .overlay-head .overlay-btn {
 	position: relative;
 	z-index: 2;
 }
-.overlay-head h1, .overlay-head p {
-	width: 50%;
-}
 .overlay p {
+	font-size: 14px;
 	margin: 20px 0;
 }
 
@@ -59,13 +76,15 @@
 
 .overlay .overlay-section {
 	border-left: 1px solid #555;
-	margin: 34px;
+	margin: 20px;
+	overflow-y: auto;
 	padding-left: 20px;
 }
 .overlay .overlay-section ul {
 	list-style: none;
 }
 .overlay .overlay-section ul li  {
+	font-size: 14px;
 	padding: 5px 0;
 	transition: padding 0.3s ease;
 }
@@ -74,36 +93,28 @@
 }
 .overlay .overlay-section .tech {
 	display: flex;
+	flex-wrap: wrap;
 }
-.overlay .overlay-section .tech li {
+.overlay .overlay-section .tech button {
+	background: #222;
+	border: none;
+	border-radius: 2px;
+	cursor: default;
+	font-size: 14px;
 	letter-spacing: 1px;
-	margin: auto 6px;
-}
-
-.overlay-image-container {
-	margin: 60px auto;
-}
-.overlay-img {
-	display: block;
-	width: 800px;
-	margin: 10px auto;
-	max-width: 98%;
-}
-.overlay .nav-icon {
-	color: azure;
-	cursor: pointer;
-	font-size: 30px;
-	position: absolute;
-	top: 3%;
-	right: 3%;
-	left: auto;
-	transition: all 0.2s ease-in-out;
+	margin: 6px;
+	padding: 7px;
 }
 
 .overlay-btn {
 	border: 2px solid #779999;
 	color: #779999;
-	margin-top: 50px;
+	font-size: 16px;
+	margin: 20px 0px 20px 20px;
+}
+.overlay-btn i {
+	font-size: 14px;
+	margin-right: 4px;
 }
 
 @media (max-width: 1000px) {
@@ -113,31 +124,29 @@
 	}
 	.overlay-container {
 		box-sizing: border-box;
-		height: auto;
-		width: 100%;
-	}
-	.overlay-head h1, .overlay-head p {
-		width: 100%;
 	}
 }
 @media (max-width: 600px) {
-	.overlay {
-		padding: 20px;
-	}
 	.overlay h1 {
 		font-size: 40px;
 		padding: 30px 0;
 	}
-	.overlay .overlay-section {
-		margin: 34px 0;
-	}
 	.overlay .overlay-head {
 		margin-bottom: 0px;
 	}
-	.overlay .overlay-section .tech {
-		display: block;
+	.overlay-container {
+		width: 100%;
 	}
-	.overlay-btn {
-		margin-top: 20px;
-	}
+}
+
+.bounce {
+  animation: bounce 1s .5s;
+  transform: scale(0.85);
+}
+
+@keyframes bounce {
+  0% { transform: scale(0) }
+  40% { transform: scale(1.1) }
+  70% { transform: scale(0.95) }
+  100% { transform: scale(1) }
 }
