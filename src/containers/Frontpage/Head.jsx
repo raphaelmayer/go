@@ -7,7 +7,7 @@ const Head = ({ themeMode }) => {
   const text =  [
     `Hi, my name is <b>Raphael</b>.`,
     `I'm a <b>full</b> <b>stack</b> <b>developer</b> based in <b>Innsbruck,</b> <b>Austria</b>.`,
-    `Currently I work as a freelancer building applications and online presences for clients from all around the globe.`
+    `Currently I am studying <b>computer</b> <b>science</b> at the University of Innsbruck.`
   ];
   
   return (
